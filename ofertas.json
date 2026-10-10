@@ -1,6 +1,121 @@
 {
-  "actualizado": "",
+  "actualizado": "9 de octubre de 2026",
+  "salida": "Salidas desde Buenos Aires del 14 al 21 de noviembre de 2026",
   "whatsapp": "5492236321023",
   "instagram": "matimarcileseviajes",
-  "ofertas": []
+  "destinos": [
+    {
+      "id": "punta-cana", "region": "caribe", "nombre": "Punta Cana", "pais": "República Dominicana",
+      "foto": "1546708973-b339540b5162", "credito": "John Prefer",
+      "tags": ["All inclusive", "Playa"],
+      "desc": "Arena blanca, palmeras y resorts all inclusive frente al mar Caribe.",
+      "paquete": 1112, "allinc": 1697, "vuelo": 877, "nota": "Vuelo directo desde USD 1.047",
+      "destacado": true, "fotoDestacado": "1692017827893-f97d95397b49", "creditoDestacado": "Victor Rosario"
+    },
+    {
+      "id": "cancun", "region": "caribe", "nombre": "Cancún", "pais": "México",
+      "foto": "1711220465753-2450b31ea318", "credito": "Jan Bachor",
+      "tags": ["Playa", "Vida nocturna"],
+      "desc": "Zona hotelera frente al Caribe, excursiones a Isla Mujeres y la mejor noche de México.",
+      "paquete": 1314, "allinc": null, "vuelo": 819
+    },
+    {
+      "id": "riviera-maya", "region": "caribe", "nombre": "Riviera Maya", "pais": "México",
+      "foto": "1568548634530-38ee433dcc1b", "credito": "Tanja Cotoaga",
+      "tags": ["All inclusive", "Playa", "Historia"],
+      "desc": "Playa del Carmen y Tulum: cenotes, ruinas mayas y resorts todo incluido.",
+      "paquete": 1753, "allinc": 1753, "vuelo": 819, "nota": "Vuelo a Cancún"
+    },
+    {
+      "id": "aruba", "region": "caribe", "nombre": "Aruba", "pais": "Caribe sur",
+      "foto": "1625869581767-c36368b25fd3", "credito": "Lex Melony",
+      "tags": ["Isla", "Playa"],
+      "desc": "Aguas turquesas, playas tranquilas y atardeceres que no se olvidan.",
+      "paquete": 1201, "allinc": 3279, "vuelo": 788, "nota": "Vuelo directo desde USD 1.617"
+    },
+    {
+      "id": "curazao", "region": "caribe", "nombre": "Curazao", "pais": "Caribe sur",
+      "foto": "1583655876950-65ea802a4186", "credito": "John de Jong",
+      "tags": ["Isla", "Playa", "Historia"],
+      "desc": "Las casitas de colores de Willemstad, playas escondidas y snorkel de primer nivel.",
+      "paquete": 1515, "allinc": 2676, "vuelo": 943
+    },
+    {
+      "id": "san-andres", "region": "caribe", "nombre": "San Andrés", "pais": "Colombia",
+      "foto": "1592782985575-a96c6e647155", "credito": "Tatiana Zanon",
+      "tags": ["Isla", "Playa", "Económico"],
+      "desc": "El mar de los siete colores, Johnny Cay y uno de los Caribes más accesibles.",
+      "paquete": 929, "allinc": 1433, "vuelo": 765
+    },
+    {
+      "id": "cartagena", "region": "caribe", "nombre": "Cartagena", "pais": "Colombia",
+      "foto": "1714686495394-73e2bb1bbd39", "credito": "Ricky Beron",
+      "tags": ["Historia", "Playa", "Económico"],
+      "desc": "Ciudad amurallada, calles de colores y escapadas a las Islas del Rosario.",
+      "paquete": 669, "allinc": 1263, "vuelo": 542
+    },
+    {
+      "id": "cuba", "region": "caribe", "nombre": "La Habana y Varadero", "pais": "Cuba",
+      "foto": "1500759285222-a95626b934cb", "credito": "Alexander Kunze",
+      "tags": ["Historia", "Isla"],
+      "desc": "Autos clásicos, música en cada esquina y las playas de Varadero.",
+      "paquete": null, "allinc": null, "vuelo": 1117
+    },
+    {
+      "id": "rio", "region": "brasil", "nombre": "Río de Janeiro", "pais": "Brasil",
+      "foto": "1483729558449-99ef09a8c325", "credito": "Agustin Diaz Gargiulo",
+      "tags": ["Viajás con DNI"],
+      "desc": "Pan de Azúcar, el Cristo Redentor y las playas de Copacabana e Ipanema.",
+      "paquete": 508, "allinc": null, "vuelo": 414, "nota": "Vuelo directo"
+    },
+    {
+      "id": "florianopolis", "region": "brasil", "nombre": "Florianópolis", "pais": "Brasil",
+      "foto": "1681157865251-2155d60882c0", "credito": "Paulo Kopzinski",
+      "tags": ["Viajás con DNI"],
+      "desc": "Más de 40 playas para elegir, ideal para ir en familia o con amigos.",
+      "paquete": 514, "allinc": null, "vuelo": 470
+    },
+    {
+      "id": "miami", "region": "eeuu", "nombre": "Miami", "pais": "Estados Unidos",
+      "foto": "1589083130544-0d6a2926e519", "credito": "Antonio Cuellar",
+      "tags": ["Playa", "Shopping"],
+      "desc": "Playas, shopping y la mejor movida latina de Estados Unidos.",
+      "paquete": 1000, "allinc": null, "vuelo": 625
+    },
+    {
+      "id": "orlando", "region": "eeuu", "nombre": "Orlando", "pais": "Estados Unidos",
+      "foto": "1609184889233-eff6dd93def4", "credito": "Mick Haupt",
+      "tags": ["Parques", "Familia"],
+      "desc": "La capital mundial de los parques temáticos, para grandes y chicos.",
+      "paquete": 1151, "allinc": null, "vuelo": 790
+    },
+    {
+      "id": "nueva-york", "region": "eeuu", "nombre": "Nueva York", "pais": "Estados Unidos",
+      "foto": "1496588152823-86ff7695e68f", "credito": "Luca Bravo",
+      "tags": ["Ciudad"],
+      "desc": "Times Square, Central Park y la ciudad que nunca duerme.",
+      "paquete": 1810, "allinc": null, "vuelo": 1116
+    },
+    {
+      "id": "madrid", "region": "europa", "nombre": "Madrid", "pais": "España",
+      "foto": "1539037116277-4db20889f2d4", "credito": "Florian Wehde",
+      "tags": ["Ciudad", "Europa"],
+      "desc": "La puerta de entrada a Europa: arte, tapas y una vida nocturna única.",
+      "paquete": 1548, "allinc": null, "vuelo": 1208
+    },
+    {
+      "id": "roma", "region": "europa", "nombre": "Roma", "pais": "Italia",
+      "foto": "1552832230-c0197dd311b5", "credito": "David Köhler",
+      "tags": ["Ciudad", "Historia"],
+      "desc": "El Coliseo, el Vaticano y la mejor pasta, en la ciudad eterna.",
+      "paquete": 1727, "allinc": null, "vuelo": 1250
+    },
+    {
+      "id": "cusco", "region": "sudamerica", "nombre": "Cusco y Machu Picchu", "pais": "Perú",
+      "foto": "1587595431973-160d0d94add1", "credito": "Eddie Kiszka",
+      "tags": ["Historia", "Aventura"],
+      "desc": "La puerta a Machu Picchu: historia inca, montañas y gastronomía peruana.",
+      "paquete": 625, "allinc": null, "vuelo": 595, "nota": "Paquete con hotel en Cusco"
+    }
+  ]
 }
