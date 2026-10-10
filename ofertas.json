@@ -750,6 +750,65 @@
                                               "codigo":  "MD3"
                                           }
                                       ]
+                     },
+                     {
+                         "id":  "formula-1",
+                         "region":  "eventos",
+                         "nombre":  "Fórmula 1",
+                         "pais":  "GP de Brasil y GP de Miami",
+                         "foto":  "1645918899630-85e2f3132a84",
+                         "credito":  "Raphael Nogueira",
+                         "tags":  [
+                                      "Eventos"
+                                  ],
+                         "desc":  "Viví la Fórmula 1 en vivo: el Gran Premio de Brasil en Interlagos o el de Miami, con vuelo, hotel y entradas.",
+                         "incluye":  "Vuelo + hotel + entradas para los 3 días",
+                         "salida":  "GP de Brasil: noviembre 2026 · GP de Miami: abril 2027",
+                         "duracion":  "3 a 8 noches",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "GP de Brasil · 4 noches · Tribuna Sector G",
+                                              "hotel":  "Hotel 3★ H3 Paulista o similar, con desayuno · vuelo chárter · 5 al 9 de noviembre",
+                                              "estrellas":  0,
+                                              "precio":  2990,
+                                              "codigo":  "GP1"
+                                          },
+                                          {
+                                              "tipo":  "GP de Brasil · 3 noches · Tribuna Sector A",
+                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
+                                              "estrellas":  0,
+                                              "precio":  3287,
+                                              "codigo":  "GP2"
+                                          },
+                                          {
+                                              "tipo":  "GP de Brasil · 3 noches · VIP Premium D",
+                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
+                                              "estrellas":  0,
+                                              "precio":  4943,
+                                              "codigo":  "GP3"
+                                          },
+                                          {
+                                              "tipo":  "GP de Miami 2027 · 8 noches · Tribuna North Beach techada",
+                                              "hotel":  "Salida grupal 28/04/2027 · vuelo American Airlines",
+                                              "estrellas":  0,
+                                              "precio":  5225,
+                                              "codigo":  "GP4"
+                                          },
+                                          {
+                                              "tipo":  "GP de Brasil · 3 noches · VIP Premium B",
+                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
+                                              "estrellas":  0,
+                                              "precio":  6043,
+                                              "codigo":  "GP5"
+                                          },
+                                          {
+                                              "tipo":  "GP de Brasil · 3 noches · VIP Orange Tree Club",
+                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
+                                              "estrellas":  0,
+                                              "precio":  7418,
+                                              "codigo":  "GP6"
+                                          }
+                                      ]
                      }
                  ]
 }

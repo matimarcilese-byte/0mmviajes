@@ -409,8 +409,8 @@
     <div class="wrap">
       <div class="head rv">
         <span class="kicker">Más allá del Caribe</span>
-        <h2 id="dest-t">Brasil, Perú, Orlando y Europa</h2>
-        <p>También con 7 noches y todas las opciones de alojamiento, desde la más económica.</p>
+        <h2 id="dest-t">Brasil, Perú, Orlando, Europa y la Fórmula 1</h2>
+        <p>Paquetes de 7 noches con todas las opciones de alojamiento, desde la más económica. La Fórmula 1 se arma según cada Gran Premio, con vuelo, hotel y entradas.</p>
       </div>
       <div class="grid" id="rail"></div>
     </div>
@@ -1255,6 +1255,65 @@
                                               "codigo":  "MD3"
                                           }
                                       ]
+                     },
+                     {
+                         "id":  "formula-1",
+                         "region":  "eventos",
+                         "nombre":  "Fórmula 1",
+                         "pais":  "GP de Brasil y GP de Miami",
+                         "foto":  "1645918899630-85e2f3132a84",
+                         "credito":  "Raphael Nogueira",
+                         "tags":  [
+                                      "Eventos"
+                                  ],
+                         "desc":  "Viví la Fórmula 1 en vivo: el Gran Premio de Brasil en Interlagos o el de Miami, con vuelo, hotel y entradas.",
+                         "incluye":  "Vuelo + hotel + entradas para los 3 días",
+                         "salida":  "GP de Brasil: noviembre 2026 · GP de Miami: abril 2027",
+                         "duracion":  "3 a 8 noches",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "GP de Brasil · 4 noches · Tribuna Sector G",
+                                              "hotel":  "Hotel 3★ H3 Paulista o similar, con desayuno · vuelo chárter · 5 al 9 de noviembre",
+                                              "estrellas":  0,
+                                              "precio":  2990,
+                                              "codigo":  "GP1"
+                                          },
+                                          {
+                                              "tipo":  "GP de Brasil · 3 noches · Tribuna Sector A",
+                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
+                                              "estrellas":  0,
+                                              "precio":  3287,
+                                              "codigo":  "GP2"
+                                          },
+                                          {
+                                              "tipo":  "GP de Brasil · 3 noches · VIP Premium D",
+                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
+                                              "estrellas":  0,
+                                              "precio":  4943,
+                                              "codigo":  "GP3"
+                                          },
+                                          {
+                                              "tipo":  "GP de Miami 2027 · 8 noches · Tribuna North Beach techada",
+                                              "hotel":  "Salida grupal 28/04/2027 · vuelo American Airlines",
+                                              "estrellas":  0,
+                                              "precio":  5225,
+                                              "codigo":  "GP4"
+                                          },
+                                          {
+                                              "tipo":  "GP de Brasil · 3 noches · VIP Premium B",
+                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
+                                              "estrellas":  0,
+                                              "precio":  6043,
+                                              "codigo":  "GP5"
+                                          },
+                                          {
+                                              "tipo":  "GP de Brasil · 3 noches · VIP Orange Tree Club",
+                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
+                                              "estrellas":  0,
+                                              "precio":  7418,
+                                              "codigo":  "GP6"
+                                          }
+                                      ]
                      }
                  ]
 }</script>
@@ -1280,10 +1339,12 @@
   const stars = n => n ? ' ' + '★'.repeat(n) : '';
   const tagsOf = d => d.tags.concat(d.opciones.some(isAI) ? ['All inclusive'] : [],
     d.opciones.some(o => /apartamento|estudio/i.test(o.tipo)) ? ['Apartamento'] : []);
-  const msgFor = d => 'Hola MM Viajes! 👋 Me interesa ' + d.nombre + ' (7 noches) desde ' + fmt(cheapest(d)) +
+  const dur = d => d.duracion || '7 noches';
+  const msgFor = d => 'Hola MM Viajes! 👋 Me interesa ' + d.nombre + ' (' + dur(d) + ') desde ' + fmt(cheapest(d)) +
     ' por persona (ref. ' + cheapestOpt(d).codigo + '). ¿Me pasás todas las opciones y disponibilidad?';
-  const optMsg = (d, o) => 'Hola MM Viajes! 👋 Me interesa ' + d.nombre + ', 7 noches: ' + o.tipo.toLowerCase() + ' en ' + o.hotel +
-    ' desde ' + fmt(o.precio) + ' por persona (ref. ' + o.codigo + '). ' + d.salida + '. ¿Me pasás disponibilidad?';
+  const optMsg = (d, o) => 'Hola MM Viajes! 👋 Me interesa ' + d.nombre +
+    (d.duracion ? ': ' + o.tipo + ' (' + o.hotel + ')' : ', 7 noches: ' + o.tipo.toLowerCase() + ' en ' + o.hotel) +
+    ' desde ' + fmt(o.precio) + ' por persona (ref. ' + o.codigo + ').' + (d.duracion ? '' : ' ' + d.salida + '.') + ' ¿Me pasás disponibilidad?';
 
   const options = d => '<ul class="opts">' + sorted(d).map((o, i) =>
     '<li><a class="js-wa" href="#cotizar" data-msg="' + esc(optMsg(d, o)) + '">' +
@@ -1299,7 +1360,7 @@
       ' sizes="(min-width:1024px) 370px, (min-width:640px) 50vw, 100vw" width="720" height="540" loading="lazy" decoding="async" alt="' + esc(d.nombre + ', ' + d.pais) + '">' +
       '<div class="badges">' + badges + '</div><div class="place"><h3>' + esc(d.nombre) + '</h3><span>' + esc(d.pais) + '</span></div></div>' +
       '<div class="body"><p>' + esc(d.desc) + '</p>' +
-      '<div class="price"><div><small>7 noches · por persona desde</small><b>' + fmt(cheapest(d)) + '</b><small>' + esc(d.incluye) + '</small></div>' +
+      '<div class="price"><div><small>' + esc(dur(d)) + ' · por persona desde</small><b>' + fmt(cheapest(d)) + '</b><small>' + esc(d.incluye) + '</small></div>' +
       '<div class="stay">' + d.opciones.length + ' opciones<br>de alojamiento</div></div>' +
       '<p class="opts-h">Elegí tu opción (por persona, base doble):</p>' + options(d) +
       '<p class="when">' + icon('plane') + esc(d.salida) + '</p>' +
@@ -1320,7 +1381,7 @@
   }
 
   function table(car, rest) {
-    const row = d => { const ai = aiFrom(d); return '<div class="trow"><div class="d"><b>' + esc(d.nombre) + '</b><small>' + d.opciones.length + ' opciones · 7 noches</small></div>' +
+    const row = d => { const ai = aiFrom(d); return '<div class="trow"><div class="d"><b>' + esc(d.nombre) + '</b><small>' + d.opciones.length + ' opciones · ' + esc(dur(d)) + '</small></div>' +
       '<div class="v p">' + fmt(cheapest(d)) + '</div>' +
       (ai ? '<div class="v">' + fmt(ai) + '</div>' : '<div class="v c">—</div>') + '</div>'; };
     $('#tabla').innerHTML = '<div class="trow h"><div>Destino</div><div class="v">Desde p/p</div><div class="v">All inclusive</div></div>' +
@@ -1367,7 +1428,7 @@
       $('#ig span').textContent = '@' + u;
     }
 
-    $('#legal').textContent = 'Tarifas de referencia por persona en base doble, en dólares estadounidenses, para paquetes de 7 noches con vuelo ida y vuelta, según las tarifas de nuestros operadores al ' + D.actualizado +
+    $('#legal').textContent = 'Tarifas de referencia por persona en base doble, en dólares estadounidenses, para paquetes de 7 noches con vuelo ida y vuelta (los eventos, como la Fórmula 1, indican sus noches y fechas en cada opción), según las tarifas de nuestros operadores al ' + D.actualizado +
       '. Salvo que se indique otra fecha: ' + D.referencia + '. Incluyen los impuestos del aéreo; pueden aplicarse impuestos y tasas hoteleras, gastos de reserva, gastos administrativos y percepciones impositivas según el medio de pago. ' +
       'Sujetas a disponibilidad y a cambios sin previo aviso. La tarifa final se confirma al momento de reservar.';
     const names = [...new Set(EXTRA_CREDITS.concat(D.destinos.flatMap(d => [d.credito, d.creditoDestacado])).filter(Boolean))];
@@ -1428,7 +1489,7 @@
 
   render();
 
-  // Datos actualizados (ofertas.json); si no carga, quedan los de la página.
+  // Datos actualizados (ofertas.json); si no carga, quedan los de la página
   fetch('ofertas.json?v=' + Date.now(), { cache: 'no-store' })
     .then(r => r.ok ? r.json() : null)
     .then(j => {
