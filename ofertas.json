@@ -1,174 +1,206 @@
 {
   "actualizado": "10 de octubre de 2026",
+  "referencia": "Salida 11 de enero 2027 desde Buenos Aires, regreso 18 de enero",
   "whatsapp": "5492236321023",
   "instagram": "matimarcileseviajes",
   "destinos": [
     {
       "id": "punta-cana", "region": "caribe", "nombre": "Punta Cana", "pais": "República Dominicana",
-      "foto": "1546708973-b339540b5162", "credito": "John Prefer",
-      "tags": ["All inclusive", "Playa"],
-      "desc": "Arena blanca, palmeras y resorts all inclusive frente al mar Caribe.",
-      "precio": 2123, "noches": 9, "plan": "All inclusive", "aereo": true,
-      "incluye": "Vuelo directo con equipaje, traslados y asistencia",
-      "salida": "Salidas en enero y febrero 2027 desde Buenos Aires",
-      "nota": "Más de 50 resorts para elegir",
-      "destacado": true, "fotoDestacado": "1692017827893-f97d95397b49", "creditoDestacado": "Victor Rosario"
+      "foto": "1546708973-b339540b5162", "credito": "John Prefer", "tags": ["Playa"],
+      "desc": "Arena blanca, palmeras y más de 300 hoteles: desde opciones económicas hasta resorts all inclusive.",
+      "incluye": "Vuelo ida y vuelta + 7 noches", "salida": "Salida 11/01/2027 desde Buenos Aires",
+      "destacado": true, "fotoDestacado": "1692017827893-f97d95397b49", "creditoDestacado": "Victor Rosario",
+      "opciones": [
+        { "tipo": "Hotel con desayuno", "hotel": "Hotel Maracas", "estrellas": 2, "precio": 1057 },
+        { "tipo": "Apartamento", "hotel": "Bávaro Green", "estrellas": 3, "precio": 1106 },
+        { "tipo": "Hotel solo alojamiento", "hotel": "Hotel & Casino Flamboyan", "estrellas": 3, "precio": 1147 },
+        { "tipo": "All inclusive", "hotel": "VIK Arena Blanca", "estrellas": 3, "precio": 1688 },
+        { "tipo": "Pensión completa", "hotel": "Whala!bávaro", "estrellas": 4, "precio": 1903 },
+        { "tipo": "Media pensión", "hotel": "AC Hotel by Marriott", "estrellas": 4, "precio": 2160 }
+      ]
     },
     {
-      "id": "bayahibe", "region": "caribe", "nombre": "Bayahibe y Punta Cana", "pais": "República Dominicana",
-      "foto": "1661436192775-57f956799915", "credito": "Michelangelo Azzariti",
-      "tags": ["All inclusive", "Combinado", "Playa"],
-      "desc": "Dos destinos en un viaje: las aguas calmas de Bayahibe y las playas de Punta Cana.",
-      "precio": 2647, "noches": 9, "plan": "All inclusive", "aereo": true,
-      "incluye": "Vuelo directo con equipaje, traslados y asistencia",
-      "salida": "Salidas en enero y febrero 2027 desde Buenos Aires"
+      "id": "cartagena", "region": "caribe", "nombre": "Cartagena", "pais": "Colombia",
+      "foto": "1714686495394-73e2bb1bbd39", "credito": "Ricky Beron", "tags": ["Historia", "Playa"],
+      "desc": "Ciudad amurallada, calles de colores y playas caribeñas a minutos del centro.",
+      "incluye": "Vuelo ida y vuelta + 7 noches", "salida": "Salida 11/01/2027 desde Buenos Aires",
+      "opciones": [
+        { "tipo": "Hotel solo alojamiento", "hotel": "Hotel Corales del Mar", "estrellas": 2, "precio": 973 },
+        { "tipo": "Apartamento", "hotel": "Casa Turística Los Doce Apóstoles", "estrellas": 2, "precio": 1064 },
+        { "tipo": "Hotel con desayuno", "hotel": "Hotel Aguamarina", "estrellas": 0, "precio": 1065 },
+        { "tipo": "Media pensión", "hotel": "Pop Art Hotel", "estrellas": 3, "precio": 1161 },
+        { "tipo": "All inclusive", "hotel": "Hotel Cartagena Plaza", "estrellas": 4, "precio": 1457 },
+        { "tipo": "Pensión completa", "hotel": "La Gran Vía Hotel", "estrellas": 3, "precio": 1483 }
+      ]
     },
     {
-      "id": "miches", "region": "caribe", "nombre": "Miches y Punta Cana", "pais": "República Dominicana",
-      "foto": "1617718295766-0f839c2853e7", "credito": "Asael Peña",
-      "tags": ["All inclusive", "Combinado", "Playa"],
-      "desc": "La costa más virgen de Dominicana, combinada con Punta Cana.",
-      "precio": 3122, "noches": 9, "plan": "All inclusive", "aereo": true,
-      "incluye": "Vuelo directo con equipaje, traslados y asistencia",
-      "salida": "Salidas en enero y febrero 2027 desde Buenos Aires"
-    },
-    {
-      "id": "dominicana-grupal", "region": "caribe", "nombre": "Dominicana en grupo", "pais": "Bayahibe, Punta Cana y Santo Domingo",
-      "foto": "1669517270484-df54ad8d54c8", "credito": "Stefan Hale",
-      "tags": ["Salida grupal", "All inclusive", "Combinado"],
-      "desc": "Tres destinos en una salida grupal: playas all inclusive y la historia de Santo Domingo.",
-      "precio": 3210, "noches": 9, "plan": "All inclusive", "aereo": true,
-      "incluye": "Vuelos LATAM ida y vuelta",
-      "salida": "Salida grupal 17 de enero 2027 desde Buenos Aires",
-      "nota": "Media pensión en Santo Domingo"
+      "id": "san-andres", "region": "caribe", "nombre": "San Andrés", "pais": "Colombia",
+      "foto": "1592782985575-a96c6e647155", "credito": "Tatiana Zanon", "tags": ["Isla", "Playa"],
+      "desc": "El mar de los siete colores, Johnny Cay y uno de los Caribes más accesibles.",
+      "incluye": "Vuelo ida y vuelta + 7 noches", "salida": "Salida 11/01/2027 desde Buenos Aires",
+      "opciones": [
+        { "tipo": "Apartamento", "hotel": "Apartamentos Sweet Island", "estrellas": 2, "precio": 1249 },
+        { "tipo": "Hotel solo alojamiento", "hotel": "Red Ground Village", "estrellas": 2, "precio": 1297 },
+        { "tipo": "Hotel con desayuno", "hotel": "Casa Sun Day Hotel Boutique", "estrellas": 2, "precio": 1317 },
+        { "tipo": "Media pensión", "hotel": "Hotel Isla Bonita", "estrellas": 3, "precio": 1471 },
+        { "tipo": "Pensión completa", "hotel": "Hotel Isla Bonita", "estrellas": 3, "precio": 1560 },
+        { "tipo": "All inclusive", "hotel": "Decameron San Luis", "estrellas": 3, "precio": 1697 }
+      ]
     },
     {
       "id": "aruba", "region": "caribe", "nombre": "Aruba", "pais": "Caribe sur",
-      "foto": "1625869581767-c36368b25fd3", "credito": "Lex Melony",
-      "tags": ["Salida grupal", "All inclusive", "Isla"],
-      "desc": "Salida grupal acompañada: playas de agua cristalina, city tour y catamarán al atardecer.",
-      "precio": 5180, "noches": 8, "plan": "All inclusive", "aereo": true,
-      "incluye": "Vuelos LATAM, city tour y paseo en catamarán",
-      "salida": "Salida grupal 28 de abril 2027 desde Buenos Aires o Córdoba"
+      "foto": "1625869581767-c36368b25fd3", "credito": "Lex Melony", "tags": ["Isla", "Playa"],
+      "desc": "Aguas turquesas, playas tranquilas y atardeceres que no se olvidan.",
+      "incluye": "Vuelo ida y vuelta + 7 noches", "salida": "Salida 11/01/2027 desde Buenos Aires",
+      "opciones": [
+        { "tipo": "Apartamento", "hotel": "Seroe Patrishi 11", "estrellas": 2, "precio": 1384 },
+        { "tipo": "Hotel solo alojamiento", "hotel": "Victoria City Hotel", "estrellas": 2, "precio": 1616 },
+        { "tipo": "Hotel con desayuno", "hotel": "Victoria City Hotel", "estrellas": 2, "precio": 1754 },
+        { "tipo": "All inclusive", "hotel": "Divi Village Golf & Beach Resort", "estrellas": 4, "precio": 3527 },
+        { "tipo": "Media pensión", "hotel": "Eagle Aruba Resort", "estrellas": 4, "precio": 3761 },
+        { "tipo": "Pensión completa", "hotel": "Eagle Aruba Resort", "estrellas": 4, "precio": 3987 }
+      ]
+    },
+    {
+      "id": "curazao", "region": "caribe", "nombre": "Curazao", "pais": "Caribe sur",
+      "foto": "1583655876950-65ea802a4186", "credito": "John de Jong", "tags": ["Isla", "Historia", "Playa"],
+      "desc": "Las casitas de colores de Willemstad, playas escondidas y snorkel de primer nivel.",
+      "incluye": "Vuelo ida y vuelta + 7 noches", "salida": "Salida 11/01/2027 desde Buenos Aires",
+      "opciones": [
+        { "tipo": "Hotel solo alojamiento", "hotel": "Eve's Residence", "estrellas": 2, "precio": 1424 },
+        { "tipo": "Apartamento", "hotel": "Mirador Apartments", "estrellas": 0, "precio": 1515 },
+        { "tipo": "Hotel con desayuno", "hotel": "Delynne Boutique Hotel", "estrellas": 3, "precio": 1640 },
+        { "tipo": "All inclusive", "hotel": "Kunuku Resort All Inclusive", "estrellas": 3, "precio": 2316 },
+        { "tipo": "Pensión completa", "hotel": "Sonesta Livingstone", "estrellas": 2, "precio": 2699 }
+      ]
     },
     {
       "id": "playa-del-carmen", "region": "caribe", "nombre": "Playa del Carmen", "pais": "Riviera Maya, México",
-      "foto": "1504814532849-cff240bbc503", "credito": "Spencer Watson",
-      "tags": ["All inclusive", "Playa"],
-      "desc": "La Riviera Maya en un resort todo incluido, cerca de Tulum y los cenotes.",
-      "precio": 1769, "noches": 12, "plan": "All inclusive", "aereo": true,
-      "incluye": "Vuelos Copa con carry-on y traslados",
-      "salida": "Salidas de agosto a diciembre 2027 desde Córdoba"
+      "foto": "1504814532849-cff240bbc503", "credito": "Spencer Watson", "tags": ["Playa"],
+      "desc": "La Quinta Avenida, playas de arena blanca y cerca de Tulum y los cenotes.",
+      "incluye": "Vuelo ida y vuelta + 7 noches", "salida": "Salida 11/01/2027 desde Buenos Aires",
+      "opciones": [
+        { "tipo": "Hotel solo alojamiento", "hotel": "Hotel Banana Boutique", "estrellas": 3, "precio": 1589 },
+        { "tipo": "Hotel con desayuno", "hotel": "BALAM Playa", "estrellas": 3, "precio": 1625 },
+        { "tipo": "Apartamento", "hotel": "IRIS Studios & Apartments", "estrellas": 2, "precio": 1640 },
+        { "tipo": "Pensión completa", "hotel": "Hotel MX Portal Maya", "estrellas": 4, "precio": 1871 },
+        { "tipo": "All inclusive", "hotel": "BlueBay Grand Esmeralda", "estrellas": 5, "precio": 2192 },
+        { "tipo": "Media pensión", "hotel": "Petit Lafitte", "estrellas": 4, "precio": 2458 }
+      ]
     },
     {
-      "id": "cancun", "region": "caribe", "nombre": "Cancún y Costa Mujeres", "pais": "México",
-      "foto": "1711220465753-2450b31ea318", "credito": "Jan Bachor",
-      "tags": ["All inclusive", "Playa"],
-      "desc": "La zona hotelera de Cancún y la nueva Costa Mujeres, con todo incluido.",
-      "precio": 1769, "noches": 12, "plan": "All inclusive", "aereo": true,
-      "incluye": "Vuelos Copa con carry-on y traslados",
-      "salida": "Salidas de agosto a diciembre 2027 desde Córdoba"
+      "id": "cancun", "region": "caribe", "nombre": "Cancún", "pais": "México",
+      "foto": "1711220465753-2450b31ea318", "credito": "Jan Bachor", "tags": ["Playa"],
+      "desc": "La zona hotelera frente al Caribe, Isla Mujeres y la mejor noche de México.",
+      "incluye": "Vuelo ida y vuelta + 7 noches", "salida": "Salida 11/01/2027 desde Buenos Aires",
+      "opciones": [
+        { "tipo": "Hotel solo alojamiento", "hotel": "Hotel Kavia Cancún", "estrellas": 3, "precio": 1646 },
+        { "tipo": "Hotel con desayuno", "hotel": "Kabah Boutique Hotel", "estrellas": 4, "precio": 1699 },
+        { "tipo": "All inclusive", "hotel": "Dos Playas Faranda", "estrellas": 3, "precio": 2035 },
+        { "tipo": "Media pensión", "hotel": "Krystal Urban Cancún", "estrellas": 4, "precio": 2132 },
+        { "tipo": "Pensión completa", "hotel": "Cancún Bay Resort", "estrellas": 3, "precio": 2404 }
+      ]
     },
     {
       "id": "costa-rica", "region": "caribe", "nombre": "Costa Rica", "pais": "Centroamérica",
-      "foto": "1536708880921-03a9306ec47d", "credito": "Atanas Malamov",
-      "tags": ["Naturaleza", "Aventura"],
-      "desc": "Volcanes, selva y playas: naturaleza en estado puro.",
-      "precio": 1800, "noches": 7, "plan": "Hoteles 3*", "aereo": true,
-      "incluye": "Vuelos Copa, traslados y asistencia al viajero",
-      "salida": "Salidas hasta noviembre 2026 desde Buenos Aires o Córdoba"
+      "foto": "1536708880921-03a9306ec47d", "credito": "Atanas Malamov", "tags": ["Naturaleza"],
+      "desc": "Circuito Jardín Salvaje: volcanes, selva y naturaleza en estado puro.",
+      "incluye": "Vuelos Copa + 7 noches, traslados y asistencia", "salida": "Salidas hasta noviembre 2026 desde Buenos Aires o Córdoba",
+      "opciones": [
+        { "tipo": "Circuito en hoteles 3★", "hotel": "Jardín Salvaje", "estrellas": 3, "precio": 1800 },
+        { "tipo": "Circuito en hoteles 4★", "hotel": "Jardín Salvaje", "estrellas": 4, "precio": 2200 }
+      ]
     },
     {
-      "id": "cartagena", "region": "caribe", "nombre": "Cartagena y Barú", "pais": "Colombia",
-      "foto": "1714686495394-73e2bb1bbd39", "credito": "Ricky Beron",
-      "tags": ["Historia", "Playa"],
-      "desc": "Ciudad amurallada, calles de colores y las playas de Barú.",
-      "precio": 1360, "noches": 6, "plan": "Hotel + excursiones", "aereo": false,
-      "incluye": "Traslados y visita a la ciudad (sin aéreo)",
-      "salida": "Salidas diarias hasta el 15 de diciembre 2026",
-      "nota": "El aéreo te lo cotizamos aparte"
+      "id": "bayahibe", "region": "caribe", "nombre": "Bayahibe", "pais": "República Dominicana",
+      "foto": "1661436192775-57f956799915", "credito": "Michelangelo Azzariti", "tags": ["Playa"],
+      "desc": "Aguas calmas, la isla Saona y un pueblo de pescadores con mucho encanto.",
+      "incluye": "Vuelo a La Romana + 7 noches", "salida": "Salida 11/01/2027 desde Buenos Aires",
+      "opciones": [
+        { "tipo": "Apartamento", "hotel": "Anya Downtown Bayahibe", "estrellas": 2, "precio": 2005 },
+        { "tipo": "Hotel con desayuno", "hotel": "GuaiG Bayahibe", "estrellas": 2, "precio": 2031 },
+        { "tipo": "All inclusive (solo adultos)", "hotel": "HM Alma de Bayahibe", "estrellas": 4, "precio": 2782 },
+        { "tipo": "All inclusive familiar", "hotel": "Viva Wyndham Dominicus Palace", "estrellas": 4, "precio": 3419 }
+      ]
     },
     {
       "id": "florianopolis", "region": "brasil", "nombre": "Florianópolis", "pais": "Brasil",
-      "foto": "1681157865251-2155d60882c0", "credito": "Paulo Kopzinski",
-      "tags": ["Viajás con DNI"],
+      "foto": "1681157865251-2155d60882c0", "credito": "Paulo Kopzinski", "tags": ["Viajás con DNI"],
       "desc": "Más de 40 playas para elegir, ideal en familia o con amigos.",
-      "precio": 885, "noches": 7, "plan": "Hotel", "aereo": true,
-      "incluye": "Vuelo, hotel y seguro",
-      "salida": "Temporada baja desde Buenos Aires"
+      "incluye": "Vuelo + 7 noches + seguro", "salida": "Temporada baja desde Buenos Aires",
+      "opciones": [
+        { "tipo": "Hotel", "hotel": "Hotel Évora", "estrellas": 0, "precio": 885 },
+        { "tipo": "Resort (promo 7x6)", "hotel": "Costão do Santinho", "estrellas": 0, "precio": 1995 }
+      ]
     },
     {
       "id": "salvador", "region": "brasil", "nombre": "Salvador de Bahía", "pais": "Brasil",
-      "foto": "1730569808407-0591588ced49", "credito": "Joice Cardoso",
-      "tags": ["Viajás con DNI"],
+      "foto": "1730569808407-0591588ced49", "credito": "Joice Cardoso", "tags": ["Viajás con DNI"],
       "desc": "Historia, música y playas en la capital de Bahía.",
-      "precio": 1100, "noches": 7, "plan": "Media pensión", "aereo": true,
-      "incluye": "Vuelo con carry-on, hotel y traslados",
-      "salida": "Salidas hasta diciembre 2026 desde Buenos Aires o Córdoba"
+      "incluye": "Vuelo + 7 noches + traslados", "salida": "Desde Buenos Aires (fechas según opción)",
+      "opciones": [
+        { "tipo": "Hotel (temporada baja)", "hotel": "Gran Hotel Stella Maris", "estrellas": 0, "precio": 1077 },
+        { "tipo": "Resort con media pensión (ago–dic 2026)", "hotel": "Catussaba Resort", "estrellas": 0, "precio": 1100 },
+        { "tipo": "Resort (17 al 24 de enero)", "hotel": "Catussaba Resort", "estrellas": 0, "precio": 1423 },
+        { "tipo": "Hotel (10 al 17 de enero)", "hotel": "Gran Hotel Stella Maris", "estrellas": 0, "precio": 1554 }
+      ]
     },
     {
-      "id": "imbassai", "region": "brasil", "nombre": "Imbassaí", "pais": "Bahía, Brasil",
-      "foto": "1745681278433-4f45b29fb3c4", "credito": "Dennis Schmidt",
-      "tags": ["Viajás con DNI", "All inclusive"],
-      "desc": "Resort all inclusive frente al mar en el litoral norte de Bahía.",
-      "precio": 1585, "noches": 7, "plan": "All inclusive", "aereo": true,
-      "incluye": "Vuelo, hotel, traslados y seguro",
-      "salida": "Temporada baja 2027 desde Buenos Aires"
+      "id": "bahia-all-inclusive", "region": "brasil", "nombre": "Bahía all inclusive", "pais": "Sauipe, Praia do Forte e Imbassaí",
+      "foto": "1745681278433-4f45b29fb3c4", "credito": "Dennis Schmidt", "tags": ["Viajás con DNI"],
+      "desc": "Resorts todo incluido frente al mar en el litoral norte de Bahía.",
+      "incluye": "Vuelo + 7 noches + traslados", "salida": "Desde Buenos Aires (fechas según opción)",
+      "opciones": [
+        { "tipo": "All inclusive · Costa do Sauipe (ago–dic 2026)", "hotel": "Sauipe Terra", "estrellas": 0, "precio": 1570 },
+        { "tipo": "All inclusive · Imbassaí (temporada baja 2027)", "hotel": "Grand Palladium Imbassaí", "estrellas": 5, "precio": 1585 },
+        { "tipo": "All inclusive · Praia do Forte (ago–dic 2026)", "hotel": "Iberostar Waves Bahía", "estrellas": 0, "precio": 1790 }
+      ]
     },
     {
       "id": "maceio", "region": "brasil", "nombre": "Maceió", "pais": "Brasil",
-      "foto": "1614761069588-bd4ec336b4f9", "credito": "William Freitas",
-      "tags": ["Viajás con DNI"],
+      "foto": "1614761069588-bd4ec336b4f9", "credito": "William Freitas", "tags": ["Viajás con DNI"],
       "desc": "Piletas naturales y aguas turquesas en el nordeste brasileño.",
-      "precio": 1730, "noches": 7, "plan": "Hotel", "aereo": true,
-      "incluye": "Vuelo, hotel y seguro",
-      "salida": "Del 16 al 23 de enero 2027 desde Buenos Aires"
+      "incluye": "Vuelo + 7 noches + seguro", "salida": "Enero 2027 desde Buenos Aires",
+      "opciones": [
+        { "tipo": "Hotel", "hotel": "Acqua Inn", "estrellas": 0, "precio": 1730 },
+        { "tipo": "Hotel", "hotel": "Acqua Prime", "estrellas": 0, "precio": 1851 },
+        { "tipo": "Hotel", "hotel": "Acqua Suites Maceió", "estrellas": 0, "precio": 1899 },
+        { "tipo": "Hotel frente al mar", "hotel": "Maceió Mar Hotel", "estrellas": 0, "precio": 2090 },
+        { "tipo": "All inclusive", "hotel": "Pratagy Beach Resort", "estrellas": 0, "precio": 2667 },
+        { "tipo": "All inclusive", "hotel": "Maceió Mar Resort", "estrellas": 0, "precio": 3546 }
+      ]
     },
     {
       "id": "peru", "region": "sudamerica", "nombre": "Lima, Cusco y Machu Picchu", "pais": "Perú",
-      "foto": "1587595431973-160d0d94add1", "credito": "Eddie Kiszka",
-      "tags": ["Historia"],
+      "foto": "1587595431973-160d0d94add1", "credito": "Eddie Kiszka", "tags": ["Historia"],
       "desc": "Lima, el Valle Sagrado y Machu Picchu en un solo viaje.",
-      "precio": 1750, "noches": 7, "plan": "Hoteles turista superior", "aereo": true,
-      "incluye": "Vuelos LATAM, traslados, excursiones y asistencia",
-      "salida": "Salidas hasta diciembre 2026 desde Buenos Aires o Córdoba"
+      "incluye": "Vuelos LATAM + 7 noches, traslados, excursiones y asistencia", "salida": "Salidas hasta diciembre 2026 desde Buenos Aires o Córdoba",
+      "opciones": [
+        { "tipo": "Hoteles turista superior", "hotel": "Amaneceres del Inca", "estrellas": 0, "precio": 1750 },
+        { "tipo": "Hoteles categoría ejecutiva", "hotel": "Amaneceres del Inca", "estrellas": 0, "precio": 1900 }
+      ]
     },
     {
-      "id": "f1", "region": "eventos", "nombre": "Fórmula 1 en Interlagos", "pais": "San Pablo, Brasil",
-      "foto": "1645918899630-85e2f3132a84", "credito": "Raphael Nogueira",
-      "tags": ["Eventos"],
-      "desc": "Viví el Gran Premio de Brasil con entradas para los 3 días.",
-      "precio": 2990, "noches": 4, "plan": "Hotel 3* con desayuno", "aereo": true,
-      "incluye": "Vuelo chárter, traslados y entradas Sector G",
-      "salida": "Del 5 al 9 de noviembre 2026 desde Buenos Aires, Córdoba o Rosario"
+      "id": "orlando", "region": "eeuu", "nombre": "Orlando", "pais": "Estados Unidos",
+      "foto": "1609184889233-eff6dd93def4", "credito": "Mick Haupt", "tags": ["Familia"],
+      "desc": "La capital mundial de los parques temáticos, para grandes y chicos.",
+      "incluye": "Vuelo ida y vuelta + 7 noches", "salida": "Salida 11/01/2027 desde Buenos Aires",
+      "opciones": [
+        { "tipo": "Hotel con desayuno", "hotel": "Garnet Inn & Suites", "estrellas": 3, "precio": 1402 },
+        { "tipo": "Hotel solo alojamiento", "hotel": "OYO Hotel Orlando Airport", "estrellas": 2, "precio": 1410 },
+        { "tipo": "Estudio con cocina", "hotel": "HomeTowne Studios Orlando South", "estrellas": 2, "precio": 1441 }
+      ]
     },
     {
-      "id": "disney", "region": "eeuu", "nombre": "Disney en familia", "pais": "Orlando, Estados Unidos",
-      "foto": "1609184889233-eff6dd93def4", "credito": "Mick Haupt",
-      "tags": ["Salida grupal", "Familia"],
-      "desc": "Salida grupal acompañada para disfrutar los parques en familia.",
-      "precio": 7330, "noches": 14, "plan": "Salida grupal", "aereo": true,
-      "incluye": "Vuelos LATAM ida y vuelta",
-      "salida": "Salida grupal 31 de enero 2027 desde Buenos Aires",
-      "nota": "Family plan desde USD 6.100 por persona"
-    },
-    {
-      "id": "eco-europa", "region": "europa", "nombre": "Eco Europa", "pais": "Circuito por Europa",
-      "foto": "1539037116277-4db20889f2d4", "credito": "Florian Wehde",
-      "tags": ["Circuito"],
-      "desc": "Circuito por Europa empezando en Madrid y Barcelona.",
-      "precio": 4055, "noches": 16, "plan": "Desayuno", "aereo": true,
-      "incluye": "Vuelos Iberia, hoteles y traslados",
-      "salida": "Salida 13 de febrero 2027 desde Buenos Aires"
-    },
-    {
-      "id": "portugal", "region": "europa", "nombre": "Portugal y norte de España", "pais": "Con stopover en Río",
-      "foto": "1585208798174-6cedd86e019a", "credito": "Aayush Gupta",
-      "tags": ["Circuito"],
-      "desc": "Lisboa, Oporto, Santiago de Compostela y Madrid, con 2 noches en Río.",
-      "precio": 3550, "noches": 13, "plan": "Desayuno", "aereo": true,
-      "incluye": "Vuelos GOL con valija, traslados, excursiones y asistencia",
-      "salida": "Salidas hasta noviembre 2026 y de enero a marzo 2027"
+      "id": "madrid", "region": "europa", "nombre": "Madrid", "pais": "España",
+      "foto": "1539037116277-4db20889f2d4", "credito": "Florian Wehde", "tags": ["Ciudad"],
+      "desc": "La puerta de entrada a Europa: arte, tapas y una vida nocturna única.",
+      "incluye": "Vuelo ida y vuelta + 7 noches", "salida": "Salida 11/01/2027 desde Buenos Aires",
+      "opciones": [
+        { "tipo": "Hotel solo alojamiento", "hotel": "Hostal Aravaca Garden", "estrellas": 3, "precio": 2082 },
+        { "tipo": "Hotel solo alojamiento", "hotel": "NH Alcorcón", "estrellas": 4, "precio": 2151 },
+        { "tipo": "Hotel con desayuno", "hotel": "Complutense", "estrellas": 2, "precio": 2194 }
+      ]
     }
   ]
 }
