@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MM Viajes · Tu próxima aventura</title>
+<meta name="description" content="MM Viajes: paquetes a Brasil, Caribe, Europa, Estados Unidos, escapadas y eventos deportivos. Precios actualizados todos los días.">
+<meta property="og:title" content="MM Viajes · Tu próxima aventura">
+<meta property="og:description" content="Paquetes, escapadas y eventos deportivos con precios actualizados todos los días.">
+<meta property="og:image" content="logo.jpg">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --orange: #ff7a1a; --pink: #f0337a; --teal: #11a3b8; --deep: #0b3b52;
+    --grad: linear-gradient(120deg, #ff8a1f 0%, #f0337a 55%, #b8329a 100%);
+    --grad-teal: linear-gradient(135deg, #18c1c9 0%, #0b6f9c 100%);
+    --bg: #fbfaf8; --surface: #ffffff; --text: #17202b; --muted: #5d6877;
+    --border: #ece8e3; --shadow: 0 10px 30px rgba(23, 32, 43, .08);
+    --radius: 20px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1419; --surface: #182029; --text: #eef1f5; --muted: #9ba7b6;
+      --border: #26303b; --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: "Poppins", system-ui, sans-serif;
+         line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  .wrap { width: min(1160px, 100% - 32px); margin-inline: auto; }
+
+  /* Header */
+  header { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 88%, transparent);
+           backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.15rem; }
+  .brand img { height: 48px; width: auto; border-radius: 10px; }
+  .brand span b { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .links { display: flex; gap: 28px; font-weight: 500; font-size: .95rem; color: var(--muted); }
+  .links a:hover { color: var(--pink); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; cursor: pointer;
+         font: inherit; font-weight: 600; padding: 12px 22px; border-radius: 999px; transition: transform .2s, box-shadow .2s; }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-primary { background: var(--grad); color: #fff; box-shadow: 0 8px 22px rgba(240, 51, 122, .35); }
+  .btn-ghost { background: var(--surface); color: var(--text); border: 1px solid var(--border); }
+  @media (max-width: 820px) { .links { display: none; } .nav .btn { padding: 10px 16px; font-size: .9rem; } }
+
+  /* Hero */
+  .hero { position: relative; overflow: hidden; padding: 84px 0 96px; }
+  .hero::before { content: ""; position: absolute; inset: -40% -10% auto auto; width: 720px; height: 720px;
+                  background: radial-gradient(circle, rgba(240,51,122,.22), transparent 62%); z-index: -1; }
+  .hero::after { content: ""; position: absolute; inset: auto auto -45% -15%; width: 680px; height: 680px;
+                 background: radial-gradient(circle, rgba(17,163,184,.2), transparent 62%); z-index: -1; }
+  .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
+  .eyebrow { display: inline-flex; gap: 8px; align-items: center; padding: 6px 14px; border-radius: 999px;
+             background: var(--surface); border: 1px solid var(--border); font-size: .85rem; font-weight: 600; color: var(--muted); }
+  .eyebrow i { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 4px rgba(34,197,94,.2); }
+  .hero h1 { font-size: clamp(2.3rem, 5.4vw, 4.1rem); line-height: 1.05; font-weight: 800; margin: 18px 0 18px; letter-spacing: -.02em; }
+  .hero h1 em { font-style: normal; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero p.lead { font-size: 1.12rem; color: var(--muted); max-width: 520px; }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+  .stats { display: flex; gap: 32px; margin-top: 40px; flex-wrap: wrap; }
+  .stats b { display: block; font-size: 1.5rem; font-weight: 800; }
+  .stats span { color: var(--muted); font-size: .85rem; }
+  .hero-card { position: relative; border-radius: 28px; overflow: hidden; aspect-ratio: 4/5; box-shadow: var(--shadow);
+               background: var(--grad-teal); }
+  .hero-card .sun { position: absolute; width: 46%; aspect-ratio: 1; border-radius: 50%; top: 12%; right: 12%;
+                    background: radial-gradient(circle, #ffd27a, #ff8a1f); box-shadow: 0 0 80px rgba(255,170,60,.7); }
+  .hero-card .sea { position: absolute; inset: auto 0 0 0; height: 42%; background: linear-gradient(180deg, #0e8fb0, #075a7a); }
+  .hero-card .sea::before { content: ""; position: absolute; inset: -18px 0 auto 0; height: 36px;
+                            background: radial-gradient(40px 18px at 40px 18px, #0e8fb0 98%, transparent) 0 0/80px 36px repeat-x; }
+  .hero-card .plane { position: absolute; top: 34%; left: 10%; font-size: 3.4rem; transform: rotate(-12deg);
+                      animation: fly 6s ease-in-out infinite; filter: drop-shadow(0 8px 10px rgba(0,0,0,.25)); }
+  @keyframes fly { 50% { transform: translate(24px, -14px) rotate(-8deg); } }
+  .hero-card .tag { position: absolute; left: 18px; right: 18px; bottom: 18px; background: rgba(255,255,255,.95); color: #17202b;
+                    border-radius: 16px; padding: 16px 18px; display: flex; justify-content: space-between; align-items: center; }
+  .hero-card .tag small { color: #5d6877; display: block; font-size: .8rem; }
+  .hero-card .tag strong { font-size: 1.05rem; }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .hero-card { aspect-ratio: 16/11; } .hero { padding: 48px 0 64px; } }
+
+  /* Sections */
+  section { padding: 80px 0; }
+  .sec-head { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 36px; flex-wrap: wrap; }
+  .sec-head h2 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); font-weight: 800; letter-spacing: -.01em; line-height: 1.15; }
+  .sec-head p { color: var(--muted); max-width: 520px; }
+  .kicker { color: var(--pink); font-weight: 700; font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 8px; display: block; }
+
+  /* Chips (tipos de viaje) */
+  .chips { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
+  .chip { border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 10px 18px; border-radius: 999px;
+          font: inherit; font-weight: 500; font-size: .92rem; cursor: pointer; transition: all .2s; }
+  .chip.active, .chip:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+
+  /* Destino cards */
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  @media (max-width: 960px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 620px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+          box-shadow: var(--shadow); display: flex; flex-direction: column; transition: transform .25s; }
+  .card:hover { transform: translateY(-6px); }
+  .card .img { position: relative; aspect-ratio: 16/10; display: grid; place-items: center; font-size: 4rem; color: #fff; }
+  .card .img .badge { position: absolute; top: 14px; left: 14px; background: rgba(255,255,255,.95); color: #17202b;
+                      font-size: .75rem; font-weight: 700; padding: 5px 12px; border-radius: 999px; }
+  .card .body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .card h3 { font-size: 1.2rem; font-weight: 700; }
+  .card p { color: var(--muted); font-size: .92rem; flex: 1; }
+  .card .foot { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; padding-top: 14px; border-top: 1px dashed var(--border); }
+  .card .price small { display: block; color: var(--muted); font-size: .75rem; }
+  .card .price b { font-size: 1.25rem; font-weight: 800; }
+  .card .price b.q { font-size: 1rem; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .card .go { background: var(--grad); color: #fff; width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; font-size: 1.1rem; }
+  .g1 { background: linear-gradient(135deg, #1fc8b5, #0a7fa8); }
+  .g2 { background: linear-gradient(135deg, #2bd2ff, #1666d6); }
+  .g3 { background: linear-gradient(135deg, #ff9a5a, #d8326e); }
+  .g4 { background: linear-gradient(135deg, #7a5cff, #e0389a); }
+  .g5 { background: linear-gradient(135deg, #22c55e, #0b6b48); }
+  .g6 { background: linear-gradient(135deg, #ffb347, #ff6a3d); }
+  .hide { display: none !important; }
+
+  /* Ofertas del día */
+  .deals { background: var(--deep); color: #fff; border-radius: 32px; padding: 56px clamp(20px, 5vw, 56px); position: relative; overflow: hidden; }
+  .deals::after { content: ""; position: absolute; right: -120px; top: -120px; width: 360px; height: 360px; border-radius: 50%; background: var(--grad); opacity: .35; filter: blur(30px); }
+  .deals .sec-head p, .deals .muted { color: #b7c7d3; }
+  .deal-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; position: relative; z-index: 1; }
+  .deal { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); border-radius: 18px; padding: 20px; }
+  .deal .t { font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; color: #ffb27a; font-weight: 700; }
+  .deal h4 { font-size: 1.1rem; margin: 6px 0 2px; }
+  .deal .d { color: #b7c7d3; font-size: .88rem; }
+  .deal .p { font-size: 1.5rem; font-weight: 800; margin-top: 12px; }
+  .deal .p small { font-size: .75rem; font-weight: 500; color: #b7c7d3; }
+  .empty { position: relative; z-index: 1; border: 1px dashed rgba(255,255,255,.25); border-radius: 18px; padding: 28px; text-align: center; }
+  .empty b { display: block; font-size: 1.15rem; margin-bottom: 4px; }
+
+  /* Features */
+  .features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  @media (max-width: 900px) { .features { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .features { grid-template-columns: 1fr; } }
+  .feat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; }
+  .feat .ic { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; font-size: 1.5rem; background: var(--grad); margin-bottom: 16px; }
+  .feat h3 { font-size: 1.05rem; margin-bottom: 6px; }
+  .feat p { color: var(--muted); font-size: .92rem; }
+
+  /* Steps */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; counter-reset: s; }
+  @media (max-width: 760px) { .steps { grid-template-columns: 1fr; } }
+  .step { padding: 28px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); position: relative; }
+  .step::before { counter-increment: s; content: counter(s); font-size: 3rem; font-weight: 800; line-height: 1;
+                  background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; display: block; margin-bottom: 10px; }
+  .step h3 { font-size: 1.1rem; margin-bottom: 4px; }
+  .step p { color: var(--muted); font-size: .93rem; }
+
+  /* FAQ */
+  .faq { max-width: 820px; margin-inline: auto; display: grid; gap: 12px; }
+  details { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 18px 22px; }
+  summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  summary::after { content: "+"; font-size: 1.3rem; color: var(--pink); line-height: 1; }
+  details[open] summary::after { content: "–"; }
+  details p { color: var(--muted); margin-top: 10px; font-size: .95rem; }
+
+  /* CTA + footer */
+  .cta { background: var(--grad); color: #fff; border-radius: 32px; padding: 56px clamp(20px, 5vw, 64px); display: flex; justify-content: space-between; align-items: center; gap: 28px; flex-wrap: wrap; }
+  .cta h2 { font-size: clamp(1.6rem, 3.4vw, 2.4rem); font-weight: 800; line-height: 1.15; max-width: 560px; }
+  .cta p { opacity: .9; margin-top: 8px; }
+  .cta .btn { background: #fff; color: #17202b; }
+  footer { padding: 48px 0 100px; color: var(--muted); font-size: .9rem; }
+  .foot-grid { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; }
+  .foot-grid img { height: 56px; border-radius: 10px; }
+
+  .wa-float { position: fixed; right: 18px; bottom: 18px; z-index: 60; width: 60px; height: 60px; border-radius: 50%;
+              background: #25d366; display: grid; place-items: center; box-shadow: 0 10px 25px rgba(37,211,102,.45); }
+  .wa-float svg { width: 32px; height: 32px; fill: #fff; }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s, transform .7s; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } .hero-card .plane { animation: none; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="brand"><img src="logo.jpg" alt="MM Viajes"><span>MM <b>Viajes</b></span></a>
+    <nav class="links">
+      <a href="#destinos">Destinos</a>
+      <a href="#ofertas">Ofertas del día</a>
+      <a href="#porque">Por qué elegirnos</a>
+      <a href="#faq">Preguntas</a>
+    </nav>
+    <a class="btn btn-primary js-wa" href="#contacto" data-msg="Hola MM Viajes! Quiero cotizar un viaje">Cotizar viaje</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><i></i> Precios actualizados todos los días</span>
+        <h1>Tu próxima <em>aventura</em> empieza acá.</h1>
+        <p class="lead">Paquetes a Brasil, Caribe, Europa y Estados Unidos, escapadas y eventos deportivos. Comparamos los mejores operadores del país para darte el mejor precio.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#ofertas">Ver ofertas de hoy →</a>
+          <a class="btn btn-ghost js-wa" href="#contacto" data-msg="Hola MM Viajes! Quiero asesoramiento para mi viaje">💬 Hablar con un asesor</a>
+        </div>
+        <div class="stats">
+          <div><b>4</b><span>operadores comparados</span></div>
+          <div><b>4×</b><span>revisiones de precio por día</span></div>
+          <div><b>100%</b><span>atención personalizada</span></div>
+        </div>
+      </div>
+      <div class="hero-card" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="plane">✈️</div>
+        <div class="sea"></div>
+        <div class="tag"><div><small>Destino destacado</small><strong>Brasil · Playas</strong></div><span class="btn btn-primary" style="padding:8px 14px;font-size:.85rem">Ver más</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="destinos">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><span class="kicker">Destinos</span><h2>Elegí cómo querés viajar</h2></div>
+        <p>Armamos tu viaje completo: aéreo, hotel, traslados y asistencia. Vos solo elegí el destino.</p>
+      </div>
+      <div class="chips" id="chips">
+        <button class="chip active" data-f="todos">Todos</button>
+        <button class="chip" data-f="playa">🏖️ Playa</button>
+        <button class="chip" data-f="internacional">🌍 Internacional</button>
+        <button class="chip" data-f="nacional">🇦🇷 Nacional</button>
+        <button class="chip" data-f="eventos">⚽ Eventos</button>
+      </div>
+      <div class="grid" id="destinos-grid">
+        <article class="card reveal" data-t="playa internacional">
+          <div class="img g1"><span class="badge">Más vendido</span>🏝️</div>
+          <div class="body"><h3>Brasil</h3><p>Florianópolis, Búzios, Río, Maceió y el Nordeste. Aéreo + hotel + traslados.</p>
+            <div class="foot"><div class="price"><small>Precio</small><b class="q" data-dest="Brasil">Consultá tarifa de hoy</b></div><a class="go js-wa" href="#contacto" data-msg="Hola! Quiero cotizar un paquete a Brasil">→</a></div></div>
+        </article>
+        <article class="card reveal" data-t="playa internacional">
+          <div class="img g2"><span class="badge">All inclusive</span>🌴</div>
+          <div class="body"><h3>Caribe</h3><p>Punta Cana, Cancún, Riviera Maya, Aruba y Curazao con todo incluido.</p>
+            <div class="foot"><div class="price"><small>Precio</small><b class="q" data-dest="Caribe">Consultá tarifa de hoy</b></div><a class="go js-wa" href="#contacto" data-msg="Hola! Quiero cotizar un all inclusive en el Caribe">→</a></div></div>
+        </article>
+        <article class="card reveal" data-t="internacional">
+          <div class="img g3"><span class="badge">Circuitos</span>🏰</div>
+          <div class="body"><h3>Europa</h3><p>Circuitos guiados y viajes a medida: España, Italia, Francia y más.</p>
+            <div class="foot"><div class="price"><small>Precio</small><b class="q" data-dest="Europa">Consultá tarifa de hoy</b></div><a class="go js-wa" href="#contacto" data-msg="Hola! Quiero cotizar un viaje a Europa">→</a></div></div>
+        </article>
+        <article class="card reveal" data-t="internacional">
+          <div class="img g4"><span class="badge">Parques</span>🎢</div>
+          <div class="body"><h3>Estados Unidos</h3><p>Orlando y sus parques temáticos, Miami y Nueva York.</p>
+            <div class="foot"><div class="price"><small>Precio</small><b class="q" data-dest="Estados Unidos">Consultá tarifa de hoy</b></div><a class="go js-wa" href="#contacto" data-msg="Hola! Quiero cotizar un viaje a Estados Unidos">→</a></div></div>
+        </article>
+        <article class="card reveal" data-t="eventos internacional">
+          <div class="img g5"><span class="badge">Cupos limitados</span>🏆</div>
+          <div class="body"><h3>Eventos deportivos y conciertos</h3><p>Fórmula 1, fútbol y recitales en el mundo, con entradas y paquete completo.</p>
+            <div class="foot"><div class="price"><small>Precio</small><b class="q" data-dest="Eventos">Consultá tarifa de hoy</b></div><a class="go js-wa" href="#contacto" data-msg="Hola! Quiero info sobre paquetes para eventos deportivos">→</a></div></div>
+        </article>
+        <article class="card reveal" data-t="nacional">
+          <div class="img g6"><span class="badge">Escapadas</span>🏔️</div>
+          <div class="body"><h3>Argentina</h3><p>Bariloche, Mendoza, Salta, Iguazú y escapadas de fin de semana.</p>
+            <div class="foot"><div class="price"><small>Precio</small><b class="q" data-dest="Argentina">Consultá tarifa de hoy</b></div><a class="go js-wa" href="#contacto" data-msg="Hola! Quiero cotizar una escapada en Argentina">→</a></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="ofertas" style="padding-top:0">
+    <div class="wrap">
+      <div class="deals reveal">
+        <div class="sec-head" style="position:relative;z-index:1">
+          <div><span class="kicker" style="color:#ffb27a">Ofertas del día</span><h2>Lo mejor de hoy</h2></div>
+          <p id="upd">Revisamos precios 4 veces por día para mostrarte las mejores tarifas.</p>
+        </div>
+        <div class="deal-list" id="deal-list"></div>
+        <div class="empty hide" id="deal-empty">
+          <b>Estamos cargando las ofertas de hoy ✈️</b>
+          <span class="muted">Mientras tanto, escribinos y te pasamos la mejor tarifa del momento.</span>
+          <div style="margin-top:16px"><a class="btn btn-primary js-wa" href="#contacto" data-msg="Hola MM Viajes! Quiero conocer las ofertas de hoy">Pedir ofertas por WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="porque" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><span class="kicker">Por qué MM Viajes</span><h2>Viajá tranquilo, nosotros nos ocupamos</h2></div>
+      </div>
+      <div class="features">
+        <div class="feat reveal"><div class="ic">💸</div><h3>Mejor precio</h3><p>Comparamos varios operadores mayoristas todos los días para conseguirte la mejor tarifa.</p></div>
+        <div class="feat reveal"><div class="ic">🤝</div><h3>Atención humana</h3><p>Te asesora una persona real, antes, durante y después del viaje.</p></div>
+        <div class="feat reveal"><div class="ic">🧳</div><h3>Todo en un lugar</h3><p>Aéreos, hoteles, traslados, excursiones y asistencia al viajero.</p></div>
+        <div class="feat reveal"><div class="ic">💳</div><h3>Formas de pago</h3><p>Consultanos por las opciones de pago y financiación disponibles.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal"><div><span class="kicker">Cómo funciona</span><h2>Reservar es así de fácil</h2></div></div>
+      <div class="steps">
+        <div class="step reveal"><h3>Contanos tu idea</h3><p>Destino, fechas y cuántos viajan. Por WhatsApp, en minutos.</p></div>
+        <div class="step reveal"><h3>Recibí tu cotización</h3><p>Te enviamos las mejores opciones comparadas, con todo detallado.</p></div>
+        <div class="step reveal"><h3>Reservá y viajá</h3><p>Confirmamos tu lugar y te acompañamos hasta que vuelvas.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal" style="justify-content:center;text-align:center"><div><span class="kicker">Preguntas frecuentes</span><h2>¿Tenés dudas?</h2></div></div>
+      <div class="faq">
+        <details class="reveal"><summary>¿Los precios publicados son finales?</summary><p>Son precios "desde", por persona, y están sujetos a disponibilidad y a cambios del operador. Te confirmamos el precio final al momento de cotizar.</p></details>
+        <details class="reveal"><summary>¿Cada cuánto se actualizan las ofertas?</summary><p>Revisamos las tarifas cuatro veces por día, así que siempre ves precios recientes.</p></details>
+        <details class="reveal"><summary>¿Qué incluyen los paquetes?</summary><p>Depende de cada propuesta: en general aéreo, alojamiento y traslados. En la cotización te detallamos todo lo incluido.</p></details>
+        <details class="reveal"><summary>¿Puedo armar un viaje a medida?</summary><p>¡Sí! Contanos qué querés y armamos el viaje según tus fechas, presupuesto y gustos.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta reveal">
+        <div><h2>¿Listo para tu próxima aventura?</h2><p>Escribinos y en minutos te pasamos tu cotización.</p></div>
+        <a class="btn js-wa" href="#contacto" data-msg="Hola MM Viajes! Quiero cotizar un viaje">💬 Cotizar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <img src="logo.jpg" alt="MM Viajes">
+    <div>© <span id="yr"></span> MM Viajes · Tu próxima aventura</div>
+    <div id="ig-link"></div>
+  </div>
+</footer>
+
+<a class="wa-float js-wa hide" id="wa-float" href="#contacto" data-msg="Hola MM Viajes! Quiero cotizar un viaje" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+</a>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Filtro de destinos
+document.getElementById('chips').addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  document.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c === b));
+  const f = b.dataset.f;
+  document.querySelectorAll('#destinos-grid .card').forEach(c => {
+    c.classList.toggle('hide', f !== 'todos' && !c.dataset.t.split(' ').includes(f));
+  });
+});
+
+// Animación al hacer scroll
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Ofertas y contacto (se editan en ofertas.json)
+fetch('ofertas.json?' + Date.now()).then(r => r.json()).then(d => {
+  if (d.whatsapp) {
+    const num = d.whatsapp.replace(/\D/g, '');
+    document.querySelectorAll('.js-wa').forEach(a => {
+      a.href = 'https://wa.me/' + num + '?text=' + encodeURIComponent(a.dataset.msg || 'Hola MM Viajes!');
+      a.target = '_blank'; a.rel = 'noopener';
+    });
+    document.getElementById('wa-float').classList.remove('hide');
+  }
+  if (d.instagram) {
+    const a = document.createElement('a');
+    a.href = 'https://instagram.com/' + d.instagram.replace('@', ''); a.target = '_blank'; a.rel = 'noopener';
+    a.textContent = '📸 @' + d.instagram.replace('@', '');
+    document.getElementById('ig-link').appendChild(a);
+  }
+  if (d.actualizado) document.getElementById('upd').textContent = 'Última actualización: ' + d.actualizado;
+
+  const list = document.getElementById('deal-list');
+  if (!d.ofertas || !d.ofertas.length) { document.getElementById('deal-empty').classList.remove('hide'); return; }
+  const minPorDest = {};
+  d.ofertas.forEach(o => {
+    const el = document.createElement('div'); el.className = 'deal';
+    const t = document.createElement('div'); t.className = 't'; t.textContent = o.tipo || '';
+    const h = document.createElement('h4'); h.textContent = o.destino;
+    const dd = document.createElement('div'); dd.className = 'd'; dd.textContent = o.detalle || '';
+    const p = document.createElement('div'); p.className = 'p';
+    p.append('Desde ' + o.precio + ' ');
+    const s = document.createElement('small'); s.textContent = 'por persona'; p.appendChild(s);
+    el.append(t, h, dd, p); list.appendChild(el);
+    if (o.categoria && !minPorDest[o.categoria]) minPorDest[o.categoria] = o.precio;
+  });
+  document.querySelectorAll('[data-dest]').forEach(b => {
+    const v = minPorDest[b.dataset.dest];
+    if (v) { b.textContent = 'Desde ' + v; b.classList.remove('q'); }
+  });
+}).catch(() => document.getElementById('deal-empty').classList.remove('hide'));
+</script>
+</body>
+</html>
