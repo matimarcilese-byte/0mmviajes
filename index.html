@@ -227,6 +227,27 @@
   .trow .v { text-align: right; font-weight: 700; font-size: .92rem; }
   .trow .v.p { color: #cf1f5b; }
   .trow .v.c { color: var(--teal); font-weight: 600; }
+
+  /* Vuelos */
+  .flights { display: grid; gap: 10px; grid-template-columns: 1fr; }
+  @media (min-width: 640px) { .flights { grid-template-columns: repeat(2, 1fr); gap: 14px; } }
+  @media (min-width: 1024px) { .flights { grid-template-columns: repeat(3, 1fr); } }
+  .fl { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 14px; background: var(--surface);
+        border-radius: 18px; box-shadow: var(--shadow); color: var(--ink); text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+  .fl:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+  .fl[hidden] { display: none; }
+  .fl .pl { width: 44px; height: 44px; border-radius: 12px; background: var(--sand); color: var(--pink); display: grid; place-items: center; }
+  .fl .pl .ic { width: 22px; height: 22px; }
+  .fl .rt { min-width: 0; }
+  .fl .rt b { display: block; font-size: .98rem; font-weight: 700; line-height: 1.2; }
+  .fl .rt small { display: block; color: var(--muted); font-size: .76rem; line-height: 1.35; }
+  .fl .fp { text-align: right; white-space: nowrap; }
+  .fl .fp b { display: block; font-size: 1.15rem; font-weight: 800; line-height: 1.15; color: #cf1f5b; }
+  .fl .fp small { display: block; color: var(--muted); font-size: .68rem; }
+  .fl .fp .tag { color: var(--pink); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+  .more { display: flex; align-items: center; justify-content: center; margin: 18px auto 0; min-height: 46px; padding: 0 24px; border-radius: 999px;
+          border: 1px solid var(--line); background: #fff; color: var(--ink); font-weight: 600; font-size: .92rem; cursor: pointer; }
+  .more[hidden], .links a[hidden] { display: none; }
   @media (min-width: 640px) { .trow { grid-template-columns: 1fr 150px 170px; padding: 14px 24px; } .tgroup { padding: 10px 24px; } }
   .note { color: var(--muted); font-size: .82rem; margin-top: 14px; }
 
@@ -329,7 +350,7 @@
   <div class="wrap bar">
     <a href="#" class="logo" aria-label="MM Viajes, ir al inicio"><img src="logo.jpg" alt="" width="62" height="44"><span>MM Viajes</span></a>
     <nav class="links" aria-label="Secciones">
-      <a href="#caribe">Caribe</a><a href="#destinos">Destinos</a><a href="#precios">Precios de hoy</a><a href="#faq">Preguntas</a>
+      <a href="#caribe">Caribe</a><a href="#destinos">Destinos</a><a href="#vuelos">Vuelos</a><a href="#cruceros" id="nav-cruceros" hidden>Cruceros</a><a href="#precios">Precios de hoy</a><a href="#faq">Preguntas</a>
     </nav>
     <a class="btn btn-wa js-wa" href="#cotizar" data-msg="Hola MM Viajes! 👋 Quiero cotizar un viaje."><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
   </div>
@@ -428,6 +449,30 @@
         <p>Paquetes de 7 noches con todas las opciones de alojamiento, desde la más económica. Tailandia se arma con vuelo y hotel en Phuket o en circuito con guía, y la Fórmula 1 según cada Gran Premio, con vuelo, hotel y entradas.</p>
       </div>
       <div class="grid" id="rail"></div>
+    </div>
+  </section>
+
+  <section class="sec pt0" id="vuelos" aria-labelledby="vuelos-t">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="kicker">Solo vuelo</span>
+        <h2 id="vuelos-t">Vuelos más baratos de hoy</h2>
+        <p>Pasajes ida y vuelta desde Buenos Aires, sin hotel, del más barato al más caro. Precio por persona con impuestos. <span id="vuelos-sub"></span></p>
+      </div>
+      <div class="flights" id="flights"></div>
+      <button class="more" type="button" id="flights-more" hidden>Ver todos los vuelos</button>
+      <p class="note">Tarifas de hoy para un adulto, sujetas a disponibilidad al momento de emitir. El equipaje incluido depende de la tarifa de cada aerolínea: te lo confirmamos al cotizar.</p>
+    </div>
+  </section>
+
+  <section class="sec pt0" id="cruceros" aria-labelledby="cruceros-t" hidden>
+    <div class="wrap">
+      <div class="head rv">
+        <span class="kicker">Zarpando desde Buenos Aires</span>
+        <h2 id="cruceros-t">Cruceros desde Buenos Aires</h2>
+        <p>Zarpando del puerto de Buenos Aires, o con el vuelo desde Buenos Aires incluido. Precios por persona en cabina doble, con impuestos portuarios, desde la cabina más económica.</p>
+      </div>
+      <div class="grid" id="grid-cruceros"></div>
     </div>
   </section>
 
@@ -1548,6 +1593,233 @@
                                           }
                                       ]
                      }
+                 ],
+    "vuelos":  [
+                   {
+                       "codigo":  "VU1",
+                       "destino":  "Punta Cana",
+                       "iata":  "PUJ",
+                       "aerolinea":  "Sky Airline",
+                       "escalas":  "2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  920
+                   },
+                   {
+                       "codigo":  "VU2",
+                       "destino":  "Cancún",
+                       "iata":  "CUN",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1414
+                   },
+                   {
+                       "codigo":  "VU3",
+                       "destino":  "Aruba",
+                       "iata":  "AUA",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1093
+                   },
+                   {
+                       "codigo":  "VU4",
+                       "destino":  "Cartagena",
+                       "iata":  "CTG",
+                       "aerolinea":  "JetSMART",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  934
+                   },
+                   {
+                       "codigo":  "VU5",
+                       "destino":  "San Andrés",
+                       "iata":  "ADZ",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1170
+                   },
+                   {
+                       "codigo":  "VU6",
+                       "destino":  "Curazao",
+                       "iata":  "CUR",
+                       "aerolinea":  "Aerolíneas Argentinas y Avianca",
+                       "escalas":  "1 a 2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1255
+                   },
+                   {
+                       "codigo":  "VU7",
+                       "destino":  "Río de Janeiro",
+                       "iata":  "RIO",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  439
+                   },
+                   {
+                       "codigo":  "VU8",
+                       "destino":  "Florianópolis",
+                       "iata":  "FLN",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "directo",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  356
+                   },
+                   {
+                       "codigo":  "VU9",
+                       "destino":  "Salvador de Bahía",
+                       "iata":  "SSA",
+                       "aerolinea":  "Gol",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  527
+                   },
+                   {
+                       "codigo":  "VU10",
+                       "destino":  "Maceió",
+                       "iata":  "MCZ",
+                       "aerolinea":  "Gol",
+                       "escalas":  "2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  675
+                   },
+                   {
+                       "codigo":  "VU11",
+                       "destino":  "Miami",
+                       "iata":  "MIA",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1075
+                   },
+                   {
+                       "codigo":  "VU12",
+                       "destino":  "Orlando",
+                       "iata":  "MCO",
+                       "aerolinea":  "LATAM y Delta",
+                       "escalas":  "1 a 2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1245
+                   },
+                   {
+                       "codigo":  "VU13",
+                       "destino":  "Nueva York",
+                       "iata":  "NYC",
+                       "aerolinea":  "Arajet",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1532
+                   },
+                   {
+                       "codigo":  "VU14",
+                       "destino":  "Madrid",
+                       "iata":  "MAD",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1831
+                   },
+                   {
+                       "codigo":  "VU15",
+                       "destino":  "Lima",
+                       "iata":  "LIM",
+                       "aerolinea":  "JetSMART",
+                       "escalas":  "directo",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  438
+                   },
+                   {
+                       "codigo":  "VU16",
+                       "destino":  "Cusco",
+                       "iata":  "CUZ",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  519
+                   }
+               ],
+    "cruceros":  [
+                     {
+                         "id":  "crucero-brasil-uruguay",
+                         "region":  "cruceros",
+                         "nombre":  "Brasil y Uruguay en crucero",
+                         "pais":  "MSC Seaview · Santos, Camboriú y Punta del Este",
+                         "foto":  "1554254648-2d58a1bc3fd5",
+                         "credito":  "Alonso Reyes",
+                         "tags":  [
+                                      "Crucero"
+                                  ],
+                         "desc":  "Zarpás del puerto de Buenos Aires y en 7 noches visitás Santos (São Paulo), Camboriú y Punta del Este.",
+                         "incluye":  "Crucero de 7 noches + impuestos portuarios",
+                         "salida":  "Salida 18/02/2027 del puerto de Buenos Aires, regreso 25/02",
+                         "duracion":  "7 noches",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "Cabina con balcón",
+                                              "hotel":  "MSC Seaview · 18 al 25 de febrero 2027",
+                                              "estrellas":  0,
+                                              "precio":  1350,
+                                              "codigo":  "CZ1"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "crucero-caribe",
+                         "region":  "cruceros",
+                         "nombre":  "Caribe sin visa en crucero",
+                         "pais":  "MSC Opera · Islas Vírgenes, St. Maarten y St. Kitts",
+                         "foto":  "1599640842225-85d111c60e6b",
+                         "credito":  "Georgy Trofimov",
+                         "tags":  [
+                                      "Crucero"
+                                  ],
+                         "desc":  "Volás a Punta Cana, pasás 3 noches en hotel y navegás 7 noches desde La Romana por Virgin Gorda, St. Maarten, St. Kitts, Tortola e Isla Catalina.",
+                         "incluye":  "Vuelo desde Ezeiza + 3 noches de hotel + crucero de 7 noches + traslados",
+                         "salida":  "Salida 30/01/2027 desde Buenos Aires, regreso 10/02",
+                         "duracion":  "10 noches",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "Cabina interior",
+                                              "hotel":  "MSC Opera · vuelo LATAM · 30/01 al 10/02/2027",
+                                              "estrellas":  0,
+                                              "precio":  2850,
+                                              "codigo":  "CZ2"
+                                          },
+                                          {
+                                              "tipo":  "Cabina exterior",
+                                              "hotel":  "MSC Opera · vuelo LATAM · 30/01 al 10/02/2027",
+                                              "estrellas":  0,
+                                              "precio":  3095,
+                                              "codigo":  "CZ3"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "crucero-transatlantico",
+                         "region":  "cruceros",
+                         "nombre":  "Transatlántico a Europa",
+                         "pais":  "Majestic Princess · Río, Canarias, Casablanca y Londres",
+                         "foto":  "1688269910608-e3c65eb4ac3a",
+                         "credito":  "Steve Davison",
+                         "tags":  [
+                                      "Crucero"
+                                  ],
+                         "desc":  "22 noches cruzando el Atlántico desde Buenos Aires: Montevideo, Río de Janeiro, Gran Canaria, Lanzarote, Tenerife, Casablanca, La Coruña y llegada a Southampton (Londres).",
+                         "incluye":  "Crucero de 22 noches + impuestos portuarios (el vuelo de regreso se cotiza aparte)",
+                         "salida":  "Embarque 09/02/2027 en el puerto de Buenos Aires, llegada a Londres el 03/03",
+                         "duracion":  "22 noches",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "Cabina interior",
+                                              "hotel":  "Majestic Princess · 9 de febrero al 3 de marzo 2027 · solo ida",
+                                              "estrellas":  0,
+                                              "precio":  1790,
+                                              "codigo":  "CZ4"
+                                          }
+                                      ]
+                     }
                  ]
 }
 </script>
@@ -1574,6 +1846,7 @@
   const tagsOf = d => d.tags.concat(d.opciones.some(isAI) ? ['All inclusive'] : [],
     d.opciones.some(o => /apartamento|estudio/i.test(o.tipo)) ? ['Apartamento'] : []);
   const dur = d => d.duracion || '7 noches';
+  const nOpts = d => d.opciones.length + (d.opciones.length === 1 ? ' opción' : ' opciones');
   const msgFor = d => 'Hola MM Viajes! 👋 Me interesa ' + d.nombre + ' (' + dur(d) + ') desde ' + fmt(cheapest(d)) +
     ' por persona (ref. ' + cheapestOpt(d).codigo + '). ¿Me pasás todas las opciones y disponibilidad?';
   const optMsg = (d, o) => 'Hola MM Viajes! 👋 Me interesa ' + d.nombre +
@@ -1595,7 +1868,7 @@
       '<div class="badges">' + badges + '</div><div class="place"><h3>' + esc(d.nombre) + '</h3><span>' + esc(d.pais) + '</span></div></div>' +
       '<div class="body"><p>' + esc(d.desc) + '</p>' +
       '<div class="price"><div><small>' + esc(dur(d)) + ' · por persona desde</small><b>' + fmt(cheapest(d)) + '</b><small>' + esc(d.incluye) + '</small></div>' +
-      '<div class="stay">' + d.opciones.length + ' opciones<br>de alojamiento</div></div>' +
+      '<div class="stay">' + nOpts(d) + '<br>' + (d.region === 'cruceros' ? 'de cabina' : 'de alojamiento') + '</div></div>' +
       '<p class="opts-h">Elegí tu opción (por persona, base doble):</p>' + options(d) +
       '<p class="when">' + icon('plane') + esc(d.salida) + '</p>' +
       '<a class="btn btn-grad js-wa" href="#cotizar" data-msg="' + esc(msgFor(d)) + '">Quiero este viaje</a></div></article>';
@@ -1629,13 +1902,45 @@
       ' desde ' + fmt(o.precio) + ' por persona (ref. ' + o.codigo + '). ¿Me pasás disponibilidad?';
   }
 
-  function table(car, rest) {
-    const row = d => { const ai = aiFrom(d); return '<div class="trow"><div class="d"><b>' + esc(d.nombre) + '</b><small>' + d.opciones.length + ' opciones · ' + esc(dur(d)) + '</small></div>' +
+  // Vuelos más baratos de hoy: solo vuelo ida y vuelta, ordenados por precio.
+  const FLIGHTS_SHOWN = 6;
+  const flightMsg = v => 'Hola MM Viajes! 👋 Me interesa el vuelo ida y vuelta Buenos Aires – ' + v.destino + ' (' + v.fechas + ', ' + v.aerolinea + ', ' + v.escalas +
+    ') desde ' + fmt(v.precio) + ' por persona (ref. ' + v.codigo + '). ¿Me pasás disponibilidad?';
+
+  function flights() {
+    const list = (D.vuelos || []).slice().sort((a, b) => a.precio - b.precio);
+    $('#vuelos').hidden = !list.length;
+    $('#flights').innerHTML = list.map((v, i) =>
+      '<a class="fl js-wa rv" href="#cotizar"' + (i >= FLIGHTS_SHOWN ? ' hidden' : '') + ' data-msg="' + esc(flightMsg(v)) + '">' +
+      '<span class="pl">' + icon('plane') + '</span>' +
+      '<span class="rt"><b>' + esc(v.destino) + '</b><small>' + esc(v.aerolinea + ' · ' + v.escalas) + '</small><small>' + esc(v.fechas) + '</small></span>' +
+      '<span class="fp">' + (i === 0 ? '<small class="tag">El más barato</small>' : '') + '<b>' + fmt(v.precio) + '</b><small>ida y vuelta</small></span></a>').join('');
+    const more = $('#flights-more');
+    more.hidden = list.length <= FLIGHTS_SHOWN;
+    more.textContent = 'Ver los ' + list.length + ' vuelos';
+    $('#vuelos-sub').textContent = 'Actualizado al ' + D.actualizado + '.';
+  }
+  $('#flights-more').addEventListener('click', e => {
+    $$('#flights .fl[hidden]').forEach(a => { a.hidden = false; a.classList.add('in'); });
+    e.currentTarget.hidden = true;
+  });
+
+  function cruises() {
+    const list = (D.cruceros || []).filter(c => c.opciones && c.opciones.length).sort((a, b) => cheapest(a) - cheapest(b));
+    $('#cruceros').hidden = !list.length;
+    $('#nav-cruceros').hidden = !list.length;
+    $('#grid-cruceros').innerHTML = list.map(card).join('');
+    return list;
+  }
+
+  function table(car, rest, cru) {
+    const row = d => { const ai = aiFrom(d); return '<div class="trow"><div class="d"><b>' + esc(d.nombre) + '</b><small>' + nOpts(d) + ' · ' + esc(dur(d)) + '</small></div>' +
       '<div class="v p">' + fmt(cheapest(d)) + '</div>' +
       (ai ? '<div class="v">' + fmt(ai) + '</div>' : '<div class="v c">—</div>') + '</div>'; };
     $('#tabla').innerHTML = '<div class="trow h"><div>Destino</div><div class="v">Desde p/p</div><div class="v">All inclusive</div></div>' +
       '<div class="tgroup">Caribe</div>' + car.map(row).join('') +
-      '<div class="tgroup">Resto del mundo</div>' + rest.map(row).join('');
+      '<div class="tgroup">Resto del mundo</div>' + rest.map(row).join('') +
+      (cru.length ? '<div class="tgroup">Cruceros desde Buenos Aires</div>' + cru.map(row).join('') : '');
   }
 
   function bindWa() {
@@ -1658,7 +1963,9 @@
     $('#grid-caribe').innerHTML = car.map(card).join('');
     $('#rail').innerHTML = rest.map(card).join('');
     feature(D.destinos.find(d => d.destacado));
-    table(car, rest);
+    flights();
+    const cru = cruises();
+    table(car, rest, cru);
 
     dealOfDay();
     $$('[data-fill="actualizado"]').forEach(e => { e.textContent = D.actualizado; });
@@ -1666,7 +1973,9 @@
 
     const opt = d => '<option>' + esc(d.nombre) + '</option>';
     $('#q-dest').innerHTML = '<optgroup label="Caribe">' + car.map(opt).join('') + '</optgroup>' +
-      '<optgroup label="Resto del mundo">' + rest.map(opt).join('') + '</optgroup><option>Otro destino / todavía no sé</option>';
+      '<optgroup label="Resto del mundo">' + rest.map(opt).join('') + '</optgroup>' +
+      (cru.length ? '<optgroup label="Cruceros">' + cru.map(opt).join('') + '</optgroup>' : '') +
+      '<option>Solo vuelo</option><option>Otro destino / todavía no sé</option>';
 
     const n = D.whatsapp.replace(/\D/g, '');
     if (n.length === 13 && n.startsWith('549')) $('#wa-num').textContent = '+54 9 ' + n.slice(3, 6) + ' ' + n.slice(6, 9) + '-' + n.slice(9);
@@ -1677,9 +1986,9 @@
     }
 
     $('#legal').textContent = 'Tarifas de referencia por persona en base doble, en dólares estadounidenses, para paquetes de 7 noches con vuelo ida y vuelta (Tailandia y los eventos, como la Fórmula 1, indican sus noches y fechas en cada opción), según las tarifas de nuestros operadores al ' + D.actualizado +
-      '. Salvo que se indique otra fecha: ' + D.referencia + '. Incluyen los impuestos del aéreo; pueden aplicarse impuestos y tasas hoteleras, gastos de reserva, gastos administrativos y percepciones impositivas según el medio de pago. ' +
+      '. Salvo que se indique otra fecha: ' + D.referencia + '. Los vuelos son tarifas ida y vuelta por persona para un adulto, sin hotel; los cruceros, por persona en cabina doble con impuestos portuarios. Incluyen los impuestos del aéreo; pueden aplicarse impuestos y tasas hoteleras, gastos de reserva, gastos administrativos y percepciones impositivas según el medio de pago. ' +
       'Sujetas a disponibilidad y a cambios sin previo aviso. La tarifa final se confirma al momento de reservar.';
-    const names = [...new Set(EXTRA_CREDITS.concat(D.destinos.flatMap(d => [d.credito, d.creditoDestacado])).filter(Boolean))];
+    const names = [...new Set(EXTRA_CREDITS.concat(D.destinos.concat(cru).flatMap(d => [d.credito, d.creditoDestacado])).filter(Boolean))];
     $('#credits').innerHTML = 'Fotos: <a href="https://unsplash.com/?utm_source=mm_viajes&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a> · ' + names.map(esc).join(', ') + '.';
 
     $$('#caribe .chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.f === '*'));

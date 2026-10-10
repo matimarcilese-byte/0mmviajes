@@ -1027,5 +1027,232 @@
                                           }
                                       ]
                      }
+                 ],
+    "vuelos":  [
+                   {
+                       "codigo":  "VU1",
+                       "destino":  "Punta Cana",
+                       "iata":  "PUJ",
+                       "aerolinea":  "Sky Airline",
+                       "escalas":  "2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  920
+                   },
+                   {
+                       "codigo":  "VU2",
+                       "destino":  "Cancún",
+                       "iata":  "CUN",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1414
+                   },
+                   {
+                       "codigo":  "VU3",
+                       "destino":  "Aruba",
+                       "iata":  "AUA",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1093
+                   },
+                   {
+                       "codigo":  "VU4",
+                       "destino":  "Cartagena",
+                       "iata":  "CTG",
+                       "aerolinea":  "JetSMART",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  934
+                   },
+                   {
+                       "codigo":  "VU5",
+                       "destino":  "San Andrés",
+                       "iata":  "ADZ",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1170
+                   },
+                   {
+                       "codigo":  "VU6",
+                       "destino":  "Curazao",
+                       "iata":  "CUR",
+                       "aerolinea":  "Aerolíneas Argentinas y Avianca",
+                       "escalas":  "1 a 2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1255
+                   },
+                   {
+                       "codigo":  "VU7",
+                       "destino":  "Río de Janeiro",
+                       "iata":  "RIO",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  439
+                   },
+                   {
+                       "codigo":  "VU8",
+                       "destino":  "Florianópolis",
+                       "iata":  "FLN",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "directo",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  356
+                   },
+                   {
+                       "codigo":  "VU9",
+                       "destino":  "Salvador de Bahía",
+                       "iata":  "SSA",
+                       "aerolinea":  "Gol",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  527
+                   },
+                   {
+                       "codigo":  "VU10",
+                       "destino":  "Maceió",
+                       "iata":  "MCZ",
+                       "aerolinea":  "Gol",
+                       "escalas":  "2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  675
+                   },
+                   {
+                       "codigo":  "VU11",
+                       "destino":  "Miami",
+                       "iata":  "MIA",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1075
+                   },
+                   {
+                       "codigo":  "VU12",
+                       "destino":  "Orlando",
+                       "iata":  "MCO",
+                       "aerolinea":  "LATAM y Delta",
+                       "escalas":  "1 a 2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1245
+                   },
+                   {
+                       "codigo":  "VU13",
+                       "destino":  "Nueva York",
+                       "iata":  "NYC",
+                       "aerolinea":  "Arajet",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1532
+                   },
+                   {
+                       "codigo":  "VU14",
+                       "destino":  "Madrid",
+                       "iata":  "MAD",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1831
+                   },
+                   {
+                       "codigo":  "VU15",
+                       "destino":  "Lima",
+                       "iata":  "LIM",
+                       "aerolinea":  "JetSMART",
+                       "escalas":  "directo",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  438
+                   },
+                   {
+                       "codigo":  "VU16",
+                       "destino":  "Cusco",
+                       "iata":  "CUZ",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  519
+                   }
+               ],
+    "cruceros":  [
+                     {
+                         "id":  "crucero-brasil-uruguay",
+                         "region":  "cruceros",
+                         "nombre":  "Brasil y Uruguay en crucero",
+                         "pais":  "MSC Seaview · Santos, Camboriú y Punta del Este",
+                         "foto":  "1554254648-2d58a1bc3fd5",
+                         "credito":  "Alonso Reyes",
+                         "tags":  [
+                                      "Crucero"
+                                  ],
+                         "desc":  "Zarpás del puerto de Buenos Aires y en 7 noches visitás Santos (São Paulo), Camboriú y Punta del Este.",
+                         "incluye":  "Crucero de 7 noches + impuestos portuarios",
+                         "salida":  "Salida 18/02/2027 del puerto de Buenos Aires, regreso 25/02",
+                         "duracion":  "7 noches",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "Cabina con balcón",
+                                              "hotel":  "MSC Seaview · 18 al 25 de febrero 2027",
+                                              "estrellas":  0,
+                                              "precio":  1350,
+                                              "codigo":  "CZ1"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "crucero-caribe",
+                         "region":  "cruceros",
+                         "nombre":  "Caribe sin visa en crucero",
+                         "pais":  "MSC Opera · Islas Vírgenes, St. Maarten y St. Kitts",
+                         "foto":  "1599640842225-85d111c60e6b",
+                         "credito":  "Georgy Trofimov",
+                         "tags":  [
+                                      "Crucero"
+                                  ],
+                         "desc":  "Volás a Punta Cana, pasás 3 noches en hotel y navegás 7 noches desde La Romana por Virgin Gorda, St. Maarten, St. Kitts, Tortola e Isla Catalina.",
+                         "incluye":  "Vuelo desde Ezeiza + 3 noches de hotel + crucero de 7 noches + traslados",
+                         "salida":  "Salida 30/01/2027 desde Buenos Aires, regreso 10/02",
+                         "duracion":  "10 noches",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "Cabina interior",
+                                              "hotel":  "MSC Opera · vuelo LATAM · 30/01 al 10/02/2027",
+                                              "estrellas":  0,
+                                              "precio":  2850,
+                                              "codigo":  "CZ2"
+                                          },
+                                          {
+                                              "tipo":  "Cabina exterior",
+                                              "hotel":  "MSC Opera · vuelo LATAM · 30/01 al 10/02/2027",
+                                              "estrellas":  0,
+                                              "precio":  3095,
+                                              "codigo":  "CZ3"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "crucero-transatlantico",
+                         "region":  "cruceros",
+                         "nombre":  "Transatlántico a Europa",
+                         "pais":  "Majestic Princess · Río, Canarias, Casablanca y Londres",
+                         "foto":  "1688269910608-e3c65eb4ac3a",
+                         "credito":  "Steve Davison",
+                         "tags":  [
+                                      "Crucero"
+                                  ],
+                         "desc":  "22 noches cruzando el Atlántico desde Buenos Aires: Montevideo, Río de Janeiro, Gran Canaria, Lanzarote, Tenerife, Casablanca, La Coruña y llegada a Southampton (Londres).",
+                         "incluye":  "Crucero de 22 noches + impuestos portuarios (el vuelo de regreso se cotiza aparte)",
+                         "salida":  "Embarque 09/02/2027 en el puerto de Buenos Aires, llegada a Londres el 03/03",
+                         "duracion":  "22 noches",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "Cabina interior",
+                                              "hotel":  "Majestic Princess · 9 de febrero al 3 de marzo 2027 · solo ida",
+                                              "estrellas":  0,
+                                              "precio":  1790,
+                                              "codigo":  "CZ4"
+                                          }
+                                      ]
+                     }
                  ]
 }
