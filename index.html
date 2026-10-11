@@ -483,7 +483,7 @@
   <section class="sec pt0" aria-label="Asistencia al viajero Assist Card">
     <div class="wrap">
       <a class="acb js-wa rv" href="#asistencia" data-msg="Hola MM Viajes! 👋 Quiero sumar una asistencia al viajero Assist Card a mi viaje (ref. AC). Viajo a: ___ · Fechas: ___ · Pasajeros y edades: ___">
-        <img class="acb-img" src="https://images.unsplash.com/photo-1603792835233-f4f7c2497d4f?auto=format&amp;fit=crop&amp;w=900&amp;h=600&amp;q=70" alt="Viajera con su valija roja lista para salir" width="900" height="600" loading="lazy" decoding="async">
+        <img class="acb-img" src="assistcard-viajera-aeropuerto.jpg" alt="Viajera con su celular y su valija en la sala de embarque del aeropuerto" width="616" height="343" loading="lazy" decoding="async">
         <span class="acb-body">
           <span class="ac-logo"><b>ASSIST CARD</b></span>
           <b class="acb-t">¿Ya tenés tu asistencia al viajero?</b>
@@ -1768,7 +1768,7 @@
   const pic = (id, w, h) => 'https://images.unsplash.com/photo-' + id + '?auto=format&fit=crop&w=' + w + (h ? '&h=' + h : '') + '&q=70';
   const icon = (id, cls = 'ic') => '<svg class="' + cls + '" aria-hidden="true"><use href="#i-' + id + '"/></svg>';
   const REGION = { brasil: 'Brasil', eeuu: 'Estados Unidos', europa: 'Europa', sudamerica: 'Sudamérica', asia: 'Asia', eventos: 'Evento' };
-  const EXTRA_CREDITS = ['Pedro Monteiro', 'krakenimages', 'Sergey Zolkin'];
+  const EXTRA_CREDITS = ['Pedro Monteiro', 'Sergey Zolkin'];
 
   let D = JSON.parse($('#data').textContent);
   const wa = msg => 'https://wa.me/' + D.whatsapp + '?text=' + encodeURIComponent(msg);
@@ -1895,7 +1895,7 @@
       'La asistencia al viajero Assist Card se cotiza aparte según el destino, los días y la edad de cada pasajero. Sujetas a disponibilidad y a cambios sin previo aviso. La tarifa final se confirma al momento de reservar.';
     const shown = car.concat(bra, eur).map(x => x.d);
     const names = [...new Set(EXTRA_CREDITS.concat(shown.map(d => d.credito)).filter(Boolean))];
-    $('#credits').innerHTML = 'Fotos: <a href="https://unsplash.com/?utm_source=mm_viajes&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a> · ' + names.map(esc).join(', ') + '.';
+    $('#credits').innerHTML = 'Fotos: <a href="https://unsplash.com/?utm_source=mm_viajes&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a> · ' + names.map(esc).join(', ') + '. Foto de la viajera en el aeropuerto: Assist Card.';
 
     bindWa();
     reveal();
