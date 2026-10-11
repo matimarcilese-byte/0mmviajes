@@ -263,16 +263,30 @@
         background: linear-gradient(135deg, var(--navy) 0%, #0d5d73 60%, var(--teal) 100%); box-shadow: var(--shadow-lg); isolation: isolate; }
   .ac::after { content: ""; position: absolute; right: -60px; top: -60px; width: 220px; height: 220px; border-radius: 50%;
                background: radial-gradient(circle, rgba(255,255,255,.18), rgba(255,255,255,0) 70%); z-index: -1; }
-  .ac-mark { width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.3); }
-  .ac-mark .ic { width: 34px; height: 34px; color: #fff; }
-  .ac-k { display: inline-block; font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #ffc27a; }
+  .ac-logo { display: inline-flex; align-items: center; width: fit-content; padding: 8px 12px; border-radius: 12px; background: #fff; box-shadow: 0 4px 14px rgba(0,0,0,.12); margin-bottom: 14px; }
+  .ac-logo img { display: block; width: 120px; height: auto; }
+  .ac-logo b { font-weight: 800; font-style: italic; font-size: 1rem; letter-spacing: .06em; line-height: 1; color: #d4002a; }
+  .ac-photo { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 20px; }
+  .ac-k { display: block; font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #ffc27a; }
+
+  /* Banner de Assist Card en la mitad de la página */
+  .acb { display: grid; grid-template-columns: 1fr; overflow: hidden; border-radius: 22px; background: var(--surface); color: var(--ink);
+         text-decoration: none; box-shadow: var(--shadow); border: 1px solid var(--line); transition: transform .2s ease, box-shadow .2s ease; }
+  .acb:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+  .acb-img { width: 100%; height: 100%; max-height: 220px; object-fit: cover; object-position: center 35%; }
+  .acb-body { display: grid; gap: 6px; padding: 18px 18px 20px; align-content: center; }
+  .acb .ac-logo { margin-bottom: 6px; box-shadow: none; border: 1px solid var(--line); }
+  .acb-t { font-size: 1.3rem; font-weight: 800; line-height: 1.2; text-wrap: balance; }
+  .acb-s { color: var(--muted); font-size: .93rem; }
+  .acb-cta { margin-top: 4px; font-weight: 700; color: #d4002a; }
+  @media (min-width: 640px) { .acb { grid-template-columns: 42% 1fr; } .acb-img { max-height: none; min-height: 240px; } .acb-body { padding: 24px 28px; } }
   .ac h2 { font-size: clamp(1.6rem, 6vw, 2.4rem); line-height: 1.1; font-weight: 800; letter-spacing: -.02em; margin: 6px 0 10px; text-wrap: balance; }
   .ac p { opacity: .92; max-width: 600px; }
   .ac-list { list-style: none; display: grid; gap: 8px; margin: 16px 0 6px; padding: 0; }
   .ac-list li { display: flex; align-items: center; gap: 8px; font-weight: 600; }
   .ac-list .ic { width: 18px; height: 18px; color: #3ee07a; flex: none; }
   .ac-fine { font-size: .8rem; opacity: .8 !important; margin-bottom: 16px; }
-  @media (min-width: 760px) { .ac { grid-template-columns: auto 1fr; align-items: start; padding: 40px; gap: 28px; } .ac-mark { width: 84px; height: 84px; } .ac-mark .ic { width: 44px; height: 44px; } }
+  @media (min-width: 760px) { .ac { grid-template-columns: 1.15fr .85fr; align-items: center; padding: 40px; gap: 32px; } }
   @media (min-width: 640px) { .trow { grid-template-columns: 1fr 150px 170px; padding: 14px 24px; } .tgroup { padding: 10px 24px; } }
   .note { color: var(--muted); font-size: .82rem; margin-top: 14px; }
 
@@ -466,6 +480,20 @@
     </div>
   </section>
 
+  <section class="sec pt0" aria-label="Asistencia al viajero Assist Card">
+    <div class="wrap">
+      <a class="acb js-wa rv" href="#asistencia" data-msg="Hola MM Viajes! 👋 Quiero sumar una asistencia al viajero Assist Card a mi viaje (ref. AC). Viajo a: ___ · Fechas: ___ · Pasajeros y edades: ___">
+        <img class="acb-img" src="https://images.unsplash.com/photo-1603792835233-f4f7c2497d4f?auto=format&amp;fit=crop&amp;w=900&amp;h=600&amp;q=70" alt="Viajera con su valija roja lista para salir" width="900" height="600" loading="lazy" decoding="async">
+        <span class="acb-body">
+          <span class="ac-logo"><b>ASSIST CARD</b></span>
+          <b class="acb-t">¿Ya tenés tu asistencia al viajero?</b>
+          <span class="acb-s">Sumá Assist Card a tu paquete o a tu pasaje, para viajar tranquilo de punta a punta. Te la cotizamos por WhatsApp.</span>
+          <span class="acb-cta">Cotizar Assist Card ›</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
   <section class="sec pt0" id="europa" aria-labelledby="europa-t">
     <div class="wrap">
       <div class="head rv">
@@ -482,7 +510,7 @@
       <div class="head rv">
         <span class="kicker">Solo vuelo</span>
         <h2 id="vuelos-t">Los vuelos más baratos de hoy</h2>
-        <p>El mejor precio a Brasil, el Caribe, Europa, Asia y Estados Unidos. Ida y vuelta desde Buenos Aires, sin hotel, por persona con impuestos. <span id="vuelos-sub"></span></p>
+        <p>Los 2 mejores precios a Brasil, el Caribe, Europa, Asia y Estados Unidos. Ida y vuelta desde Buenos Aires, sin hotel, por persona con impuestos. <span id="vuelos-sub"></span></p>
       </div>
       <div class="flights" id="flights"></div>
       <p class="note">Tarifas de hoy para un adulto, sujetas a disponibilidad al momento de emitir. El equipaje incluido depende de la tarifa de cada aerolínea: te lo confirmamos al cotizar.</p>
@@ -492,8 +520,8 @@
   <section class="sec pt0" id="asistencia" aria-labelledby="ac-t">
     <div class="wrap">
       <div class="ac rv">
-        <div class="ac-mark" aria-hidden="true"><svg class="ic"><use href="#i-shield"/></svg></div>
         <div class="ac-txt">
+          <span class="ac-logo"><b>ASSIST CARD</b></span>
           <span class="ac-k">Asistencia al viajero</span>
           <h2 id="ac-t">Viajá cubierto con Assist Card</h2>
           <p>Sumala a cualquier viaje, aunque hayas comprado el pasaje por tu cuenta. Te ayudamos a elegir el plan según el destino, los días y la edad de cada pasajero.</p>
@@ -505,6 +533,7 @@
           <p class="ac-fine">La cobertura depende del plan elegido. Te pasamos las condiciones de cada uno antes de contratar.</p>
           <a class="btn btn-wa js-wa" href="#cotizar" data-msg="Hola MM Viajes! 👋 Quiero cotizar una asistencia al viajero Assist Card (ref. AC). Viajo a: ___ · Fechas: ___ · Pasajeros y edades: ___"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Cotizar mi Assist Card</a>
         </div>
+        <img class="ac-photo" src="https://images.unsplash.com/photo-1549894595-4698795b38ee?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=70" alt="Viajero caminando por el aeropuerto con su valija" width="800" height="600" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -1739,7 +1768,7 @@
   const pic = (id, w, h) => 'https://images.unsplash.com/photo-' + id + '?auto=format&fit=crop&w=' + w + (h ? '&h=' + h : '') + '&q=70';
   const icon = (id, cls = 'ic') => '<svg class="' + cls + '" aria-hidden="true"><use href="#i-' + id + '"/></svg>';
   const REGION = { brasil: 'Brasil', eeuu: 'Estados Unidos', europa: 'Europa', sudamerica: 'Sudamérica', asia: 'Asia', eventos: 'Evento' };
-  const EXTRA_CREDITS = ['Pedro Monteiro', 'Asael Peña'];
+  const EXTRA_CREDITS = ['Pedro Monteiro', 'krakenimages', 'Sergey Zolkin'];
 
   let D = JSON.parse($('#data').textContent);
   const wa = msg => 'https://wa.me/' + D.whatsapp + '?text=' + encodeURIComponent(msg);
@@ -1801,15 +1830,18 @@
       ' desde ' + fmt(o.precio) + ' por persona (ref. ' + o.codigo + '). ¿Me pasás disponibilidad?';
   }
 
-  // Vuelos: el más barato de cada región, ordenados por precio.
+  // Vuelos: los 2 más baratos de cada región (10 en total), ordenados por precio. Si a una región le faltan, se completa con los siguientes más baratos.
+  const VUELOS_POR_REGION = 2, VUELOS_TOTAL = 10;
   const REGIONES_VUELO = { brasil: 'Brasil', caribe: 'Caribe', europa: 'Europa', asia: 'Asia', eeuu: 'Estados Unidos' };
   const flightMsg = v => 'Hola MM Viajes! 👋 Me interesa el vuelo ida y vuelta Buenos Aires – ' + v.destino + ' (' + v.fechas + ', ' + v.aerolinea + ', ' + v.escalas +
     ') desde ' + fmt(v.precio) + ' por persona (ref. ' + v.codigo + '). ¿Me pasás disponibilidad?';
 
   function flights() {
-    const best = {};
-    (D.vuelos || []).forEach(v => { if (REGIONES_VUELO[v.region] && (!best[v.region] || v.precio < best[v.region].precio)) best[v.region] = v; });
-    const list = Object.values(best).sort((a, b) => a.precio - b.precio);
+    const all = (D.vuelos || []).filter(v => REGIONES_VUELO[v.region]).sort((a, b) => a.precio - b.precio);
+    const count = {};
+    const list = all.filter(v => (count[v.region] = (count[v.region] || 0) + 1) <= VUELOS_POR_REGION);
+    all.forEach(v => { if (list.length < VUELOS_TOTAL && !list.includes(v)) list.push(v); });
+    list.sort((a, b) => a.precio - b.precio).splice(VUELOS_TOTAL);
     $('#vuelos').hidden = !list.length;
     $('#flights').innerHTML = list.map((v, i) =>
       '<a class="fl js-wa rv" href="#cotizar" data-msg="' + esc(flightMsg(v)) + '">' +
