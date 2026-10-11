@@ -648,73 +648,6 @@
                                       ]
                      },
                      {
-                         "id":  "peru",
-                         "region":  "sudamerica",
-                         "nombre":  "Lima, Cusco y Machu Picchu",
-                         "pais":  "Perú",
-                         "foto":  "1587595431973-160d0d94add1",
-                         "credito":  "Eddie Kiszka",
-                         "tags":  [
-                                      "Historia"
-                                  ],
-                         "desc":  "Lima, el Valle Sagrado y Machu Picchu en un solo viaje.",
-                         "incluye":  "Vuelos LATAM + 7 noches, traslados, excursiones y asistencia",
-                         "salida":  "Salidas hasta diciembre 2026 desde Buenos Aires o Córdoba",
-                         "opciones":  [
-                                          {
-                                              "tipo":  "Hoteles turista superior",
-                                              "hotel":  "Amaneceres del Inca",
-                                              "estrellas":  0,
-                                              "precio":  1960,
-                                              "codigo":  "PE1"
-                                          },
-                                          {
-                                              "tipo":  "Hoteles categoría ejecutiva",
-                                              "hotel":  "Amaneceres del Inca",
-                                              "estrellas":  0,
-                                              "precio":  2128,
-                                              "codigo":  "PE2"
-                                          }
-                                      ]
-                     },
-                     {
-                         "id":  "orlando",
-                         "region":  "eeuu",
-                         "nombre":  "Orlando",
-                         "pais":  "Estados Unidos",
-                         "foto":  "1609184889233-eff6dd93def4",
-                         "credito":  "Mick Haupt",
-                         "tags":  [
-                                      "Familia"
-                                  ],
-                         "desc":  "La capital mundial de los parques temáticos, para grandes y chicos.",
-                         "incluye":  "Vuelo ida y vuelta + 7 noches",
-                         "salida":  "Salida 11/01/2027 desde Buenos Aires",
-                         "opciones":  [
-                                          {
-                                              "tipo":  "Hotel con desayuno",
-                                              "hotel":  "Garnet Inn \u0026 Suites",
-                                              "estrellas":  3,
-                                              "precio":  1402,
-                                              "codigo":  "OR1"
-                                          },
-                                          {
-                                              "tipo":  "Hotel solo alojamiento",
-                                              "hotel":  "OYO Hotel Orlando Airport",
-                                              "estrellas":  2,
-                                              "precio":  1410,
-                                              "codigo":  "OR2"
-                                          },
-                                          {
-                                              "tipo":  "Estudio con cocina",
-                                              "hotel":  "HomeTowne Studios Orlando South",
-                                              "estrellas":  2,
-                                              "precio":  1441,
-                                              "codigo":  "OR3"
-                                          }
-                                      ]
-                     },
-                     {
                          "id":  "madrid",
                          "region":  "europa",
                          "nombre":  "Madrid",
@@ -748,65 +681,6 @@
                                               "estrellas":  2,
                                               "precio":  2194,
                                               "codigo":  "MD3"
-                                          }
-                                      ]
-                     },
-                     {
-                         "id":  "formula-1",
-                         "region":  "eventos",
-                         "nombre":  "Fórmula 1",
-                         "pais":  "GP de Brasil y GP de Miami",
-                         "foto":  "1645918899630-85e2f3132a84",
-                         "credito":  "Raphael Nogueira",
-                         "tags":  [
-                                      "Eventos"
-                                  ],
-                         "desc":  "Viví la Fórmula 1 en vivo: el Gran Premio de Brasil en Interlagos o el de Miami, con vuelo, hotel y entradas.",
-                         "incluye":  "Vuelo + hotel + entradas para los 3 días",
-                         "salida":  "GP de Brasil: noviembre 2026 · GP de Miami: abril 2027",
-                         "duracion":  "3 a 8 noches",
-                         "opciones":  [
-                                          {
-                                              "tipo":  "GP de Brasil · 4 noches · Tribuna Sector G",
-                                              "hotel":  "Hotel 3★ H3 Paulista o similar, con desayuno · vuelo chárter · 5 al 9 de noviembre",
-                                              "estrellas":  0,
-                                              "precio":  3349,
-                                              "codigo":  "GP1"
-                                          },
-                                          {
-                                              "tipo":  "GP de Brasil · 3 noches · Tribuna Sector A",
-                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
-                                              "estrellas":  0,
-                                              "precio":  3287,
-                                              "codigo":  "GP2"
-                                          },
-                                          {
-                                              "tipo":  "GP de Brasil · 3 noches · VIP Premium D",
-                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
-                                              "estrellas":  0,
-                                              "precio":  4943,
-                                              "codigo":  "GP3"
-                                          },
-                                          {
-                                              "tipo":  "GP de Miami 2027 · 8 noches · Tribuna North Beach techada",
-                                              "hotel":  "Salida grupal 28/04/2027 · vuelo American Airlines",
-                                              "estrellas":  0,
-                                              "precio":  5225,
-                                              "codigo":  "GP4"
-                                          },
-                                          {
-                                              "tipo":  "GP de Brasil · 3 noches · VIP Premium B",
-                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
-                                              "estrellas":  0,
-                                              "precio":  6043,
-                                              "codigo":  "GP5"
-                                          },
-                                          {
-                                              "tipo":  "GP de Brasil · 3 noches · VIP Orange Tree Club",
-                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
-                                              "estrellas":  0,
-                                              "precio":  7418,
-                                              "codigo":  "GP6"
                                           }
                                       ]
                      },
@@ -962,68 +836,118 @@
                                       ]
                      },
                      {
-                         "id":  "tailandia",
-                         "region":  "asia",
-                         "nombre":  "Tailandia",
-                         "pais":  "Phuket, Bangkok y el Sudeste Asiático",
-                         "foto":  "1504214208698-ea1916a2195a",
-                         "credito":  "Jakob Owens",
+                         "id":  "lisboa",
+                         "region":  "europa",
+                         "nombre":  "Lisboa",
+                         "pais":  "Portugal",
+                         "foto":  "1585208798174-6cedd86e019a",
+                         "credito":  "Aayush Gupta",
                          "tags":  [
-                                      "Exótico"
+                                      "Ciudad"
                                   ],
-                         "desc":  "Playas turquesa en Phuket, templos en Bangkok y Chiang Mai, y circuitos que suman Singapur, Bali o Estambul.",
-                         "incluye":  "Vuelo + hotel en Phuket, o circuito con vuelos, guía y excursiones",
-                         "salida":  "Phuket: 11 al 20 de enero 2027 · Circuitos: 30/01 y 27/02/2027 desde Buenos Aires",
-                         "duracion":  "9 a 18 noches",
+                         "desc":  "Tranvías amarillos, miradores y fado entre Alfama y el Barrio Alto.",
+                         "incluye":  "Vuelo ida y vuelta + 7 noches",
+                         "salida":  "Salida 11/01/2027 desde Buenos Aires",
                          "opciones":  [
                                           {
-                                              "tipo":  "Phuket · 9 noches · Solo alojamiento",
-                                              "hotel":  "Baan Kim Lian Sha · vuelos Iberia y Qatar · 11 al 20 de enero",
+                                              "tipo":  "Hotel con desayuno",
+                                              "hotel":  "Lisboa 85 by Ridan Hotels",
+                                              "estrellas":  3,
+                                              "precio":  2133,
+                                              "codigo":  "LS1"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "barcelona",
+                         "region":  "europa",
+                         "nombre":  "Barcelona",
+                         "pais":  "España",
+                         "foto":  "1583422409516-2895a77efded",
+                         "credito":  "Logan Armstrong",
+                         "tags":  [
+                                      "Ciudad"
+                                  ],
+                         "desc":  "Gaudí, la Rambla y el Mediterráneo, en una ciudad para recorrer a pie.",
+                         "incluye":  "Vuelo ida y vuelta + 7 noches",
+                         "salida":  "Salida 11/01/2027 desde Buenos Aires",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "Hotel solo alojamiento",
+                                              "hotel":  "Hotel Lyon",
+                                              "estrellas":  1,
+                                              "precio":  2181,
+                                              "codigo":  "BC1"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "roma",
+                         "region":  "europa",
+                         "nombre":  "Roma",
+                         "pais":  "Italia",
+                         "foto":  "1552832230-c0197dd311b5",
+                         "credito":  "David Köhler",
+                         "tags":  [
+                                      "Historia"
+                                  ],
+                         "desc":  "El Coliseo, el Vaticano y la Fontana di Trevi, a pie por el centro histórico.",
+                         "incluye":  "Vuelo ida y vuelta + 7 noches",
+                         "salida":  "Salida 11/01/2027 desde Buenos Aires",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "Habitación doble, solo alojamiento",
+                                              "hotel":  "Marco Laura B\u0026B",
                                               "estrellas":  2,
-                                              "precio":  3082,
-                                              "codigo":  "TH1"
-                                          },
+                                              "precio":  2294,
+                                              "codigo":  "RM1"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "paris",
+                         "region":  "europa",
+                         "nombre":  "París",
+                         "pais":  "Francia",
+                         "foto":  "1502602898657-3e91760cbb34",
+                         "credito":  "Chris Karidis",
+                         "tags":  [
+                                      "Ciudad"
+                                  ],
+                         "desc":  "La Torre Eiffel, el Louvre y Montmartre en una semana.",
+                         "incluye":  "Vuelo ida y vuelta + 7 noches",
+                         "salida":  "Salida 11/01/2027 desde Buenos Aires",
+                         "opciones":  [
                                           {
-                                              "tipo":  "Phuket · 9 noches · Con desayuno",
-                                              "hotel":  "Mystays Phuket · vuelos Iberia y Qatar · 11 al 20 de enero",
+                                              "tipo":  "Hotel solo alojamiento",
+                                              "hotel":  "Campanile Paris Est - Porte de Bagnolet",
                                               "estrellas":  3,
-                                              "precio":  3163,
-                                              "codigo":  "TH2"
-                                          },
+                                              "precio":  2421,
+                                              "codigo":  "PA1"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "portugal-espana",
+                         "region":  "europa",
+                         "nombre":  "Portugal y norte de España",
+                         "pais":  "Circuito de Lisboa a Madrid",
+                         "foto":  "1646921307555-e6fc19f384a7",
+                         "credito":  "Tomás Evaristo",
+                         "tags":  [
+                                      "Circuito"
+                                  ],
+                         "desc":  "Lisboa, Fátima, Oporto, Santiago de Compostela y Madrid, con 2 noches de playa en Río de Janeiro.",
+                         "incluye":  "Vuelo con valija + 13 noches con desayuno + traslados, visitas y asistencia",
+                         "salida":  "Salidas los sábados del 23/01 al 27/03/2027 desde Buenos Aires",
+                         "duracion":  "13 noches",
+                         "opciones":  [
                                           {
-                                              "tipo":  "Phuket · 9 noches · Media pensión",
-                                              "hotel":  "Pearl Hotel Phuket · vuelos Iberia y Qatar · 11 al 20 de enero",
-                                              "estrellas":  3,
-                                              "precio":  3417,
-                                              "codigo":  "TH3"
-                                          },
-                                          {
-                                              "tipo":  "Phuket · 9 noches · Pensión completa",
-                                              "hotel":  "Maikhao Hotel · vuelos Iberia y Qatar · 11 al 20 de enero",
-                                              "estrellas":  3,
-                                              "precio":  3710,
-                                              "codigo":  "TH4"
-                                          },
-                                          {
-                                              "tipo":  "Phuket · 9 noches · All inclusive",
-                                              "hotel":  "Island Escape Burasari · vuelos Iberia y Qatar · 11 al 20 de enero",
-                                              "estrellas":  5,
-                                              "precio":  4173,
-                                              "codigo":  "TH5"
-                                          },
-                                          {
-                                              "tipo":  "Circuito Tailandia Esencial y Estambul · 15 noches",
-                                              "hotel":  "Bangkok, Chiang Rai, Chiang Mai, Phuket y Estambul · grupal con guía · Turkish Airlines · salida 30/01/2027",
+                                              "tipo":  "Circuito Portugal y norte de España · 13 noches",
+                                              "hotel":  "2 noches en Río y 11 de circuito, con desayuno · vuelo GOL",
                                               "estrellas":  0,
-                                              "precio":  7280,
-                                              "codigo":  "TH6"
-                                          },
-                                          {
-                                              "tipo":  "Circuito Tailandia, Singapur y Bali · 18 noches",
-                                              "hotel":  "Bangkok, Chiang Mai, Phuket, Singapur y Bali · grupal con guía · desayunos y 8 comidas · Turkish Airlines · salida 27/02/2027",
-                                              "estrellas":  0,
-                                              "precio":  9400,
-                                              "codigo":  "TH7"
+                                              "precio":  3976,
+                                              "codigo":  "PT1"
                                           }
                                       ]
                      }
@@ -1031,6 +955,7 @@
     "vuelos":  [
                    {
                        "codigo":  "VU1",
+                       "region":  "caribe",
                        "destino":  "Punta Cana",
                        "iata":  "PUJ",
                        "aerolinea":  "Sky Airline",
@@ -1040,6 +965,7 @@
                    },
                    {
                        "codigo":  "VU2",
+                       "region":  "caribe",
                        "destino":  "Cancún",
                        "iata":  "CUN",
                        "aerolinea":  "LATAM",
@@ -1049,6 +975,7 @@
                    },
                    {
                        "codigo":  "VU3",
+                       "region":  "caribe",
                        "destino":  "Aruba",
                        "iata":  "AUA",
                        "aerolinea":  "LATAM",
@@ -1058,6 +985,7 @@
                    },
                    {
                        "codigo":  "VU4",
+                       "region":  "caribe",
                        "destino":  "Cartagena",
                        "iata":  "CTG",
                        "aerolinea":  "JetSMART",
@@ -1067,6 +995,7 @@
                    },
                    {
                        "codigo":  "VU5",
+                       "region":  "caribe",
                        "destino":  "San Andrés",
                        "iata":  "ADZ",
                        "aerolinea":  "LATAM",
@@ -1076,6 +1005,7 @@
                    },
                    {
                        "codigo":  "VU6",
+                       "region":  "caribe",
                        "destino":  "Curazao",
                        "iata":  "CUR",
                        "aerolinea":  "Aerolíneas Argentinas y Avianca",
@@ -1085,6 +1015,7 @@
                    },
                    {
                        "codigo":  "VU7",
+                       "region":  "brasil",
                        "destino":  "Río de Janeiro",
                        "iata":  "RIO",
                        "aerolinea":  "LATAM",
@@ -1094,6 +1025,7 @@
                    },
                    {
                        "codigo":  "VU8",
+                       "region":  "brasil",
                        "destino":  "Florianópolis",
                        "iata":  "FLN",
                        "aerolinea":  "LATAM",
@@ -1103,6 +1035,7 @@
                    },
                    {
                        "codigo":  "VU9",
+                       "region":  "brasil",
                        "destino":  "Salvador de Bahía",
                        "iata":  "SSA",
                        "aerolinea":  "Gol",
@@ -1112,6 +1045,7 @@
                    },
                    {
                        "codigo":  "VU10",
+                       "region":  "brasil",
                        "destino":  "Maceió",
                        "iata":  "MCZ",
                        "aerolinea":  "Gol",
@@ -1121,6 +1055,7 @@
                    },
                    {
                        "codigo":  "VU11",
+                       "region":  "eeuu",
                        "destino":  "Miami",
                        "iata":  "MIA",
                        "aerolinea":  "LATAM",
@@ -1130,6 +1065,7 @@
                    },
                    {
                        "codigo":  "VU12",
+                       "region":  "eeuu",
                        "destino":  "Orlando",
                        "iata":  "MCO",
                        "aerolinea":  "LATAM y Delta",
@@ -1139,6 +1075,7 @@
                    },
                    {
                        "codigo":  "VU13",
+                       "region":  "eeuu",
                        "destino":  "Nueva York",
                        "iata":  "NYC",
                        "aerolinea":  "Arajet",
@@ -1148,6 +1085,7 @@
                    },
                    {
                        "codigo":  "VU14",
+                       "region":  "europa",
                        "destino":  "Madrid",
                        "iata":  "MAD",
                        "aerolinea":  "LATAM",
@@ -1156,103 +1094,97 @@
                        "precio":  1831
                    },
                    {
-                       "codigo":  "VU15",
-                       "destino":  "Lima",
-                       "iata":  "LIM",
-                       "aerolinea":  "JetSMART",
-                       "escalas":  "directo",
-                       "fechas":  "11 al 18 de enero 2027",
-                       "precio":  438
-                   },
-                   {
-                       "codigo":  "VU16",
-                       "destino":  "Cusco",
-                       "iata":  "CUZ",
+                       "codigo":  "VU17",
+                       "region":  "europa",
+                       "destino":  "Lisboa",
+                       "iata":  "LIS",
                        "aerolinea":  "LATAM",
                        "escalas":  "1 escala",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  519
+                       "precio":  1852
+                   },
+                   {
+                       "codigo":  "VU18",
+                       "region":  "europa",
+                       "destino":  "Barcelona",
+                       "iata":  "BCN",
+                       "aerolinea":  "Air Canada y Aerolíneas Argentinas",
+                       "escalas":  "2 a 3 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1946
+                   },
+                   {
+                       "codigo":  "VU19",
+                       "region":  "europa",
+                       "destino":  "Roma",
+                       "iata":  "ROM",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2043
+                   },
+                   {
+                       "codigo":  "VU20",
+                       "region":  "europa",
+                       "destino":  "París",
+                       "iata":  "PAR",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2136
+                   },
+                   {
+                       "codigo":  "VU21",
+                       "region":  "europa",
+                       "destino":  "Londres",
+                       "iata":  "LON",
+                       "aerolinea":  "Lufthansa e ITA Airways",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2103
+                   },
+                   {
+                       "codigo":  "VU22",
+                       "region":  "asia",
+                       "destino":  "Dubái",
+                       "iata":  "DXB",
+                       "aerolinea":  "Emirates",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2030
+                   },
+                   {
+                       "codigo":  "VU23",
+                       "region":  "asia",
+                       "destino":  "Singapur",
+                       "iata":  "SIN",
+                       "aerolinea":  "Turkish Airlines",
+                       "escalas":  "con escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2513
+                   },
+                   {
+                       "codigo":  "VU24",
+                       "region":  "asia",
+                       "destino":  "Tokio",
+                       "iata":  "TYO",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "con escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2597
+                   },
+                   {
+                       "codigo":  "VU25",
+                       "region":  "asia",
+                       "destino":  "Bangkok",
+                       "iata":  "BKK",
+                       "aerolinea":  "Qatar Airways e Iberia",
+                       "escalas":  "2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2824
                    }
                ],
     "cruceros":  [
-                     {
-                         "id":  "crucero-brasil-uruguay",
-                         "region":  "cruceros",
-                         "nombre":  "Brasil y Uruguay en crucero",
-                         "pais":  "MSC Seaview · Santos, Camboriú y Punta del Este",
-                         "foto":  "1554254648-2d58a1bc3fd5",
-                         "credito":  "Alonso Reyes",
-                         "tags":  [
-                                      "Crucero"
-                                  ],
-                         "desc":  "Zarpás del puerto de Buenos Aires y en 7 noches visitás Santos (São Paulo), Camboriú y Punta del Este.",
-                         "incluye":  "Crucero de 7 noches + impuestos portuarios",
-                         "salida":  "Salida 18/02/2027 del puerto de Buenos Aires, regreso 25/02",
-                         "duracion":  "7 noches",
-                         "opciones":  [
-                                          {
-                                              "tipo":  "Cabina con balcón",
-                                              "hotel":  "MSC Seaview · 18 al 25 de febrero 2027",
-                                              "estrellas":  0,
-                                              "precio":  1350,
-                                              "codigo":  "CZ1"
-                                          }
-                                      ]
-                     },
-                     {
-                         "id":  "crucero-caribe",
-                         "region":  "cruceros",
-                         "nombre":  "Caribe sin visa en crucero",
-                         "pais":  "MSC Opera · Islas Vírgenes, St. Maarten y St. Kitts",
-                         "foto":  "1599640842225-85d111c60e6b",
-                         "credito":  "Georgy Trofimov",
-                         "tags":  [
-                                      "Crucero"
-                                  ],
-                         "desc":  "Volás a Punta Cana, pasás 3 noches en hotel y navegás 7 noches desde La Romana por Virgin Gorda, St. Maarten, St. Kitts, Tortola e Isla Catalina.",
-                         "incluye":  "Vuelo desde Ezeiza + 3 noches de hotel + crucero de 7 noches + traslados",
-                         "salida":  "Salida 30/01/2027 desde Buenos Aires, regreso 10/02",
-                         "duracion":  "10 noches",
-                         "opciones":  [
-                                          {
-                                              "tipo":  "Cabina interior",
-                                              "hotel":  "MSC Opera · vuelo LATAM · 30/01 al 10/02/2027",
-                                              "estrellas":  0,
-                                              "precio":  2850,
-                                              "codigo":  "CZ2"
-                                          },
-                                          {
-                                              "tipo":  "Cabina exterior",
-                                              "hotel":  "MSC Opera · vuelo LATAM · 30/01 al 10/02/2027",
-                                              "estrellas":  0,
-                                              "precio":  3095,
-                                              "codigo":  "CZ3"
-                                          }
-                                      ]
-                     },
-                     {
-                         "id":  "crucero-transatlantico",
-                         "region":  "cruceros",
-                         "nombre":  "Transatlántico a Europa",
-                         "pais":  "Majestic Princess · Río, Canarias, Casablanca y Londres",
-                         "foto":  "1688269910608-e3c65eb4ac3a",
-                         "credito":  "Steve Davison",
-                         "tags":  [
-                                      "Crucero"
-                                  ],
-                         "desc":  "22 noches cruzando el Atlántico desde Buenos Aires: Montevideo, Río de Janeiro, Gran Canaria, Lanzarote, Tenerife, Casablanca, La Coruña y llegada a Southampton (Londres).",
-                         "incluye":  "Crucero de 22 noches + impuestos portuarios (el vuelo de regreso se cotiza aparte)",
-                         "salida":  "Embarque 09/02/2027 en el puerto de Buenos Aires, llegada a Londres el 03/03",
-                         "duracion":  "22 noches",
-                         "opciones":  [
-                                          {
-                                              "tipo":  "Cabina interior",
-                                              "hotel":  "Majestic Princess · 9 de febrero al 3 de marzo 2027 · solo ida",
-                                              "estrellas":  0,
-                                              "precio":  1790,
-                                              "codigo":  "CZ4"
-                                          }
-                                      ]
-                     }
+
                  ]
 }

@@ -248,6 +248,31 @@
   .more { display: flex; align-items: center; justify-content: center; margin: 18px auto 0; min-height: 46px; padding: 0 24px; border-radius: 999px;
           border: 1px solid var(--line); background: #fff; color: var(--ink); font-weight: 600; font-size: .92rem; cursor: pointer; }
   .more[hidden], .links a[hidden] { display: none; }
+  .fl .rt .rg { display: inline-block; margin-bottom: 3px; padding: 2px 8px; border-radius: 999px; background: var(--sand); color: #b4521a;
+                font-size: .66rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+
+  /* Paquete (una opción por tarjeta) */
+  .pk { display: grid; gap: 2px; }
+  .pk b { font-size: 1.02rem; font-weight: 700; line-height: 1.3; }
+  .pk small { color: var(--muted); font-size: .84rem; }
+  .more-opts { align-self: center; font-size: .84rem; font-weight: 600; color: var(--teal); text-decoration: underline; text-underline-offset: 3px; }
+  .card[hidden], section[hidden] { display: none; }
+
+  /* Assist Card */
+  .ac { position: relative; overflow: hidden; display: grid; gap: 18px; padding: 28px 22px; border-radius: 28px; color: #fff;
+        background: linear-gradient(135deg, var(--navy) 0%, #0d5d73 60%, var(--teal) 100%); box-shadow: var(--shadow-lg); isolation: isolate; }
+  .ac::after { content: ""; position: absolute; right: -60px; top: -60px; width: 220px; height: 220px; border-radius: 50%;
+               background: radial-gradient(circle, rgba(255,255,255,.18), rgba(255,255,255,0) 70%); z-index: -1; }
+  .ac-mark { width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.3); }
+  .ac-mark .ic { width: 34px; height: 34px; color: #fff; }
+  .ac-k { display: inline-block; font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #ffc27a; }
+  .ac h2 { font-size: clamp(1.6rem, 6vw, 2.4rem); line-height: 1.1; font-weight: 800; letter-spacing: -.02em; margin: 6px 0 10px; text-wrap: balance; }
+  .ac p { opacity: .92; max-width: 600px; }
+  .ac-list { list-style: none; display: grid; gap: 8px; margin: 16px 0 6px; padding: 0; }
+  .ac-list li { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+  .ac-list .ic { width: 18px; height: 18px; color: #3ee07a; flex: none; }
+  .ac-fine { font-size: .8rem; opacity: .8 !important; margin-bottom: 16px; }
+  @media (min-width: 760px) { .ac { grid-template-columns: auto 1fr; align-items: start; padding: 40px; gap: 28px; } .ac-mark { width: 84px; height: 84px; } .ac-mark .ic { width: 44px; height: 44px; } }
   @media (min-width: 640px) { .trow { grid-template-columns: 1fr 150px 170px; padding: 14px 24px; } .tgroup { padding: 10px 24px; } }
   .note { color: var(--muted); font-size: .82rem; margin-top: 14px; }
 
@@ -350,7 +375,7 @@
   <div class="wrap bar">
     <a href="#" class="logo" aria-label="MM Viajes, ir al inicio"><img src="logo.jpg" alt="" width="62" height="44"><span>MM Viajes</span></a>
     <nav class="links" aria-label="Secciones">
-      <a href="#caribe">Caribe</a><a href="#destinos">Destinos</a><a href="#vuelos">Vuelos</a><a href="#cruceros" id="nav-cruceros" hidden>Cruceros</a><a href="#precios">Precios de hoy</a><a href="#faq">Preguntas</a>
+      <a href="#caribe">Caribe</a><a href="#brasil">Brasil</a><a href="#europa">Europa</a><a href="#vuelos">Vuelos</a><a href="#asistencia">Asistencia</a><a href="#cotizar">Cotizar</a>
     </nav>
     <a class="btn btn-wa js-wa" href="#cotizar" data-msg="Hola MM Viajes! 👋 Quiero cotizar un viaje."><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
   </div>
@@ -420,16 +445,9 @@
   <section class="sec" id="caribe" aria-labelledby="caribe-t">
     <div class="wrap">
       <div class="head rv">
-        <span class="kicker">Nuestro foco</span>
-        <h2 id="caribe-t">Las playas más lindas del Caribe</h2>
-        <p>Paquetes de 7 noches con vuelo desde Buenos Aires. En cada destino tenés todas las opciones (hotel, apartamento, desayuno, media pensión o all inclusive) ordenadas de la más económica a la más completa.</p>
-      </div>
-      <div class="chips" role="group" aria-label="Filtrar destinos del Caribe">
-        <button class="chip" type="button" aria-pressed="true" data-f="*">Todos</button>
-        <button class="chip" type="button" aria-pressed="false" data-f="All inclusive">Con all inclusive</button>
-        <button class="chip" type="button" aria-pressed="false" data-f="Apartamento">Con apartamentos</button>
-        <button class="chip" type="button" aria-pressed="false" data-f="Isla">Islas</button>
-        <button class="chip" type="button" aria-pressed="false" data-f="Historia|Naturaleza">Naturaleza y cultura</button>
+        <span class="kicker">Caribe</span>
+        <h2 id="caribe-t">Lo mejor del Caribe</h2>
+        <p>El paquete más conveniente de cada destino, con vuelo desde Buenos Aires y 7 noches de hotel. Si querés otro tipo de alojamiento, te pasamos todas las opciones por WhatsApp.</p>
       </div>
       <div class="grid" id="grid-caribe">
         <noscript><p>Para ver las ofertas activá JavaScript o escribinos por WhatsApp al +54 9 223 632-1023.</p></noscript>
@@ -437,18 +455,25 @@
     </div>
   </section>
 
-  <section class="sec pt0" aria-label="Oferta destacada">
-    <div class="wrap"><div class="feature rv" id="feature"></div></div>
-  </section>
-
-  <section class="sec" id="destinos" aria-labelledby="dest-t">
+  <section class="sec pt0" id="brasil" aria-labelledby="brasil-t">
     <div class="wrap">
       <div class="head rv">
-        <span class="kicker">Más allá del Caribe</span>
-        <h2 id="dest-t">Brasil, Perú, Orlando, Europa, Tailandia y la Fórmula 1</h2>
-        <p>Paquetes de 7 noches con todas las opciones de alojamiento, desde la más económica. Tailandia se arma con vuelo y hotel en Phuket o en circuito con guía, y la Fórmula 1 según cada Gran Premio, con vuelo, hotel y entradas.</p>
+        <span class="kicker">Brasil</span>
+        <h2 id="brasil-t">Los 7 mejores paquetes a Brasil</h2>
+        <p>Playa, ciudad y all inclusive, con vuelo y 7 noches de hotel, del más barato al más caro.</p>
       </div>
-      <div class="grid" id="rail"></div>
+      <div class="grid" id="grid-brasil"></div>
+    </div>
+  </section>
+
+  <section class="sec pt0" id="europa" aria-labelledby="europa-t">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="kicker">Europa</span>
+        <h2 id="europa-t">5 opciones para ir a Europa</h2>
+        <p>Vuelo ida y vuelta y hotel en las ciudades más pedidas, desde la opción más económica de cada una.</p>
+      </div>
+      <div class="grid" id="grid-europa"></div>
     </div>
   </section>
 
@@ -456,81 +481,31 @@
     <div class="wrap">
       <div class="head rv">
         <span class="kicker">Solo vuelo</span>
-        <h2 id="vuelos-t">Vuelos más baratos de hoy</h2>
-        <p>Pasajes ida y vuelta desde Buenos Aires, sin hotel, del más barato al más caro. Precio por persona con impuestos. <span id="vuelos-sub"></span></p>
+        <h2 id="vuelos-t">Los vuelos más baratos de hoy</h2>
+        <p>El mejor precio a Brasil, el Caribe, Europa, Asia y Estados Unidos. Ida y vuelta desde Buenos Aires, sin hotel, por persona con impuestos. <span id="vuelos-sub"></span></p>
       </div>
       <div class="flights" id="flights"></div>
-      <button class="more" type="button" id="flights-more" hidden>Ver todos los vuelos</button>
       <p class="note">Tarifas de hoy para un adulto, sujetas a disponibilidad al momento de emitir. El equipaje incluido depende de la tarifa de cada aerolínea: te lo confirmamos al cotizar.</p>
     </div>
   </section>
 
-  <section class="sec pt0" id="cruceros" aria-labelledby="cruceros-t" hidden>
+  <section class="sec pt0" id="asistencia" aria-labelledby="ac-t">
     <div class="wrap">
-      <div class="head rv">
-        <span class="kicker">Zarpando desde Buenos Aires</span>
-        <h2 id="cruceros-t">Cruceros desde Buenos Aires</h2>
-        <p>Zarpando del puerto de Buenos Aires, o con el vuelo desde Buenos Aires incluido. Precios por persona en cabina doble, con impuestos portuarios, desde la cabina más económica.</p>
+      <div class="ac rv">
+        <div class="ac-mark" aria-hidden="true"><svg class="ic"><use href="#i-shield"/></svg></div>
+        <div class="ac-txt">
+          <span class="ac-k">Asistencia al viajero</span>
+          <h2 id="ac-t">Viajá cubierto con Assist Card</h2>
+          <p>Sumala a cualquier viaje, aunque hayas comprado el pasaje por tu cuenta. Te ayudamos a elegir el plan según el destino, los días y la edad de cada pasajero.</p>
+          <ul class="ac-list">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Asistencia médica en el exterior</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Ayuda con equipaje y documentos</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Atención las 24 horas</li>
+          </ul>
+          <p class="ac-fine">La cobertura depende del plan elegido. Te pasamos las condiciones de cada uno antes de contratar.</p>
+          <a class="btn btn-wa js-wa" href="#cotizar" data-msg="Hola MM Viajes! 👋 Quiero cotizar una asistencia al viajero Assist Card (ref. AC). Viajo a: ___ · Fechas: ___ · Pasajeros y edades: ___"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Cotizar mi Assist Card</a>
+        </div>
       </div>
-      <div class="grid" id="grid-cruceros"></div>
-    </div>
-  </section>
-
-  <section class="sec pt0" id="precios" aria-labelledby="precios-t">
-    <div class="wrap">
-      <div class="head rv">
-        <span class="kicker">Transparencia</span>
-        <h2 id="precios-t">Precios de hoy</h2>
-        <p>Todos los destinos en un solo lugar, en dólares y por persona. <span id="precios-sub"></span></p>
-      </div>
-      <div class="table rv" id="tabla"></div>
-      <p class="note">Paquetes de 7 noches con vuelo. Precios por persona en base doble, desde la opción más económica.</p>
-    </div>
-  </section>
-
-  <section class="sec pt0" aria-labelledby="why-t">
-    <div class="wrap">
-      <div class="head rv"><span class="kicker">Por qué MM Viajes</span><h2 id="why-t">Viajá tranquilo, nosotros nos ocupamos</h2></div>
-      <div class="why">
-        <div class="feat rv"><div class="ib"><svg class="ic" aria-hidden="true"><use href="#i-tag"/></svg></div><h3>Precios al día</h3><p>Revisamos tarifas todos los días para mostrarte valores reales y actualizados.</p></div>
-        <div class="feat rv"><div class="ib"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></div><h3>Atención por WhatsApp</h3><p>Te atiende una persona real, antes, durante y después del viaje.</p></div>
-        <div class="feat rv"><div class="ib"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg></div><h3>Todo en una cotización</h3><p>Vuelos, hotel, traslados y asistencia al viajero, sin vueltas.</p></div>
-        <div class="feat rv"><div class="ib"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg></div><h3>Sin sorpresas</h3><p>Te asesoramos sobre documentación y requisitos de cada destino.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec pt0" aria-labelledby="steps-t">
-    <div class="wrap">
-      <div class="head rv"><span class="kicker">Cómo funciona</span><h2 id="steps-t">Reservar es así de fácil</h2></div>
-      <div class="steps">
-        <div class="step rv"><h3>Elegí tu destino</h3><p>Mirá las ofertas o contanos qué viaje tenés en mente.</p></div>
-        <div class="step rv"><h3>Recibí tu cotización</h3><p>Te mandamos opciones comparadas por WhatsApp, con todo detallado.</p></div>
-        <div class="step rv"><h3>Reservá y viajá</h3><p>Confirmamos tu lugar y te acompañamos hasta que vuelvas.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec pt0" id="faq" aria-labelledby="faq-t">
-    <div class="wrap">
-      <div class="head rv"><span class="kicker">Preguntas frecuentes</span><h2 id="faq-t">¿Tenés dudas?</h2></div>
-      <div class="faq">
-        <details class="rv"><summary>¿Los precios publicados son finales?</summary><p>Son tarifas de referencia por persona en base doble, en dólares, para las fechas de salida que indica cada paquete. Cambian según la fecha y la disponibilidad, por eso te confirmamos el precio final al cotizar.</p></details>
-        <details class="rv"><summary>¿Qué incluye un paquete?</summary><p>Vuelo ida y vuelta y 7 noches de alojamiento. En cada destino te mostramos todas las opciones (hotel, apartamento, con desayuno, media pensión o all inclusive) desde la más económica. En la cotización te detallamos todo.</p></details>
-        <details class="rv"><summary>¿Qué es el all inclusive?</summary><p>El hotel incluye comidas, bebidas y actividades del resort. Cada hotel tiene sus condiciones: te las detallamos en la cotización.</p></details>
-        <details class="rv"><summary>¿Puedo salir desde otra ciudad?</summary><p>¡Sí! Algunos paquetes salen desde Córdoba o Rosario, y para el resto te cotizamos la conexión desde tu ciudad.</p></details>
-        <details class="rv"><summary>¿Qué documentación necesito?</summary><p>Depende del destino. Te asesoramos sobre pasaporte, visas y requisitos de ingreso antes de reservar.</p></details>
-        <details class="rv"><summary>¿Puedo armar un viaje a medida?</summary><p>Claro. Contanos fechas, presupuesto y qué te gusta, y armamos el viaje ideal para vos.</p></details>
-      </div>
-    </div>
-  </section>
-
-  <section class="band" aria-labelledby="band-t">
-    <img src="https://images.unsplash.com/photo-1697302611781-5166533305da?auto=format&fit=crop&w=1600&q=65" alt="" loading="lazy" decoding="async">
-    <div class="wrap rv">
-      <h2 id="band-t">Tu próxima aventura empieza con un mensaje.</h2>
-      <p>Contanos a dónde querés ir y te armamos la mejor opción para tu presupuesto.</p>
-      <a class="btn btn-wa js-wa" href="#cotizar" data-msg="Hola MM Viajes! 👋 Quiero armar mi próximo viaje."><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Hablar con MM Viajes</a>
     </div>
   </section>
 </main>
@@ -1214,73 +1189,6 @@
                                       ]
                      },
                      {
-                         "id":  "peru",
-                         "region":  "sudamerica",
-                         "nombre":  "Lima, Cusco y Machu Picchu",
-                         "pais":  "Perú",
-                         "foto":  "1587595431973-160d0d94add1",
-                         "credito":  "Eddie Kiszka",
-                         "tags":  [
-                                      "Historia"
-                                  ],
-                         "desc":  "Lima, el Valle Sagrado y Machu Picchu en un solo viaje.",
-                         "incluye":  "Vuelos LATAM + 7 noches, traslados, excursiones y asistencia",
-                         "salida":  "Salidas hasta diciembre 2026 desde Buenos Aires o Córdoba",
-                         "opciones":  [
-                                          {
-                                              "tipo":  "Hoteles turista superior",
-                                              "hotel":  "Amaneceres del Inca",
-                                              "estrellas":  0,
-                                              "precio":  1960,
-                                              "codigo":  "PE1"
-                                          },
-                                          {
-                                              "tipo":  "Hoteles categoría ejecutiva",
-                                              "hotel":  "Amaneceres del Inca",
-                                              "estrellas":  0,
-                                              "precio":  2128,
-                                              "codigo":  "PE2"
-                                          }
-                                      ]
-                     },
-                     {
-                         "id":  "orlando",
-                         "region":  "eeuu",
-                         "nombre":  "Orlando",
-                         "pais":  "Estados Unidos",
-                         "foto":  "1609184889233-eff6dd93def4",
-                         "credito":  "Mick Haupt",
-                         "tags":  [
-                                      "Familia"
-                                  ],
-                         "desc":  "La capital mundial de los parques temáticos, para grandes y chicos.",
-                         "incluye":  "Vuelo ida y vuelta + 7 noches",
-                         "salida":  "Salida 11/01/2027 desde Buenos Aires",
-                         "opciones":  [
-                                          {
-                                              "tipo":  "Hotel con desayuno",
-                                              "hotel":  "Garnet Inn \u0026 Suites",
-                                              "estrellas":  3,
-                                              "precio":  1402,
-                                              "codigo":  "OR1"
-                                          },
-                                          {
-                                              "tipo":  "Hotel solo alojamiento",
-                                              "hotel":  "OYO Hotel Orlando Airport",
-                                              "estrellas":  2,
-                                              "precio":  1410,
-                                              "codigo":  "OR2"
-                                          },
-                                          {
-                                              "tipo":  "Estudio con cocina",
-                                              "hotel":  "HomeTowne Studios Orlando South",
-                                              "estrellas":  2,
-                                              "precio":  1441,
-                                              "codigo":  "OR3"
-                                          }
-                                      ]
-                     },
-                     {
                          "id":  "madrid",
                          "region":  "europa",
                          "nombre":  "Madrid",
@@ -1314,65 +1222,6 @@
                                               "estrellas":  2,
                                               "precio":  2194,
                                               "codigo":  "MD3"
-                                          }
-                                      ]
-                     },
-                     {
-                         "id":  "formula-1",
-                         "region":  "eventos",
-                         "nombre":  "Fórmula 1",
-                         "pais":  "GP de Brasil y GP de Miami",
-                         "foto":  "1645918899630-85e2f3132a84",
-                         "credito":  "Raphael Nogueira",
-                         "tags":  [
-                                      "Eventos"
-                                  ],
-                         "desc":  "Viví la Fórmula 1 en vivo: el Gran Premio de Brasil en Interlagos o el de Miami, con vuelo, hotel y entradas.",
-                         "incluye":  "Vuelo + hotel + entradas para los 3 días",
-                         "salida":  "GP de Brasil: noviembre 2026 · GP de Miami: abril 2027",
-                         "duracion":  "3 a 8 noches",
-                         "opciones":  [
-                                          {
-                                              "tipo":  "GP de Brasil · 4 noches · Tribuna Sector G",
-                                              "hotel":  "Hotel 3★ H3 Paulista o similar, con desayuno · vuelo chárter · 5 al 9 de noviembre",
-                                              "estrellas":  0,
-                                              "precio":  3349,
-                                              "codigo":  "GP1"
-                                          },
-                                          {
-                                              "tipo":  "GP de Brasil · 3 noches · Tribuna Sector A",
-                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
-                                              "estrellas":  0,
-                                              "precio":  3287,
-                                              "codigo":  "GP2"
-                                          },
-                                          {
-                                              "tipo":  "GP de Brasil · 3 noches · VIP Premium D",
-                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
-                                              "estrellas":  0,
-                                              "precio":  4943,
-                                              "codigo":  "GP3"
-                                          },
-                                          {
-                                              "tipo":  "GP de Miami 2027 · 8 noches · Tribuna North Beach techada",
-                                              "hotel":  "Salida grupal 28/04/2027 · vuelo American Airlines",
-                                              "estrellas":  0,
-                                              "precio":  5225,
-                                              "codigo":  "GP4"
-                                          },
-                                          {
-                                              "tipo":  "GP de Brasil · 3 noches · VIP Premium B",
-                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
-                                              "estrellas":  0,
-                                              "precio":  6043,
-                                              "codigo":  "GP5"
-                                          },
-                                          {
-                                              "tipo":  "GP de Brasil · 3 noches · VIP Orange Tree Club",
-                                              "hotel":  "Novotel SP Jardins · 6 al 9 de noviembre",
-                                              "estrellas":  0,
-                                              "precio":  7418,
-                                              "codigo":  "GP6"
                                           }
                                       ]
                      },
@@ -1528,68 +1377,118 @@
                                       ]
                      },
                      {
-                         "id":  "tailandia",
-                         "region":  "asia",
-                         "nombre":  "Tailandia",
-                         "pais":  "Phuket, Bangkok y el Sudeste Asiático",
-                         "foto":  "1504214208698-ea1916a2195a",
-                         "credito":  "Jakob Owens",
+                         "id":  "lisboa",
+                         "region":  "europa",
+                         "nombre":  "Lisboa",
+                         "pais":  "Portugal",
+                         "foto":  "1585208798174-6cedd86e019a",
+                         "credito":  "Aayush Gupta",
                          "tags":  [
-                                      "Exótico"
+                                      "Ciudad"
                                   ],
-                         "desc":  "Playas turquesa en Phuket, templos en Bangkok y Chiang Mai, y circuitos que suman Singapur, Bali o Estambul.",
-                         "incluye":  "Vuelo + hotel en Phuket, o circuito con vuelos, guía y excursiones",
-                         "salida":  "Phuket: 11 al 20 de enero 2027 · Circuitos: 30/01 y 27/02/2027 desde Buenos Aires",
-                         "duracion":  "9 a 18 noches",
+                         "desc":  "Tranvías amarillos, miradores y fado entre Alfama y el Barrio Alto.",
+                         "incluye":  "Vuelo ida y vuelta + 7 noches",
+                         "salida":  "Salida 11/01/2027 desde Buenos Aires",
                          "opciones":  [
                                           {
-                                              "tipo":  "Phuket · 9 noches · Solo alojamiento",
-                                              "hotel":  "Baan Kim Lian Sha · vuelos Iberia y Qatar · 11 al 20 de enero",
+                                              "tipo":  "Hotel con desayuno",
+                                              "hotel":  "Lisboa 85 by Ridan Hotels",
+                                              "estrellas":  3,
+                                              "precio":  2133,
+                                              "codigo":  "LS1"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "barcelona",
+                         "region":  "europa",
+                         "nombre":  "Barcelona",
+                         "pais":  "España",
+                         "foto":  "1583422409516-2895a77efded",
+                         "credito":  "Logan Armstrong",
+                         "tags":  [
+                                      "Ciudad"
+                                  ],
+                         "desc":  "Gaudí, la Rambla y el Mediterráneo, en una ciudad para recorrer a pie.",
+                         "incluye":  "Vuelo ida y vuelta + 7 noches",
+                         "salida":  "Salida 11/01/2027 desde Buenos Aires",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "Hotel solo alojamiento",
+                                              "hotel":  "Hotel Lyon",
+                                              "estrellas":  1,
+                                              "precio":  2181,
+                                              "codigo":  "BC1"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "roma",
+                         "region":  "europa",
+                         "nombre":  "Roma",
+                         "pais":  "Italia",
+                         "foto":  "1552832230-c0197dd311b5",
+                         "credito":  "David Köhler",
+                         "tags":  [
+                                      "Historia"
+                                  ],
+                         "desc":  "El Coliseo, el Vaticano y la Fontana di Trevi, a pie por el centro histórico.",
+                         "incluye":  "Vuelo ida y vuelta + 7 noches",
+                         "salida":  "Salida 11/01/2027 desde Buenos Aires",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "Habitación doble, solo alojamiento",
+                                              "hotel":  "Marco Laura B\u0026B",
                                               "estrellas":  2,
-                                              "precio":  3082,
-                                              "codigo":  "TH1"
-                                          },
+                                              "precio":  2294,
+                                              "codigo":  "RM1"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "paris",
+                         "region":  "europa",
+                         "nombre":  "París",
+                         "pais":  "Francia",
+                         "foto":  "1502602898657-3e91760cbb34",
+                         "credito":  "Chris Karidis",
+                         "tags":  [
+                                      "Ciudad"
+                                  ],
+                         "desc":  "La Torre Eiffel, el Louvre y Montmartre en una semana.",
+                         "incluye":  "Vuelo ida y vuelta + 7 noches",
+                         "salida":  "Salida 11/01/2027 desde Buenos Aires",
+                         "opciones":  [
                                           {
-                                              "tipo":  "Phuket · 9 noches · Con desayuno",
-                                              "hotel":  "Mystays Phuket · vuelos Iberia y Qatar · 11 al 20 de enero",
+                                              "tipo":  "Hotel solo alojamiento",
+                                              "hotel":  "Campanile Paris Est - Porte de Bagnolet",
                                               "estrellas":  3,
-                                              "precio":  3163,
-                                              "codigo":  "TH2"
-                                          },
+                                              "precio":  2421,
+                                              "codigo":  "PA1"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "portugal-espana",
+                         "region":  "europa",
+                         "nombre":  "Portugal y norte de España",
+                         "pais":  "Circuito de Lisboa a Madrid",
+                         "foto":  "1646921307555-e6fc19f384a7",
+                         "credito":  "Tomás Evaristo",
+                         "tags":  [
+                                      "Circuito"
+                                  ],
+                         "desc":  "Lisboa, Fátima, Oporto, Santiago de Compostela y Madrid, con 2 noches de playa en Río de Janeiro.",
+                         "incluye":  "Vuelo con valija + 13 noches con desayuno + traslados, visitas y asistencia",
+                         "salida":  "Salidas los sábados del 23/01 al 27/03/2027 desde Buenos Aires",
+                         "duracion":  "13 noches",
+                         "opciones":  [
                                           {
-                                              "tipo":  "Phuket · 9 noches · Media pensión",
-                                              "hotel":  "Pearl Hotel Phuket · vuelos Iberia y Qatar · 11 al 20 de enero",
-                                              "estrellas":  3,
-                                              "precio":  3417,
-                                              "codigo":  "TH3"
-                                          },
-                                          {
-                                              "tipo":  "Phuket · 9 noches · Pensión completa",
-                                              "hotel":  "Maikhao Hotel · vuelos Iberia y Qatar · 11 al 20 de enero",
-                                              "estrellas":  3,
-                                              "precio":  3710,
-                                              "codigo":  "TH4"
-                                          },
-                                          {
-                                              "tipo":  "Phuket · 9 noches · All inclusive",
-                                              "hotel":  "Island Escape Burasari · vuelos Iberia y Qatar · 11 al 20 de enero",
-                                              "estrellas":  5,
-                                              "precio":  4173,
-                                              "codigo":  "TH5"
-                                          },
-                                          {
-                                              "tipo":  "Circuito Tailandia Esencial y Estambul · 15 noches",
-                                              "hotel":  "Bangkok, Chiang Rai, Chiang Mai, Phuket y Estambul · grupal con guía · Turkish Airlines · salida 30/01/2027",
+                                              "tipo":  "Circuito Portugal y norte de España · 13 noches",
+                                              "hotel":  "2 noches en Río y 11 de circuito, con desayuno · vuelo GOL",
                                               "estrellas":  0,
-                                              "precio":  7280,
-                                              "codigo":  "TH6"
-                                          },
-                                          {
-                                              "tipo":  "Circuito Tailandia, Singapur y Bali · 18 noches",
-                                              "hotel":  "Bangkok, Chiang Mai, Phuket, Singapur y Bali · grupal con guía · desayunos y 8 comidas · Turkish Airlines · salida 27/02/2027",
-                                              "estrellas":  0,
-                                              "precio":  9400,
-                                              "codigo":  "TH7"
+                                              "precio":  3976,
+                                              "codigo":  "PT1"
                                           }
                                       ]
                      }
@@ -1597,6 +1496,7 @@
     "vuelos":  [
                    {
                        "codigo":  "VU1",
+                       "region":  "caribe",
                        "destino":  "Punta Cana",
                        "iata":  "PUJ",
                        "aerolinea":  "Sky Airline",
@@ -1606,6 +1506,7 @@
                    },
                    {
                        "codigo":  "VU2",
+                       "region":  "caribe",
                        "destino":  "Cancún",
                        "iata":  "CUN",
                        "aerolinea":  "LATAM",
@@ -1615,6 +1516,7 @@
                    },
                    {
                        "codigo":  "VU3",
+                       "region":  "caribe",
                        "destino":  "Aruba",
                        "iata":  "AUA",
                        "aerolinea":  "LATAM",
@@ -1624,6 +1526,7 @@
                    },
                    {
                        "codigo":  "VU4",
+                       "region":  "caribe",
                        "destino":  "Cartagena",
                        "iata":  "CTG",
                        "aerolinea":  "JetSMART",
@@ -1633,6 +1536,7 @@
                    },
                    {
                        "codigo":  "VU5",
+                       "region":  "caribe",
                        "destino":  "San Andrés",
                        "iata":  "ADZ",
                        "aerolinea":  "LATAM",
@@ -1642,6 +1546,7 @@
                    },
                    {
                        "codigo":  "VU6",
+                       "region":  "caribe",
                        "destino":  "Curazao",
                        "iata":  "CUR",
                        "aerolinea":  "Aerolíneas Argentinas y Avianca",
@@ -1651,6 +1556,7 @@
                    },
                    {
                        "codigo":  "VU7",
+                       "region":  "brasil",
                        "destino":  "Río de Janeiro",
                        "iata":  "RIO",
                        "aerolinea":  "LATAM",
@@ -1660,6 +1566,7 @@
                    },
                    {
                        "codigo":  "VU8",
+                       "region":  "brasil",
                        "destino":  "Florianópolis",
                        "iata":  "FLN",
                        "aerolinea":  "LATAM",
@@ -1669,6 +1576,7 @@
                    },
                    {
                        "codigo":  "VU9",
+                       "region":  "brasil",
                        "destino":  "Salvador de Bahía",
                        "iata":  "SSA",
                        "aerolinea":  "Gol",
@@ -1678,6 +1586,7 @@
                    },
                    {
                        "codigo":  "VU10",
+                       "region":  "brasil",
                        "destino":  "Maceió",
                        "iata":  "MCZ",
                        "aerolinea":  "Gol",
@@ -1687,6 +1596,7 @@
                    },
                    {
                        "codigo":  "VU11",
+                       "region":  "eeuu",
                        "destino":  "Miami",
                        "iata":  "MIA",
                        "aerolinea":  "LATAM",
@@ -1696,6 +1606,7 @@
                    },
                    {
                        "codigo":  "VU12",
+                       "region":  "eeuu",
                        "destino":  "Orlando",
                        "iata":  "MCO",
                        "aerolinea":  "LATAM y Delta",
@@ -1705,6 +1616,7 @@
                    },
                    {
                        "codigo":  "VU13",
+                       "region":  "eeuu",
                        "destino":  "Nueva York",
                        "iata":  "NYC",
                        "aerolinea":  "Arajet",
@@ -1714,6 +1626,7 @@
                    },
                    {
                        "codigo":  "VU14",
+                       "region":  "europa",
                        "destino":  "Madrid",
                        "iata":  "MAD",
                        "aerolinea":  "LATAM",
@@ -1722,104 +1635,98 @@
                        "precio":  1831
                    },
                    {
-                       "codigo":  "VU15",
-                       "destino":  "Lima",
-                       "iata":  "LIM",
-                       "aerolinea":  "JetSMART",
-                       "escalas":  "directo",
-                       "fechas":  "11 al 18 de enero 2027",
-                       "precio":  438
-                   },
-                   {
-                       "codigo":  "VU16",
-                       "destino":  "Cusco",
-                       "iata":  "CUZ",
+                       "codigo":  "VU17",
+                       "region":  "europa",
+                       "destino":  "Lisboa",
+                       "iata":  "LIS",
                        "aerolinea":  "LATAM",
                        "escalas":  "1 escala",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  519
+                       "precio":  1852
+                   },
+                   {
+                       "codigo":  "VU18",
+                       "region":  "europa",
+                       "destino":  "Barcelona",
+                       "iata":  "BCN",
+                       "aerolinea":  "Air Canada y Aerolíneas Argentinas",
+                       "escalas":  "2 a 3 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  1946
+                   },
+                   {
+                       "codigo":  "VU19",
+                       "region":  "europa",
+                       "destino":  "Roma",
+                       "iata":  "ROM",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2043
+                   },
+                   {
+                       "codigo":  "VU20",
+                       "region":  "europa",
+                       "destino":  "París",
+                       "iata":  "PAR",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2136
+                   },
+                   {
+                       "codigo":  "VU21",
+                       "region":  "europa",
+                       "destino":  "Londres",
+                       "iata":  "LON",
+                       "aerolinea":  "Lufthansa e ITA Airways",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2103
+                   },
+                   {
+                       "codigo":  "VU22",
+                       "region":  "asia",
+                       "destino":  "Dubái",
+                       "iata":  "DXB",
+                       "aerolinea":  "Emirates",
+                       "escalas":  "1 escala",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2030
+                   },
+                   {
+                       "codigo":  "VU23",
+                       "region":  "asia",
+                       "destino":  "Singapur",
+                       "iata":  "SIN",
+                       "aerolinea":  "Turkish Airlines",
+                       "escalas":  "con escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2513
+                   },
+                   {
+                       "codigo":  "VU24",
+                       "region":  "asia",
+                       "destino":  "Tokio",
+                       "iata":  "TYO",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "con escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2597
+                   },
+                   {
+                       "codigo":  "VU25",
+                       "region":  "asia",
+                       "destino":  "Bangkok",
+                       "iata":  "BKK",
+                       "aerolinea":  "Qatar Airways e Iberia",
+                       "escalas":  "2 escalas",
+                       "fechas":  "11 al 18 de enero 2027",
+                       "precio":  2824
                    }
                ],
     "cruceros":  [
-                     {
-                         "id":  "crucero-brasil-uruguay",
-                         "region":  "cruceros",
-                         "nombre":  "Brasil y Uruguay en crucero",
-                         "pais":  "MSC Seaview · Santos, Camboriú y Punta del Este",
-                         "foto":  "1554254648-2d58a1bc3fd5",
-                         "credito":  "Alonso Reyes",
-                         "tags":  [
-                                      "Crucero"
-                                  ],
-                         "desc":  "Zarpás del puerto de Buenos Aires y en 7 noches visitás Santos (São Paulo), Camboriú y Punta del Este.",
-                         "incluye":  "Crucero de 7 noches + impuestos portuarios",
-                         "salida":  "Salida 18/02/2027 del puerto de Buenos Aires, regreso 25/02",
-                         "duracion":  "7 noches",
-                         "opciones":  [
-                                          {
-                                              "tipo":  "Cabina con balcón",
-                                              "hotel":  "MSC Seaview · 18 al 25 de febrero 2027",
-                                              "estrellas":  0,
-                                              "precio":  1350,
-                                              "codigo":  "CZ1"
-                                          }
-                                      ]
-                     },
-                     {
-                         "id":  "crucero-caribe",
-                         "region":  "cruceros",
-                         "nombre":  "Caribe sin visa en crucero",
-                         "pais":  "MSC Opera · Islas Vírgenes, St. Maarten y St. Kitts",
-                         "foto":  "1599640842225-85d111c60e6b",
-                         "credito":  "Georgy Trofimov",
-                         "tags":  [
-                                      "Crucero"
-                                  ],
-                         "desc":  "Volás a Punta Cana, pasás 3 noches en hotel y navegás 7 noches desde La Romana por Virgin Gorda, St. Maarten, St. Kitts, Tortola e Isla Catalina.",
-                         "incluye":  "Vuelo desde Ezeiza + 3 noches de hotel + crucero de 7 noches + traslados",
-                         "salida":  "Salida 30/01/2027 desde Buenos Aires, regreso 10/02",
-                         "duracion":  "10 noches",
-                         "opciones":  [
-                                          {
-                                              "tipo":  "Cabina interior",
-                                              "hotel":  "MSC Opera · vuelo LATAM · 30/01 al 10/02/2027",
-                                              "estrellas":  0,
-                                              "precio":  2850,
-                                              "codigo":  "CZ2"
-                                          },
-                                          {
-                                              "tipo":  "Cabina exterior",
-                                              "hotel":  "MSC Opera · vuelo LATAM · 30/01 al 10/02/2027",
-                                              "estrellas":  0,
-                                              "precio":  3095,
-                                              "codigo":  "CZ3"
-                                          }
-                                      ]
-                     },
-                     {
-                         "id":  "crucero-transatlantico",
-                         "region":  "cruceros",
-                         "nombre":  "Transatlántico a Europa",
-                         "pais":  "Majestic Princess · Río, Canarias, Casablanca y Londres",
-                         "foto":  "1688269910608-e3c65eb4ac3a",
-                         "credito":  "Steve Davison",
-                         "tags":  [
-                                      "Crucero"
-                                  ],
-                         "desc":  "22 noches cruzando el Atlántico desde Buenos Aires: Montevideo, Río de Janeiro, Gran Canaria, Lanzarote, Tenerife, Casablanca, La Coruña y llegada a Southampton (Londres).",
-                         "incluye":  "Crucero de 22 noches + impuestos portuarios (el vuelo de regreso se cotiza aparte)",
-                         "salida":  "Embarque 09/02/2027 en el puerto de Buenos Aires, llegada a Londres el 03/03",
-                         "duracion":  "22 noches",
-                         "opciones":  [
-                                          {
-                                              "tipo":  "Cabina interior",
-                                              "hotel":  "Majestic Princess · 9 de febrero al 3 de marzo 2027 · solo ida",
-                                              "estrellas":  0,
-                                              "precio":  1790,
-                                              "codigo":  "CZ4"
-                                          }
-                                      ]
-                     }
+
                  ]
 }
 </script>
@@ -1837,54 +1744,46 @@
   let D = JSON.parse($('#data').textContent);
   const wa = msg => 'https://wa.me/' + D.whatsapp + '?text=' + encodeURIComponent(msg);
 
-  const sorted = d => d.opciones.slice().sort((a, b) => a.precio - b.precio);
-  const cheapest = d => Math.min(...d.opciones.map(o => o.precio));
   const cheapestOpt = d => d.opciones.reduce((a, b) => (b.precio < a.precio ? b : a));
   const isAI = o => /all inclusive/i.test(o.tipo);
-  const aiFrom = d => { const a = d.opciones.filter(isAI).map(o => o.precio); return a.length ? Math.min(...a) : null; };
   const stars = n => n ? ' ' + '★'.repeat(n) : '';
-  const tagsOf = d => d.tags.concat(d.opciones.some(isAI) ? ['All inclusive'] : [],
-    d.opciones.some(o => /apartamento|estudio/i.test(o.tipo)) ? ['Apartamento'] : []);
   const dur = d => d.duracion || '7 noches';
-  const nOpts = d => d.opciones.length + (d.opciones.length === 1 ? ' opción' : ' opciones');
-  const msgFor = d => 'Hola MM Viajes! 👋 Me interesa ' + d.nombre + ' (' + dur(d) + ') desde ' + fmt(cheapest(d)) +
-    ' por persona (ref. ' + cheapestOpt(d).codigo + '). ¿Me pasás todas las opciones y disponibilidad?';
+  const byPrice = (a, b) => a.o.precio - b.o.precio;
   const optMsg = (d, o) => 'Hola MM Viajes! 👋 Me interesa ' + d.nombre +
     (d.duracion ? ': ' + o.tipo + ' (' + o.hotel + ')' : ', 7 noches: ' + o.tipo.toLowerCase() + ' en ' + o.hotel) +
     ' desde ' + fmt(o.precio) + ' por persona (ref. ' + o.codigo + ').' + (d.duracion ? '' : ' ' + d.salida + '.') + ' ¿Me pasás disponibilidad?';
+  const moreMsg = (d, o) => 'Hola MM Viajes! 👋 Quiero ver todas las opciones de alojamiento para ' + d.nombre + ' (' + dur(d) + '). Vi el paquete ref. ' + o.codigo + '.';
 
-  const options = d => '<ul class="opts">' + sorted(d).map((o, i) =>
-    '<li><a class="js-wa" href="#cotizar" data-msg="' + esc(optMsg(d, o)) + '">' +
-    '<span class="ot"><b>' + esc(o.tipo) + '</b><small>' + esc(o.hotel) + stars(o.estrellas) + '</small></span>' +
-    '<span class="op">' + (i === 0 ? '<small>desde</small>' : '') + fmt(o.precio) + '</span></a></li>').join('') + '</ul>';
-
-  function card(d) {
-    const badges = (d.destacado ? '<span class="badge hot">Destacado</span>' : '') +
-      (d.opciones.some(isAI) ? '<span class="badge">All inclusive</span>' : '') +
-      d.tags.slice(0, 1).map(t => '<span class="badge">' + esc(t) + '</span>').join('');
-    return '<article class="card rv" data-tags="' + esc(tagsOf(d).join('|')) + '">' +
+  // Una tarjeta por paquete: el hotel, el régimen y el precio de esa opción.
+  function pkgCard(d, o, i) {
+    const badges = (i === 0 ? '<span class="badge hot">El más barato</span>' : '') +
+      (isAI(o) ? '<span class="badge">All inclusive</span>' : '') +
+      (d.tags && d.tags[0] ? '<span class="badge">' + esc(d.tags[0]) + '</span>' : '');
+    return '<article class="card rv">' +
       '<div class="media"><img src="' + pic(d.foto, 720, 540) + '" srcset="' + pic(d.foto, 480, 360) + ' 480w, ' + pic(d.foto, 720, 540) + ' 720w, ' + pic(d.foto, 960, 720) + ' 960w"' +
       ' sizes="(min-width:1024px) 370px, (min-width:640px) 50vw, 100vw" width="720" height="540" loading="lazy" decoding="async" alt="' + esc(d.nombre + ', ' + d.pais) + '">' +
       '<div class="badges">' + badges + '</div><div class="place"><h3>' + esc(d.nombre) + '</h3><span>' + esc(d.pais) + '</span></div></div>' +
       '<div class="body"><p>' + esc(d.desc) + '</p>' +
-      '<div class="price"><div><small>' + esc(dur(d)) + ' · por persona desde</small><b>' + fmt(cheapest(d)) + '</b><small>' + esc(d.incluye) + '</small></div>' +
-      '<div class="stay">' + nOpts(d) + '<br>' + (d.region === 'cruceros' ? 'de cabina' : 'de alojamiento') + '</div></div>' +
-      '<p class="opts-h">Elegí tu opción (por persona, base doble):</p>' + options(d) +
+      '<div class="pk"><b>' + esc(o.hotel.split(' · ')[0]) + stars(o.estrellas) + '</b><small>' + esc([o.tipo].concat(o.hotel.split(' · ').slice(1)).join(' · ')) + '</small></div>' +
+      '<div class="price"><div><small>' + esc(dur(d)) + ' · por persona desde</small><b>' + fmt(o.precio) + '</b><small>' + esc(d.incluye) + '</small></div></div>' +
       '<p class="when">' + icon('plane') + esc(d.salida) + '</p>' +
-      '<a class="btn btn-grad js-wa" href="#cotizar" data-msg="' + esc(msgFor(d)) + '">Quiero este viaje</a></div></article>';
+      '<a class="btn btn-grad js-wa" href="#cotizar" data-msg="' + esc(optMsg(d, o)) + '">Quiero este viaje</a>' +
+      '<a class="more-opts js-wa" href="#cotizar" data-msg="' + esc(moreMsg(d, o)) + '">Ver otras opciones en ' + esc(d.nombre) + '</a>' +
+      '</div></article>';
   }
 
-  function feature(f) {
-    if (!f) { $('#feature').closest('section').hidden = true; return; }
-    const from = cheapest(f), ai = aiFrom(f);
-    const msg = 'Hola MM Viajes! 👋 Quiero la oferta destacada: ' + f.nombre + ', 7 noches desde ' + fmt(from) + ' por persona (ref. ' + cheapestOpt(f).codigo + ')' +
-      (ai ? ' (all inclusive desde ' + fmt(ai) + ')' : '') + '. ¿Qué fechas tienen disponibles?';
-    $('#feature').innerHTML = '<img src="' + pic(f.fotoDestacado || f.foto, 1400, 1000) + '" width="1400" height="1000" loading="lazy" decoding="async" alt="' + esc('Playa de ' + f.nombre) + '">' +
-      '<div class="in"><span class="pill">★ Oferta destacada</span><h2>' + esc(f.nombre) + ' · 7 noches</h2>' +
-      '<p>' + esc(f.incluye) + '. ' + esc(f.salida) + '. Hoteles, apartamentos y all inclusive para elegir.</p>' +
-      '<div class="fprice"><small>desde</small><span class="big">' + fmt(from) + '</span><small>por persona en base doble' +
-      (ai ? ' · all inclusive desde ' + fmt(ai) : '') + '</small></div>' +
-      '<a class="btn btn-grad js-wa" href="#cotizar" data-msg="' + esc(msg) + '">Quiero esta oferta</a></div>';
+  const region = r => D.destinos.filter(d => d.region === r && d.opciones && d.opciones.length);
+  // El mejor de cada destino (ordenados por precio) y, si faltan, se completa con las siguientes opciones más baratas.
+  function topN(list, n) {
+    const chosen = list.map(d => ({ d, o: cheapestOpt(d) })).sort(byPrice).slice(0, n);
+    const used = new Set(chosen.map(x => x.o.codigo));
+    const extra = list.flatMap(d => d.opciones.map(o => ({ d, o }))).filter(x => !used.has(x.o.codigo)).sort(byPrice);
+    while (chosen.length < n && extra.length) chosen.push(extra.shift());
+    return chosen.sort(byPrice);
+  }
+  function fillGrid(id, items) {
+    $('#' + id).innerHTML = items.map((x, i) => pkgCard(x.d, x.o, i)).join('');
+    $('#' + id).closest('section').hidden = !items.length;
   }
 
   // Oferta más barata del día: la opción con vuelo + alojamiento de menor precio, de cualquier destino.
@@ -1902,45 +1801,22 @@
       ' desde ' + fmt(o.precio) + ' por persona (ref. ' + o.codigo + '). ¿Me pasás disponibilidad?';
   }
 
-  // Vuelos más baratos de hoy: solo vuelo ida y vuelta, ordenados por precio.
-  const FLIGHTS_SHOWN = 6;
+  // Vuelos: el más barato de cada región, ordenados por precio.
+  const REGIONES_VUELO = { brasil: 'Brasil', caribe: 'Caribe', europa: 'Europa', asia: 'Asia', eeuu: 'Estados Unidos' };
   const flightMsg = v => 'Hola MM Viajes! 👋 Me interesa el vuelo ida y vuelta Buenos Aires – ' + v.destino + ' (' + v.fechas + ', ' + v.aerolinea + ', ' + v.escalas +
     ') desde ' + fmt(v.precio) + ' por persona (ref. ' + v.codigo + '). ¿Me pasás disponibilidad?';
 
   function flights() {
-    const list = (D.vuelos || []).slice().sort((a, b) => a.precio - b.precio);
+    const best = {};
+    (D.vuelos || []).forEach(v => { if (REGIONES_VUELO[v.region] && (!best[v.region] || v.precio < best[v.region].precio)) best[v.region] = v; });
+    const list = Object.values(best).sort((a, b) => a.precio - b.precio);
     $('#vuelos').hidden = !list.length;
     $('#flights').innerHTML = list.map((v, i) =>
-      '<a class="fl js-wa rv" href="#cotizar"' + (i >= FLIGHTS_SHOWN ? ' hidden' : '') + ' data-msg="' + esc(flightMsg(v)) + '">' +
+      '<a class="fl js-wa rv" href="#cotizar" data-msg="' + esc(flightMsg(v)) + '">' +
       '<span class="pl">' + icon('plane') + '</span>' +
-      '<span class="rt"><b>' + esc(v.destino) + '</b><small>' + esc(v.aerolinea + ' · ' + v.escalas) + '</small><small>' + esc(v.fechas) + '</small></span>' +
+      '<span class="rt"><span class="rg">' + esc(REGIONES_VUELO[v.region]) + '</span><b>' + esc(v.destino) + '</b><small>' + esc(v.aerolinea + ' · ' + v.escalas) + '</small><small>' + esc(v.fechas) + '</small></span>' +
       '<span class="fp">' + (i === 0 ? '<small class="tag">El más barato</small>' : '') + '<b>' + fmt(v.precio) + '</b><small>ida y vuelta</small></span></a>').join('');
-    const more = $('#flights-more');
-    more.hidden = list.length <= FLIGHTS_SHOWN;
-    more.textContent = 'Ver los ' + list.length + ' vuelos';
     $('#vuelos-sub').textContent = 'Actualizado al ' + D.actualizado + '.';
-  }
-  $('#flights-more').addEventListener('click', e => {
-    $$('#flights .fl[hidden]').forEach(a => { a.hidden = false; a.classList.add('in'); });
-    e.currentTarget.hidden = true;
-  });
-
-  function cruises() {
-    const list = (D.cruceros || []).filter(c => c.opciones && c.opciones.length).sort((a, b) => cheapest(a) - cheapest(b));
-    $('#cruceros').hidden = !list.length;
-    $('#nav-cruceros').hidden = !list.length;
-    $('#grid-cruceros').innerHTML = list.map(card).join('');
-    return list;
-  }
-
-  function table(car, rest, cru) {
-    const row = d => { const ai = aiFrom(d); return '<div class="trow"><div class="d"><b>' + esc(d.nombre) + '</b><small>' + nOpts(d) + ' · ' + esc(dur(d)) + '</small></div>' +
-      '<div class="v p">' + fmt(cheapest(d)) + '</div>' +
-      (ai ? '<div class="v">' + fmt(ai) + '</div>' : '<div class="v c">—</div>') + '</div>'; };
-    $('#tabla').innerHTML = '<div class="trow h"><div>Destino</div><div class="v">Desde p/p</div><div class="v">All inclusive</div></div>' +
-      '<div class="tgroup">Caribe</div>' + car.map(row).join('') +
-      '<div class="tgroup">Resto del mundo</div>' + rest.map(row).join('') +
-      (cru.length ? '<div class="tgroup">Cruceros desde Buenos Aires</div>' + cru.map(row).join('') : '');
   }
 
   function bindWa() {
@@ -1957,25 +1833,22 @@
   const reveal = () => $$('.rv:not(.in)').forEach(el => io ? io.observe(el) : el.classList.add('in'));
 
   function render() {
-    const byPrice = (a, b) => cheapest(a) - cheapest(b);
-    const car = D.destinos.filter(d => d.region === 'caribe').sort(byPrice);
-    const rest = D.destinos.filter(d => d.region !== 'caribe').sort(byPrice);
-    $('#grid-caribe').innerHTML = car.map(card).join('');
-    $('#rail').innerHTML = rest.map(card).join('');
-    feature(D.destinos.find(d => d.destacado));
+    const car = region('caribe').map(d => ({ d, o: cheapestOpt(d) })).sort(byPrice);
+    const bra = topN(region('brasil'), 7);
+    const eur = topN(region('europa'), 5);
+    fillGrid('grid-caribe', car);
+    fillGrid('grid-brasil', bra);
+    fillGrid('grid-europa', eur);
     flights();
-    const cru = cruises();
-    table(car, rest, cru);
-
     dealOfDay();
     $$('[data-fill="actualizado"]').forEach(e => { e.textContent = D.actualizado; });
-    $('#precios-sub').textContent = 'Actualizado al ' + D.actualizado + '.';
 
-    const opt = d => '<option>' + esc(d.nombre) + '</option>';
+    const opt = x => '<option>' + esc(x.d.nombre) + '</option>';
+    const uniq = arr => arr.filter((x, i) => arr.findIndex(y => y.d.id === x.d.id) === i);
     $('#q-dest').innerHTML = '<optgroup label="Caribe">' + car.map(opt).join('') + '</optgroup>' +
-      '<optgroup label="Resto del mundo">' + rest.map(opt).join('') + '</optgroup>' +
-      (cru.length ? '<optgroup label="Cruceros">' + cru.map(opt).join('') + '</optgroup>' : '') +
-      '<option>Solo vuelo</option><option>Otro destino / todavía no sé</option>';
+      '<optgroup label="Brasil">' + uniq(bra).map(opt).join('') + '</optgroup>' +
+      '<optgroup label="Europa">' + uniq(eur).map(opt).join('') + '</optgroup>' +
+      '<option>Solo vuelo</option><option>Asistencia al viajero (Assist Card)</option><option>Otro destino / todavía no sé</option>';
 
     const n = D.whatsapp.replace(/\D/g, '');
     if (n.length === 13 && n.startsWith('549')) $('#wa-num').textContent = '+54 9 ' + n.slice(3, 6) + ' ' + n.slice(6, 9) + '-' + n.slice(9);
@@ -1985,24 +1858,16 @@
       $('#ig span').textContent = '@' + u;
     }
 
-    $('#legal').textContent = 'Tarifas de referencia por persona en base doble, en dólares estadounidenses, para paquetes de 7 noches con vuelo ida y vuelta (Tailandia y los eventos, como la Fórmula 1, indican sus noches y fechas en cada opción), según las tarifas de nuestros operadores al ' + D.actualizado +
-      '. Salvo que se indique otra fecha: ' + D.referencia + '. Los vuelos son tarifas ida y vuelta por persona para un adulto, sin hotel; los cruceros, por persona en cabina doble con impuestos portuarios. Incluyen los impuestos del aéreo; pueden aplicarse impuestos y tasas hoteleras, gastos de reserva, gastos administrativos y percepciones impositivas según el medio de pago. ' +
-      'Sujetas a disponibilidad y a cambios sin previo aviso. La tarifa final se confirma al momento de reservar.';
-    const names = [...new Set(EXTRA_CREDITS.concat(D.destinos.concat(cru).flatMap(d => [d.credito, d.creditoDestacado])).filter(Boolean))];
+    $('#legal').textContent = 'Tarifas de referencia por persona en base doble, en dólares estadounidenses, para paquetes con vuelo ida y vuelta y 7 noches de hotel (los circuitos indican sus noches), según las tarifas de nuestros operadores al ' + D.actualizado +
+      '. Salvo que se indique otra fecha: ' + D.referencia + '. Los vuelos son tarifas ida y vuelta por persona para un adulto, sin hotel. Incluyen los impuestos del aéreo; pueden aplicarse impuestos y tasas hoteleras, gastos de reserva, gastos administrativos y percepciones impositivas según el medio de pago. ' +
+      'La asistencia al viajero Assist Card se cotiza aparte según el destino, los días y la edad de cada pasajero. Sujetas a disponibilidad y a cambios sin previo aviso. La tarifa final se confirma al momento de reservar.';
+    const shown = car.concat(bra, eur).map(x => x.d);
+    const names = [...new Set(EXTRA_CREDITS.concat(shown.map(d => d.credito)).filter(Boolean))];
     $('#credits').innerHTML = 'Fotos: <a href="https://unsplash.com/?utm_source=mm_viajes&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a> · ' + names.map(esc).join(', ') + '.';
 
-    $$('#caribe .chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.f === '*'));
     bindWa();
     reveal();
   }
-
-  // Filtros del Caribe
-  $$('#caribe .chip').forEach(c => c.addEventListener('click', () => {
-    $$('#caribe .chip').forEach(x => x.setAttribute('aria-pressed', x === c));
-    const f = c.dataset.f;
-    const want = f.split('|');
-    $$('#grid-caribe .card').forEach(k => { k.hidden = f !== '*' && !k.dataset.tags.split('|').some(t => want.includes(t)); });
-  }));
 
   // Cotizador
   const mes = $('#q-mes');
