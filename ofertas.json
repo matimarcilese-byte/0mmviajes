@@ -1,5 +1,5 @@
 {
-    "actualizado":  "13 de octubre de 2026",
+    "actualizado":  "15 de octubre de 2026",
     "referencia":  "Salida 11 de enero 2027 desde Buenos Aires, regreso 18 de enero",
     "whatsapp":  "5492236321023",
     "instagram":  "matimarcileseviajes",
@@ -25,28 +25,28 @@
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Hotel Maracas",
                                               "estrellas":  2,
-                                              "precio":  1147,
+                                              "precio":  1157,
                                               "codigo":  "PC1"
                                           },
                                           {
                                               "tipo":  "Apartamento",
                                               "hotel":  "Bávaro Green",
                                               "estrellas":  3,
-                                              "precio":  1195,
+                                              "precio":  1205,
                                               "codigo":  "PC2"
                                           },
                                           {
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "Hotel \u0026 Casino Flamboyan",
                                               "estrellas":  3,
-                                              "precio":  1236,
+                                              "precio":  1247,
                                               "codigo":  "PC3"
                                           },
                                           {
                                               "tipo":  "All inclusive",
                                               "hotel":  "VIK Arena Blanca",
                                               "estrellas":  3,
-                                              "precio":  1777,
+                                              "precio":  1788,
                                               "codigo":  "PC4"
                                           },
                                           {
@@ -60,7 +60,7 @@
                                               "tipo":  "Media pensión",
                                               "hotel":  "AC Hotel by Marriott",
                                               "estrellas":  4,
-                                              "precio":  2249,
+                                              "precio":  2260,
                                               "codigo":  "PC6"
                                           }
                                       ]
@@ -84,42 +84,42 @@
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "Hotel Corales del Mar",
                                               "estrellas":  2,
-                                              "precio":  944,
+                                              "precio":  1133,
                                               "codigo":  "CA1"
                                           },
                                           {
                                               "tipo":  "Apartamento",
                                               "hotel":  "Casa Turística Los Doce Apóstoles",
                                               "estrellas":  2,
-                                              "precio":  1034,
+                                              "precio":  1223,
                                               "codigo":  "CA2"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Hotel Aguamarina",
                                               "estrellas":  0,
-                                              "precio":  1038,
+                                              "precio":  1226,
                                               "codigo":  "CA3"
                                           },
                                           {
                                               "tipo":  "Media pensión",
                                               "hotel":  "Pop Art Hotel",
                                               "estrellas":  3,
-                                              "precio":  1132,
+                                              "precio":  1321,
                                               "codigo":  "CA4"
                                           },
                                           {
                                               "tipo":  "All inclusive",
                                               "hotel":  "Hotel Cartagena Plaza",
                                               "estrellas":  4,
-                                              "precio":  1410,
+                                              "precio":  1603,
                                               "codigo":  "CA5"
                                           },
                                           {
                                               "tipo":  "Pensión completa",
                                               "hotel":  "La Gran Vía Hotel",
                                               "estrellas":  3,
-                                              "precio":  1473,
+                                              "precio":  1633,
                                               "codigo":  "CA6"
                                           }
                                       ]
@@ -150,7 +150,7 @@
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "Red Ground Village",
                                               "estrellas":  2,
-                                              "precio":  1316,
+                                              "precio":  1267,
                                               "codigo":  "SA2"
                                           },
                                           {
@@ -164,21 +164,21 @@
                                               "tipo":  "Media pensión",
                                               "hotel":  "Hotel Isla Bonita",
                                               "estrellas":  3,
-                                              "precio":  1490,
+                                              "precio":  1440,
                                               "codigo":  "SA4"
                                           },
                                           {
                                               "tipo":  "Pensión completa",
                                               "hotel":  "Hotel Isla Bonita",
                                               "estrellas":  3,
-                                              "precio":  1578,
+                                              "precio":  1529,
                                               "codigo":  "SA5"
                                           },
                                           {
                                               "tipo":  "All inclusive",
                                               "hotel":  "Decameron San Luis",
                                               "estrellas":  3,
-                                              "precio":  1718,
+                                              "precio":  1667,
                                               "codigo":  "SA6"
                                           }
                                       ]
@@ -202,42 +202,42 @@
                                               "tipo":  "Apartamento",
                                               "hotel":  "Seroe Patrishi 11",
                                               "estrellas":  2,
-                                              "precio":  1395,
+                                              "precio":  1481,
                                               "codigo":  "AR1"
                                           },
                                           {
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "Victoria City Hotel",
                                               "estrellas":  2,
-                                              "precio":  1626,
+                                              "precio":  1713,
                                               "codigo":  "AR2"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Victoria City Hotel",
                                               "estrellas":  2,
-                                              "precio":  1781,
+                                              "precio":  1851,
                                               "codigo":  "AR3"
                                           },
                                           {
                                               "tipo":  "All inclusive",
                                               "hotel":  "Divi Village Golf \u0026 Beach Resort",
                                               "estrellas":  4,
-                                              "precio":  3537,
+                                              "precio":  3624,
                                               "codigo":  "AR4"
                                           },
                                           {
                                               "tipo":  "Media pensión",
                                               "hotel":  "Eagle Aruba Resort",
                                               "estrellas":  4,
-                                              "precio":  3772,
+                                              "precio":  3858,
                                               "codigo":  "AR5"
                                           },
                                           {
                                               "tipo":  "Pensión completa",
                                               "hotel":  "Eagle Aruba Resort",
                                               "estrellas":  4,
-                                              "precio":  3996,
+                                              "precio":  4078,
                                               "codigo":  "AR6"
                                           }
                                       ]
@@ -262,35 +262,35 @@
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "Eve\u0027s Residence",
                                               "estrellas":  2,
-                                              "precio":  1763,
+                                              "precio":  1891,
                                               "codigo":  "CU1"
                                           },
                                           {
                                               "tipo":  "Apartamento",
                                               "hotel":  "Mirador Apartments",
                                               "estrellas":  0,
-                                              "precio":  1829,
+                                              "precio":  1957,
                                               "codigo":  "CU2"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Delynne Boutique Hotel",
                                               "estrellas":  3,
-                                              "precio":  1953,
+                                              "precio":  2082,
                                               "codigo":  "CU3"
                                           },
                                           {
                                               "tipo":  "All inclusive",
                                               "hotel":  "Kunuku Resort All Inclusive",
                                               "estrellas":  3,
-                                              "precio":  2630,
+                                              "precio":  2755,
                                               "codigo":  "CU4"
                                           },
                                           {
                                               "tipo":  "Pensión completa",
                                               "hotel":  "Sonesta Livingstone",
                                               "estrellas":  2,
-                                              "precio":  3047,
+                                              "precio":  3142,
                                               "codigo":  "CU5"
                                           }
                                       ]
@@ -313,14 +313,14 @@
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "Hotel Banana Boutique",
                                               "estrellas":  3,
-                                              "precio":  1600,
+                                              "precio":  1469,
                                               "codigo":  "PD1"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "BALAM Playa",
                                               "estrellas":  3,
-                                              "precio":  1636,
+                                              "precio":  1504,
                                               "codigo":  "PD2"
                                           },
                                           {
@@ -334,21 +334,21 @@
                                               "tipo":  "Pensión completa",
                                               "hotel":  "Hotel MX Portal Maya",
                                               "estrellas":  4,
-                                              "precio":  1883,
+                                              "precio":  1757,
                                               "codigo":  "PD4"
                                           },
                                           {
                                               "tipo":  "All inclusive",
                                               "hotel":  "BlueBay Grand Esmeralda",
                                               "estrellas":  5,
-                                              "precio":  2202,
+                                              "precio":  2064,
                                               "codigo":  "PD5"
                                           },
                                           {
                                               "tipo":  "Media pensión",
                                               "hotel":  "Petit Lafitte",
                                               "estrellas":  4,
-                                              "precio":  2471,
+                                              "precio":  2313,
                                               "codigo":  "PD6"
                                           }
                                       ]
@@ -371,28 +371,28 @@
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "Hotel Kavia Cancún",
                                               "estrellas":  3,
-                                              "precio":  1656,
+                                              "precio":  1527,
                                               "codigo":  "CN1"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Kabah Boutique Hotel",
                                               "estrellas":  4,
-                                              "precio":  1721,
+                                              "precio":  1588,
                                               "codigo":  "CN2"
                                           },
                                           {
                                               "tipo":  "All inclusive",
                                               "hotel":  "Dos Playas Faranda",
                                               "estrellas":  3,
-                                              "precio":  2046,
+                                              "precio":  1916,
                                               "codigo":  "CN3"
                                           },
                                           {
                                               "tipo":  "Media pensión",
                                               "hotel":  "Krystal Urban Cancún",
                                               "estrellas":  4,
-                                              "precio":  2150,
+                                              "precio":  1923,
                                               "codigo":  "CN4"
                                           },
                                           {
@@ -466,14 +466,14 @@
                                               "tipo":  "All inclusive (solo adultos)",
                                               "hotel":  "HM Alma de Bayahibe",
                                               "estrellas":  4,
-                                              "precio":  2775,
+                                              "precio":  2782,
                                               "codigo":  "BY3"
                                           },
                                           {
                                               "tipo":  "All inclusive familiar",
                                               "hotel":  "Viva Wyndham Dominicus Palace",
                                               "estrellas":  4,
-                                              "precio":  3465,
+                                              "precio":  3626,
                                               "codigo":  "BY4"
                                           }
                                       ]
@@ -665,21 +665,21 @@
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "Hostal Aravaca Garden",
                                               "estrellas":  3,
-                                              "precio":  2049,
+                                              "precio":  2017,
                                               "codigo":  "MD1"
                                           },
                                           {
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "NH Alcorcón",
                                               "estrellas":  4,
-                                              "precio":  2132,
+                                              "precio":  2143,
                                               "codigo":  "MD2"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Complutense",
                                               "estrellas":  2,
-                                              "precio":  2161,
+                                              "precio":  2130,
                                               "codigo":  "MD3"
                                           }
                                       ]
@@ -702,14 +702,14 @@
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "Ibis Copacabana Posto 5 · vuelo con equipaje de mano",
                                               "estrellas":  3,
-                                              "precio":  1158,
+                                              "precio":  1160,
                                               "codigo":  "RJ1"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Augustos Copacabana · vuelo con equipaje de mano",
                                               "estrellas":  3,
-                                              "precio":  1199,
+                                              "precio":  1195,
                                               "codigo":  "RJ2"
                                           },
                                           {
@@ -737,14 +737,14 @@
                                               "tipo":  "Media pensión",
                                               "hotel":  "Othon Palace Copacabana · vuelo con equipaje de mano",
                                               "estrellas":  4,
-                                              "precio":  1992,
+                                              "precio":  2013,
                                               "codigo":  "RJ6"
                                           },
                                           {
                                               "tipo":  "Pensión completa",
                                               "hotel":  "Ritz Copacabana · vuelo con equipaje de mano",
                                               "estrellas":  4,
-                                              "precio":  2264,
+                                              "precio":  2284,
                                               "codigo":  "RJ7"
                                           },
                                           {
@@ -779,16 +779,16 @@
                          "opciones":  [
                                           {
                                               "tipo":  "Pousada con desayuno",
-                                              "hotel":  "Destino Búzios Pousada · 9 al 16/1 · vuelo con equipaje de mano",
+                                              "hotel":  "Destino Búzios Pousada · 10 al 17/1 · vuelo con equipaje de mano",
                                               "estrellas":  3,
-                                              "precio":  1317,
+                                              "precio":  1073,
                                               "codigo":  "BZ1"
                                           },
                                           {
                                               "tipo":  "Apartamento de 1 dormitorio",
-                                              "hotel":  "Villa Valentina Pousada · 9 al 16/1 · vuelo con equipaje de mano",
+                                              "hotel":  "Villa Valentina Pousada · 10 al 17/1 · vuelo con equipaje de mano",
                                               "estrellas":  0,
-                                              "precio":  1325,
+                                              "precio":  1111,
                                               "codigo":  "BZ2"
                                           },
                                           {
@@ -800,9 +800,9 @@
                                           },
                                           {
                                               "tipo":  "Media pensión",
-                                              "hotel":  "Pousada Dos Reis · 9 al 16/1 · vuelo con equipaje de mano",
+                                              "hotel":  "Pousada Dos Reis · 10 al 17/1 · vuelo con equipaje de mano",
                                               "estrellas":  0,
-                                              "precio":  1604,
+                                              "precio":  1393,
                                               "codigo":  "BZ4"
                                           },
                                           {
@@ -814,9 +814,9 @@
                                           },
                                           {
                                               "tipo":  "Pensión completa",
-                                              "hotel":  "Costa do Sol Boutique, Praia Brava · 9 al 16/1 · vuelo con equipaje de mano",
+                                              "hotel":  "Costa do Sol Boutique, Praia Brava · 10 al 17/1 · vuelo con equipaje de mano",
                                               "estrellas":  0,
-                                              "precio":  2311,
+                                              "precio":  2082,
                                               "codigo":  "BZ6"
                                           },
                                           {
@@ -853,7 +853,7 @@
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Duplo Charme Boutique Hotel",
                                               "estrellas":  3,
-                                              "precio":  2149,
+                                              "precio":  2314,
                                               "codigo":  "LS1"
                                           }
                                       ]
@@ -876,7 +876,7 @@
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "Hotel Lyon",
                                               "estrellas":  1,
-                                              "precio":  2192,
+                                              "precio":  2198,
                                               "codigo":  "BC1"
                                           }
                                       ]
@@ -899,7 +899,7 @@
                                               "tipo":  "Habitación doble, solo alojamiento",
                                               "hotel":  "Marco Laura B\u0026B",
                                               "estrellas":  2,
-                                              "precio":  2298,
+                                              "precio":  2464,
                                               "codigo":  "RM1"
                                           }
                                       ]
@@ -922,7 +922,7 @@
                                               "tipo":  "Estudio, solo alojamiento",
                                               "hotel":  "Séjours \u0026 Affaires Pantin Charles de Gaulle",
                                               "estrellas":  0,
-                                              "precio":  2463,
+                                              "precio":  2464,
                                               "codigo":  "PA1"
                                           }
                                       ]
@@ -961,7 +961,7 @@
                        "aerolinea":  "LATAM",
                        "escalas":  "2 escalas",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  1001
+                       "precio":  1077
                    },
                    {
                        "codigo":  "VU2",
@@ -971,7 +971,7 @@
                        "aerolinea":  "LATAM",
                        "escalas":  "2 escalas",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  1499
+                       "precio":  1369
                    },
                    {
                        "codigo":  "VU3",
@@ -981,17 +981,17 @@
                        "aerolinea":  "LATAM",
                        "escalas":  "2 escalas",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  1103
+                       "precio":  1190
                    },
                    {
                        "codigo":  "VU4",
                        "region":  "caribe",
                        "destino":  "Cartagena",
                        "iata":  "CTG",
-                       "aerolinea":  "JetSMART",
-                       "escalas":  "1 escala",
+                       "aerolinea":  "LATAM",
+                       "escalas":  "2 escalas",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  879
+                       "precio":  1067
                    },
                    {
                        "codigo":  "VU5",
@@ -1001,27 +1001,27 @@
                        "aerolinea":  "LATAM",
                        "escalas":  "2 escalas",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  1096
+                       "precio":  1046
                    },
                    {
                        "codigo":  "VU6",
                        "region":  "caribe",
                        "destino":  "Curazao",
                        "iata":  "CUR",
-                       "aerolinea":  "Copa Airlines",
+                       "aerolinea":  "Avianca",
                        "escalas":  "1 escala",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  1425
+                       "precio":  1697
                    },
                    {
                        "codigo":  "VU7",
                        "region":  "brasil",
                        "destino":  "Río de Janeiro",
                        "iata":  "RIO",
-                       "aerolinea":  "LATAM",
-                       "escalas":  "1 escala",
+                       "aerolinea":  "Emirates",
+                       "escalas":  "directo",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  477
+                       "precio":  464
                    },
                    {
                        "codigo":  "VU8",
@@ -1031,7 +1031,7 @@
                        "aerolinea":  "LATAM",
                        "escalas":  "directo",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  361
+                       "precio":  418
                    },
                    {
                        "codigo":  "VU9",
@@ -1048,10 +1048,10 @@
                        "region":  "brasil",
                        "destino":  "Maceió",
                        "iata":  "MCZ",
-                       "aerolinea":  "LATAM",
-                       "escalas":  "1 escala",
+                       "aerolinea":  "Gol",
+                       "escalas":  "2 escalas",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  654
+                       "precio":  619
                    },
                    {
                        "codigo":  "VU11",
@@ -1061,7 +1061,7 @@
                        "aerolinea":  "LATAM",
                        "escalas":  "1 escala",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  1120
+                       "precio":  1138
                    },
                    {
                        "codigo":  "VU12",
@@ -1069,19 +1069,19 @@
                        "destino":  "Orlando",
                        "iata":  "MCO",
                        "aerolinea":  "United Airlines",
-                       "escalas":  "2 escalas",
+                       "escalas":  "1 escala",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  1245
+                       "precio":  1292
                    },
                    {
                        "codigo":  "VU13",
                        "region":  "eeuu",
                        "destino":  "Nueva York",
                        "iata":  "NYC",
-                       "aerolinea":  "Arajet",
-                       "escalas":  "1 escala",
+                       "aerolinea":  "American Airlines",
+                       "escalas":  "directo",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  1472
+                       "precio":  1493
                    },
                    {
                        "codigo":  "VU14",
@@ -1091,7 +1091,7 @@
                        "aerolinea":  "LATAM",
                        "escalas":  "1 escala",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  1809
+                       "precio":  1800
                    },
                    {
                        "codigo":  "VU17",
@@ -1101,14 +1101,14 @@
                        "aerolinea":  "LATAM",
                        "escalas":  "1 escala",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  1852
+                       "precio":  2017
                    },
                    {
                        "codigo":  "VU18",
                        "region":  "europa",
                        "destino":  "Barcelona",
                        "iata":  "BCN",
-                       "aerolinea":  "LATAM",
+                       "aerolinea":  "Lufthansa",
                        "escalas":  "2 escalas",
                        "fechas":  "11 al 18 de enero 2027",
                        "precio":  1946
@@ -1118,10 +1118,10 @@
                        "region":  "europa",
                        "destino":  "Roma",
                        "iata":  "ROM",
-                       "aerolinea":  "LATAM",
+                       "aerolinea":  "Iberia",
                        "escalas":  "1 escala",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  2036
+                       "precio":  2058
                    },
                    {
                        "codigo":  "VU20",
@@ -1131,7 +1131,7 @@
                        "aerolinea":  "Iberia",
                        "escalas":  "1 escala",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  2191
+                       "precio":  2190
                    },
                    {
                        "codigo":  "VU21",
@@ -1141,7 +1141,7 @@
                        "aerolinea":  "United Airlines",
                        "escalas":  "1 escala",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  2055
+                       "precio":  1909
                    },
                    {
                        "codigo":  "VU22",
@@ -1158,30 +1158,30 @@
                        "region":  "asia",
                        "destino":  "Singapur",
                        "iata":  "SIN",
-                       "aerolinea":  "Air France",
-                       "escalas":  "1 escala",
+                       "aerolinea":  "Turkish Airlines",
+                       "escalas":  "2 escalas",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  2995
+                       "precio":  2650
                    },
                    {
                        "codigo":  "VU24",
                        "region":  "asia",
                        "destino":  "Tokio",
                        "iata":  "TYO",
-                       "aerolinea":  "KLM",
+                       "aerolinea":  "Emirates",
                        "escalas":  "1 escala",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  2529
+                       "precio":  2627
                    },
                    {
                        "codigo":  "VU25",
                        "region":  "asia",
                        "destino":  "Bangkok",
                        "iata":  "BKK",
-                       "aerolinea":  "Ethiopian Airlines",
-                       "escalas":  "1 escala",
+                       "aerolinea":  "United Airlines",
+                       "escalas":  "2 escalas",
                        "fechas":  "11 al 18 de enero 2027",
-                       "precio":  2861
+                       "precio":  2845
                    }
                ],
     "cruceros":  [
