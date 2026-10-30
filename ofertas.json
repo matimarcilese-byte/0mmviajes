@@ -1,5 +1,5 @@
 {
-    "actualizado":  "26 de octubre de 2026",
+    "actualizado":  "30 de octubre de 2026",
     "referencia":  "Salida 11 de enero 2027 desde Buenos Aires, regreso 18 de enero",
     "whatsapp":  "5492236321023",
     "instagram":  "matimarcileseviajes",
@@ -422,14 +422,14 @@
                                               "tipo":  "Circuito en hoteles 3★",
                                               "hotel":  "Jardín Salvaje",
                                               "estrellas":  3,
-                                              "precio":  2016,
+                                              "precio":  1980,
                                               "codigo":  "CR1"
                                           },
                                           {
                                               "tipo":  "Circuito en hoteles 4★",
                                               "hotel":  "Jardín Salvaje",
                                               "estrellas":  4,
-                                              "precio":  2464,
+                                              "precio":  2420,
                                               "codigo":  "CR2"
                                           }
                                       ]
@@ -533,7 +533,7 @@
                                               "tipo":  "Resort con media pensión (ago–dic 2026)",
                                               "hotel":  "Catussaba Resort",
                                               "estrellas":  0,
-                                              "precio":  1232,
+                                              "precio":  1210,
                                               "codigo":  "SV2"
                                           },
                                           {
@@ -570,7 +570,7 @@
                                               "tipo":  "All inclusive · Costa do Sauipe (ago–dic 2026)",
                                               "hotel":  "Sauipe Terra",
                                               "estrellas":  0,
-                                              "precio":  1758,
+                                              "precio":  1727,
                                               "codigo":  "BA1"
                                           },
                                           {
@@ -584,7 +584,7 @@
                                               "tipo":  "All inclusive · Praia do Forte (ago–dic 2026)",
                                               "hotel":  "Iberostar Waves Bahía",
                                               "estrellas":  0,
-                                              "precio":  2005,
+                                              "precio":  1969,
                                               "codigo":  "BA3"
                                           }
                                       ]
@@ -946,7 +946,7 @@
                                               "tipo":  "Circuito Portugal y norte de España · 13 noches",
                                               "hotel":  "2 noches en Río y 11 de circuito, con desayuno · vuelo GOL",
                                               "estrellas":  0,
-                                              "precio":  3976,
+                                              "precio":  3905,
                                               "codigo":  "PT1"
                                           }
                                       ]
