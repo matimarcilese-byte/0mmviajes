@@ -366,7 +366,7 @@
   }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"TravelAgency","name":"MM Viajes","slogan":"Tu próxima aventura","url":"https://matimarcilese-byte.github.io/0mmviajes/","logo":"https://matimarcilese-byte.github.io/0mmviajes/logo.jpg","image":"https://matimarcilese-byte.github.io/0mmviajes/logo.jpg","telephone":"+5492236321023","sameAs":["https://www.instagram.com/matimarcileseviajes/"],"areaServed":"AR"}
+{"@context":"https://schema.org","@type":"TravelAgency","name":"MM Viajes","slogan":"Tu próxima aventura","url":"https://matimarcilese-byte.github.io/0mmviajes/","logo":"https://matimarcilese-byte.github.io/0mmviajes/logo.jpg","image":"https://matimarcilese-byte.github.io/0mmviajes/logo.jpg","telephone":"+5492314551744","sameAs":["https://www.instagram.com/matimarcileseviajes/"],"areaServed":"AR"}
 </script>
 </head>
 <body>
@@ -464,7 +464,7 @@
         <p>El paquete más conveniente de cada destino, con vuelo desde Buenos Aires y 7 noches de hotel. Si querés otro tipo de alojamiento, te pasamos todas las opciones por WhatsApp.</p>
       </div>
       <div class="grid" id="grid-caribe">
-        <noscript><p>Para ver las ofertas activá JavaScript o escribinos por WhatsApp al +54 9 223 632-1023.</p></noscript>
+        <noscript><p>Para ver las ofertas activá JavaScript o escribinos por WhatsApp al +54 9 2314 55-1744.</p></noscript>
       </div>
     </div>
   </section>
@@ -549,7 +549,7 @@
       <div>
         <h3>Contacto</h3>
         <div class="flinks">
-          <a class="js-wa" href="#cotizar" data-msg="Hola MM Viajes! 👋 Quiero hacer una consulta."><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span id="wa-num">+54 9 223 632-1023</span></a>
+          <a class="js-wa" href="#cotizar" data-msg="Hola MM Viajes! 👋 Quiero hacer una consulta."><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span id="wa-num">+54 9 2314 55-1744</span></a>
           <a id="ig" href="https://www.instagram.com/matimarcileseviajes/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg><span>@matimarcileseviajes</span></a>
           <button id="share" type="button"><svg class="ic" aria-hidden="true"><use href="#i-share"/></svg><span>Compartir esta web</span></button>
         </div>
@@ -571,7 +571,7 @@
 {
     "actualizado":  "10 de octubre de 2026",
     "referencia":  "Salida 11 de enero 2027 desde Buenos Aires, regreso 18 de enero",
-    "whatsapp":  "5492236321023",
+    "whatsapp":  "5492314551744",
     "instagram":  "matimarcileseviajes",
     "destinos":  [
                      {
@@ -1883,7 +1883,7 @@
       '<option>Solo vuelo</option><option>Asistencia al viajero (Assist Card)</option><option>Otro destino / todavía no sé</option>';
 
     const n = D.whatsapp.replace(/\D/g, '');
-    if (n.length === 13 && n.startsWith('549')) $('#wa-num').textContent = '+54 9 ' + n.slice(3, 6) + ' ' + n.slice(6, 9) + '-' + n.slice(9);
+    if (n.length === 13 && n.startsWith('549')) $('#wa-num').textContent = '+54 9 ' + n.slice(3, 7) + ' ' + n.slice(7, 9) + '-' + n.slice(9);
     if (D.instagram) {
       const u = D.instagram.replace('@', '');
       $('#ig').href = 'https://www.instagram.com/' + encodeURIComponent(u) + '/';
