@@ -496,14 +496,14 @@
                                               "tipo":  "Hotel",
                                               "hotel":  "Hotel Évora",
                                               "estrellas":  0,
-                                              "precio":  885,
+                                              "precio":  920,
                                               "codigo":  "FL1"
                                           },
                                           {
                                               "tipo":  "Resort (promo 7x6)",
                                               "hotel":  "Costão do Santinho",
                                               "estrellas":  0,
-                                              "precio":  1995,
+                                              "precio":  2075,
                                               "codigo":  "FL2"
                                           }
                                       ]
@@ -526,7 +526,7 @@
                                               "tipo":  "Hotel (temporada baja)",
                                               "hotel":  "Gran Hotel Stella Maris",
                                               "estrellas":  0,
-                                              "precio":  1077,
+                                              "precio":  1120,
                                               "codigo":  "SV1"
                                           },
                                           {
@@ -540,14 +540,14 @@
                                               "tipo":  "Resort (17 al 24 de enero)",
                                               "hotel":  "Catussaba Resort",
                                               "estrellas":  0,
-                                              "precio":  1423,
+                                              "precio":  1480,
                                               "codigo":  "SV3"
                                           },
                                           {
                                               "tipo":  "Hotel (10 al 17 de enero)",
                                               "hotel":  "Gran Hotel Stella Maris",
                                               "estrellas":  0,
-                                              "precio":  1554,
+                                              "precio":  1616,
                                               "codigo":  "SV4"
                                           }
                                       ]
@@ -577,7 +577,7 @@
                                               "tipo":  "All inclusive · Imbassaí (temporada baja 2027)",
                                               "hotel":  "Grand Palladium Imbassaí",
                                               "estrellas":  5,
-                                              "precio":  1585,
+                                              "precio":  1648,
                                               "codigo":  "BA2"
                                           },
                                           {
@@ -607,42 +607,42 @@
                                               "tipo":  "Hotel",
                                               "hotel":  "Acqua Inn",
                                               "estrellas":  0,
-                                              "precio":  1660,
+                                              "precio":  1726,
                                               "codigo":  "MC1"
                                           },
                                           {
                                               "tipo":  "Hotel",
                                               "hotel":  "Acqua Prime",
                                               "estrellas":  0,
-                                              "precio":  1809,
+                                              "precio":  1881,
                                               "codigo":  "MC2"
                                           },
                                           {
                                               "tipo":  "Hotel",
                                               "hotel":  "Acqua Suites Maceió",
                                               "estrellas":  0,
-                                              "precio":  1863,
+                                              "precio":  1938,
                                               "codigo":  "MC3"
                                           },
                                           {
                                               "tipo":  "Hotel frente al mar",
                                               "hotel":  "Maceió Mar Hotel",
                                               "estrellas":  0,
-                                              "precio":  2034,
+                                              "precio":  2115,
                                               "codigo":  "MC4"
                                           },
                                           {
                                               "tipo":  "All inclusive",
                                               "hotel":  "Pratagy Beach Resort",
                                               "estrellas":  0,
-                                              "precio":  2646,
+                                              "precio":  2752,
                                               "codigo":  "MC5"
                                           },
                                           {
                                               "tipo":  "All inclusive",
                                               "hotel":  "Maceió Mar Resort",
                                               "estrellas":  0,
-                                              "precio":  3407,
+                                              "precio":  3543,
                                               "codigo":  "MC6"
                                           }
                                       ]
@@ -716,21 +716,21 @@
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Mercure Barra da Tijuca",
                                               "estrellas":  0,
-                                              "precio":  1266,
+                                              "precio":  1317,
                                               "codigo":  "RJ3"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Olinda Rio Hotel, Copacabana",
                                               "estrellas":  0,
-                                              "precio":  1434,
+                                              "precio":  1491,
                                               "codigo":  "RJ4"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Pestana Rio Atlântica, Copacabana",
                                               "estrellas":  0,
-                                              "precio":  1772,
+                                              "precio":  1843,
                                               "codigo":  "RJ5"
                                           },
                                           {
@@ -751,14 +751,14 @@
                                               "tipo":  "Hotel de lujo con desayuno",
                                               "hotel":  "Emiliano Rio, Copacabana",
                                               "estrellas":  0,
-                                              "precio":  3505,
+                                              "precio":  3645,
                                               "codigo":  "RJ8"
                                           },
                                           {
                                               "tipo":  "Hotel de lujo solo alojamiento",
                                               "hotel":  "Fasano Rio de Janeiro, Ipanema",
                                               "estrellas":  0,
-                                              "precio":  4495,
+                                              "precio":  4675,
                                               "codigo":  "RJ9"
                                           }
                                       ]
@@ -795,7 +795,7 @@
                                               "tipo":  "Pousada con desayuno",
                                               "hotel":  "Pousada Dos Reis · 10 al 17/1",
                                               "estrellas":  0,
-                                              "precio":  1602,
+                                              "precio":  1666,
                                               "codigo":  "BZ3"
                                           },
                                           {
@@ -809,7 +809,7 @@
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Ilha Branca Inn · 10 al 17/1",
                                               "estrellas":  0,
-                                              "precio":  1681,
+                                              "precio":  1748,
                                               "codigo":  "BZ5"
                                           },
                                           {
@@ -823,14 +823,14 @@
                                               "tipo":  "Hotel boutique con desayuno",
                                               "hotel":  "Vila da Santa Hotel Boutique \u0026 Spa · 10 al 17/1",
                                               "estrellas":  0,
-                                              "precio":  2697,
+                                              "precio":  2805,
                                               "codigo":  "BZ7"
                                           },
                                           {
                                               "tipo":  "Resort con desayuno",
                                               "hotel":  "Zendaya Resort Beach Sport \u0026 Spa · 10 al 17/1",
                                               "estrellas":  0,
-                                              "precio":  5193,
+                                              "precio":  5401,
                                               "codigo":  "BZ8"
                                           }
                                       ]
