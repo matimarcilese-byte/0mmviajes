@@ -1184,6 +1184,78 @@
                        "precio":  1892
                    }
                ],
+    "grupales":  [
+                     {
+                         "id":  "grupal-riviera-maya",
+                         "region":  "caribe",
+                         "nombre":  "Cancún y Playa del Carmen",
+                         "pais":  "México, con stop en Panamá",
+                         "foto":  "1749147074412-9b9d8249ad30",
+                         "credito":  "Peregrine Photography",
+                         "desc":  "4 noches all inclusive en Playa del Carmen, 4 en Cancún y 3 en Panamá, con visita al Canal y city tour.",
+                         "duracion":  "12 días · 11 noches",
+                         "incluye":  "Vuelos Copa con carry on, hoteles, traslados, excursiones y asistencia al viajero",
+                         "salida":  "Salidas 2027: 5 de marzo, 22 de abril, 3 de junio, 14 de agosto y 25 de septiembre",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "All inclusive 4★ en Playa del Carmen",
+                                              "hotel":  "Riu Lupita, Aloft Cancún y Victoria Suites Panamá",
+                                              "estrellas":  4,
+                                              "precio":  3590,
+                                              "codigo":  "GR1"
+                                          },
+                                          {
+                                              "tipo":  "All inclusive 5★ en Playa del Carmen",
+                                              "hotel":  "Riu Playacar, Aloft Cancún y Victoria Suites Panamá",
+                                              "estrellas":  5,
+                                              "precio":  3989,
+                                              "codigo":  "GR2"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "grupal-europa-apasionante",
+                         "region":  "europa",
+                         "nombre":  "Europa Apasionante",
+                         "pais":  "España, Francia, Suiza, Italia y Mónaco",
+                         "foto":  "1498307833015-e7b400441eb8",
+                         "credito":  "Rebe Adelaida",
+                         "desc":  "Madrid, París, Venecia, Roma, Florencia, la Costa Azul y Barcelona, en bus con guía en español.",
+                         "duracion":  "18 días · 16 noches",
+                         "incluye":  "Vuelo directo Iberia con valija, hoteles con desayuno, bus con guía, visitas y asistencia al viajero",
+                         "salida":  "Salidas 3 de marzo y 7 de abril de 2027 a este precio (también 12 de mayo, 9 de junio, 14 de julio y 11 de agosto)",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "Hoteles turista 3★ con desayuno",
+                                              "hotel":  "16 noches en Madrid, Burdeos, París, Aosta, Venecia, Roma, Florencia, Costa Azul y Barcelona",
+                                              "estrellas":  3,
+                                              "precio":  5858,
+                                              "codigo":  "GR3"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "grupal-dubai",
+                         "region":  "asia",
+                         "nombre":  "Dubái y Abu Dhabi",
+                         "pais":  "Emiratos Árabes Unidos",
+                         "foto":  "1512453979798-5ea266f8880c",
+                         "credito":  "David Rodrigo",
+                         "desc":  "7 noches en Dubái y 3 en Abu Dhabi, con safari en 4x4 por el desierto, cena en barco dhow y la Gran Mezquita.",
+                         "duracion":  "12 días · 10 noches",
+                         "incluye":  "Vuelos Emirates con valija, hoteles con desayuno, traslados, excursiones y asistencia al viajero",
+                         "salida":  "Salidas 2027: 12 de enero y 21 de marzo",
+                         "opciones":  [
+                                          {
+                                              "tipo":  "Hoteles 4★ con desayuno buffet",
+                                              "hotel":  "7 noches en Dubái y 3 en Abu Dhabi",
+                                              "estrellas":  4,
+                                              "precio":  3863,
+                                              "codigo":  "GR4"
+                                          }
+                                      ]
+                     }
+                 ],
     "cruceros":  [
 
                  ]

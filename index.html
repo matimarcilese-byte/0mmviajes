@@ -390,7 +390,7 @@
   <div class="wrap bar">
     <a href="#" class="logo" aria-label="MM Viajes, ir al inicio"><img src="logo.jpg" alt="" width="62" height="44"><span>MM Viajes</span></a>
     <nav class="links" aria-label="Secciones">
-      <a href="#caribe">Caribe</a><a href="#brasil">Brasil</a><a href="#europa">Europa</a><a href="#vuelos">Vuelos</a><a href="#asistencia">Asistencia</a><a href="#cotizar">Cotizar</a>
+      <a href="#caribe">Caribe</a><a href="#brasil">Brasil</a><a href="#europa">Europa</a><a href="#grupales">Grupales</a><a href="#vuelos">Vuelos</a><a href="#asistencia">Asistencia</a><a href="#cotizar">Cotizar</a>
     </nav>
     <a class="btn btn-wa js-wa" href="#cotizar" data-msg="Hola MM Viajes! 👋 Quiero cotizar un viaje."><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
   </div>
@@ -503,6 +503,18 @@
         <p>Vuelo ida y vuelta y hotel en las ciudades más pedidas, desde la opción más económica de cada una.</p>
       </div>
       <div class="grid" id="grid-europa"></div>
+    </div>
+  </section>
+
+  <section class="sec pt0" id="grupales" aria-labelledby="grupales-t" hidden>
+    <div class="wrap">
+      <div class="head rv">
+        <span class="kicker">Viajes grupales</span>
+        <h2 id="grupales-t">Viajá en grupo por el mundo</h2>
+        <p>Salidas grupales desde Ezeiza con vuelos, hoteles, excursiones y asistencia al viajero. Incluyen el traslado hasta Ezeiza desde el interior de Buenos Aires, Córdoba, Santa Fe, Entre Ríos y La Pampa.</p>
+      </div>
+      <div class="grid" id="grid-grupales"></div>
+      <p class="note">Precio final por persona en base doble o triple, con impuestos. Si viajás solo, podés compartir habitación con otro pasajero del grupo o pagar la habitación single. Un coordinador acompaña al grupo desde Argentina cuando la salida llega a 20 pasajeros.</p>
     </div>
   </section>
 
@@ -1831,6 +1843,40 @@
       ' desde ' + fmt(o.precio) + ' por persona (ref. ' + o.codigo + '). ¿Me pasás disponibilidad?';
   }
 
+  // Viajes grupales: el más barato de cada región (Caribe, Europa y Asia o África), en ese orden.
+  const GRUPAL_SLOTS = [['caribe', 'Caribe'], ['europa', 'Europa'], ['asia', 'Asia y África']];
+  const grupalSlot = r => (r === 'africa' || r === 'asia' ? 'asia' : r);
+  const grpMsg = (d, o) => 'Hola MM Viajes! 👋 Me interesa el viaje grupal "' + d.nombre + '" (' + d.duracion + ', ' + o.tipo.charAt(0).toLowerCase() + o.tipo.slice(1) + ') desde ' + fmt(o.precio) +
+    ' por persona (ref. ' + o.codigo + '). ' + d.salida + '. ¿Me pasás disponibilidad?';
+  const grpMoreMsg = (d, o) => 'Hola MM Viajes! 👋 Quiero el itinerario completo y las fechas del viaje grupal "' + d.nombre + '" (ref. ' + o.codigo + ').';
+
+  function grpCard(d, o, label) {
+    return '<article class="card rv">' +
+      '<div class="media"><img src="' + pic(d.foto, 720, 540) + '" srcset="' + pic(d.foto, 480, 360) + ' 480w, ' + pic(d.foto, 720, 540) + ' 720w, ' + pic(d.foto, 960, 720) + ' 960w"' +
+      ' sizes="(min-width:1024px) 370px, (min-width:640px) 50vw, 100vw" width="720" height="540" loading="lazy" decoding="async" alt="' + esc(d.nombre + ', ' + d.pais) + '">' +
+      '<div class="badges"><span class="badge hot">Salida grupal</span><span class="badge">' + esc(label) + '</span></div>' +
+      '<div class="place"><h3>' + esc(d.nombre) + '</h3><span>' + esc(d.pais) + '</span></div></div>' +
+      '<div class="body"><p>' + esc(d.desc) + '</p>' +
+      '<div class="pk"><b>' + esc(o.tipo) + '</b><small>' + esc(o.hotel) + '</small></div>' +
+      '<div class="price"><div><small>' + esc(d.duracion) + ' · por persona desde</small><b>' + fmt(o.precio) + '</b><small>' + esc(d.incluye) + '</small></div></div>' +
+      '<p class="when">' + icon('plane') + esc(d.salida) + '</p>' +
+      '<a class="btn btn-grad js-wa" href="#cotizar" data-msg="' + esc(grpMsg(d, o)) + '">Quiero este viaje</a>' +
+      '<a class="more-opts js-wa" href="#cotizar" data-msg="' + esc(grpMoreMsg(d, o)) + '">Ver itinerario y fechas</a>' +
+      '</div></article>';
+  }
+
+  function grupales() {
+    const all = (D.grupales || []).filter(d => d.opciones && d.opciones.length);
+    const list = GRUPAL_SLOTS.map(([slot, label]) => {
+      const best = all.filter(d => grupalSlot(d.region) === slot).map(d => ({ d, o: cheapestOpt(d) })).sort(byPrice)[0];
+      return best ? { ...best, label } : null;
+    }).filter(Boolean);
+    $('#grid-grupales').innerHTML = list.map(x => grpCard(x.d, x.o, x.label)).join('');
+    $('#grupales').hidden = !list.length;
+    $$('.links a[href="#grupales"]').forEach(a => { a.hidden = !list.length; });
+    return list;
+  }
+
   // Vuelos: los 2 más baratos de cada región (10 en total), ordenados por precio. Si a una región le faltan, se completa con los siguientes más baratos.
   const VUELOS_POR_REGION = 2, VUELOS_TOTAL = 10;
   const REGIONES_VUELO = { brasil: 'Brasil', caribe: 'Caribe', europa: 'Europa', asia: 'Asia', eeuu: 'Estados Unidos' };
@@ -1872,6 +1918,7 @@
     fillGrid('grid-caribe', car);
     fillGrid('grid-brasil', bra);
     fillGrid('grid-europa', eur);
+    const grp = grupales();
     flights();
     dealOfDay();
     $$('[data-fill="actualizado"]').forEach(e => { e.textContent = D.actualizado; });
@@ -1881,6 +1928,7 @@
     $('#q-dest').innerHTML = '<optgroup label="Caribe">' + car.map(opt).join('') + '</optgroup>' +
       '<optgroup label="Brasil">' + uniq(bra).map(opt).join('') + '</optgroup>' +
       '<optgroup label="Europa">' + uniq(eur).map(opt).join('') + '</optgroup>' +
+      (grp.length ? '<optgroup label="Viajes grupales">' + grp.map(x => '<option>' + esc('Grupal ' + x.d.nombre) + '</option>').join('') + '</optgroup>' : '') +
       '<option>Solo vuelo</option><option>Asistencia al viajero (Assist Card)</option><option>Otro destino / todavía no sé</option>';
 
     const n = D.whatsapp.replace(/\D/g, '');
@@ -1892,9 +1940,9 @@
     }
 
     $('#legal').textContent = 'Tarifas de referencia por persona en base doble, en dólares estadounidenses, para paquetes con vuelo ida y vuelta y 7 noches de hotel (los circuitos indican sus noches), según las tarifas de nuestros operadores al ' + D.actualizado +
-      '. Salvo que se indique otra fecha: ' + D.referencia + '. Los vuelos son tarifas ida y vuelta por persona para un adulto, sin hotel. Incluyen los impuestos del aéreo; pueden aplicarse impuestos y tasas hoteleras, gastos de reserva, gastos administrativos y percepciones impositivas según el medio de pago. ' +
+      '. Salvo que se indique otra fecha: ' + D.referencia + '. Los viajes grupales indican sus días, noches y salidas: su precio es final por persona en base doble o triple, incluye el traslado hasta Ezeiza desde el interior de Buenos Aires, Córdoba, Santa Fe, Entre Ríos y La Pampa (si no lo usás, se descuenta), y no incluye tasas turísticas que se pagan en destino. Los vuelos son tarifas ida y vuelta por persona para un adulto, sin hotel. Incluyen los impuestos del aéreo; pueden aplicarse impuestos y tasas hoteleras, gastos de reserva, gastos administrativos y percepciones impositivas según el medio de pago. ' +
       'La asistencia al viajero Assist Card se cotiza aparte según el destino, los días y la edad de cada pasajero. Sujetas a disponibilidad y a cambios sin previo aviso. La tarifa final se confirma al momento de reservar.';
-    const shown = car.concat(bra, eur).map(x => x.d);
+    const shown = car.concat(bra, eur, grp).map(x => x.d);
     const names = [...new Set(EXTRA_CREDITS.concat(shown.map(d => d.credito)).filter(Boolean))];
     $('#credits').innerHTML = 'Fotos: <a href="https://unsplash.com/?utm_source=mm_viajes&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a> · ' + names.map(esc).join(', ') + '. Foto de la viajera en el aeropuerto: Assist Card.';
 
