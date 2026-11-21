@@ -474,7 +474,7 @@
     <div class="wrap">
       <div class="head rv">
         <span class="kicker">Brasil</span>
-        <h2 id="brasil-t">Los 7 mejores paquetes a Brasil</h2>
+        <h2 id="brasil-t">Los 3 mejores paquetes a Brasil</h2>
         <p>Playa, ciudad y all inclusive, con vuelo y 7 noches de hotel, del más barato al más caro.</p>
       </div>
       <div class="grid" id="grid-brasil"></div>
@@ -1913,7 +1913,7 @@
 
   function render() {
     const car = region('caribe').map(d => ({ d, o: cheapestOpt(d) })).sort(byPrice);
-    const bra = topN(region('brasil'), 7);
+    const bra = topN(region('brasil'), 3);
     const eur = topN(region('europa'), 5);
     fillGrid('grid-caribe', car);
     fillGrid('grid-brasil', bra);
