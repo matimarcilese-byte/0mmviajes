@@ -1,5 +1,5 @@
 {
-    "actualizado":  "21 de noviembre de 2026",
+    "actualizado":  "23 de noviembre de 2026",
     "referencia":  "Cada destino muestra su salida más barata de 7 noches desde Buenos Aires",
     "whatsapp":  "5492314551744",
     "instagram":  "matimarcileseviajes",
@@ -51,9 +51,9 @@
                                           },
                                           {
                                               "tipo":  "Pensión completa",
-                                              "hotel":  "Sunscape Coco Punta Cana",
-                                              "estrellas":  4,
-                                              "precio":  1368,
+                                              "hotel":  "Grand Bávaro Princess",
+                                              "estrellas":  5,
+                                              "precio":  1983,
                                               "codigo":  "PC5"
                                           },
                                           {
@@ -78,13 +78,13 @@
                                   ],
                          "desc":  "Ciudad amurallada, calles de colores y playas caribeñas a minutos del centro.",
                          "incluye":  "Vuelo ida y vuelta + 7 noches",
-                         "salida":  "Salida 10/05/2027 desde Buenos Aires, regreso 17/05",
+                         "salida":  "Salida 08/03/2027 desde Buenos Aires, regreso 15/03",
                          "opciones":  [
                                           {
                                               "tipo":  "Hotel solo alojamiento",
-                                              "hotel":  "Hostel VIM",
-                                              "estrellas":  0,
-                                              "precio":  747,
+                                              "hotel":  "Shanty Guest House",
+                                              "estrellas":  1,
+                                              "precio":  697,
                                               "codigo":  "CA1"
                                           },
                                           {
@@ -112,14 +112,14 @@
                                               "tipo":  "All inclusive",
                                               "hotel":  "Hotel Cartagena Plaza",
                                               "estrellas":  4,
-                                              "precio":  1141,
+                                              "precio":  1159,
                                               "codigo":  "CA5"
                                           },
                                           {
                                               "tipo":  "Pensión completa",
                                               "hotel":  "La Gran Vía Hotel",
                                               "estrellas":  3,
-                                              "precio":  1199,
+                                              "precio":  1154,
                                               "codigo":  "CA6"
                                           }
                                       ]
@@ -143,42 +143,42 @@
                                               "tipo":  "Apartamento",
                                               "hotel":  "Charming 2-bedroom Apartment in Punta Hansa",
                                               "estrellas":  2,
-                                              "precio":  789,
+                                              "precio":  787,
                                               "codigo":  "SA1"
                                           },
                                           {
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "Posada Cultural Bahía Sonora",
                                               "estrellas":  0,
-                                              "precio":  738,
+                                              "precio":  727,
                                               "codigo":  "SA2"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Casa Sun Day Hotel Boutique",
                                               "estrellas":  2,
-                                              "precio":  819,
+                                              "precio":  804,
                                               "codigo":  "SA3"
                                           },
                                           {
                                               "tipo":  "Media pensión",
                                               "hotel":  "Hotel Isla Bonita",
                                               "estrellas":  4,
-                                              "precio":  1021,
+                                              "precio":  988,
                                               "codigo":  "SA4"
                                           },
                                           {
                                               "tipo":  "Pensión completa",
                                               "hotel":  "Hotel Isla Bonita",
                                               "estrellas":  4,
-                                              "precio":  1119,
+                                              "precio":  1080,
                                               "codigo":  "SA5"
                                           },
                                           {
                                               "tipo":  "All inclusive",
                                               "hotel":  "Decameron San Luis",
                                               "estrellas":  3,
-                                              "precio":  1274,
+                                              "precio":  1146,
                                               "codigo":  "SA6"
                                           }
                                       ]
@@ -196,48 +196,48 @@
                                   ],
                          "desc":  "Aguas turquesas, playas tranquilas y atardeceres que no se olvidan.",
                          "incluye":  "Vuelo ida y vuelta + 7 noches",
-                         "salida":  "Salida 07/06/2027 desde Buenos Aires, regreso 14/06",
+                         "salida":  "Salida 31/05/2027 desde Buenos Aires, regreso 07/06",
                          "opciones":  [
                                           {
                                               "tipo":  "Apartamento",
                                               "hotel":  "Aruba Cunucu Residence",
                                               "estrellas":  3,
-                                              "precio":  1088,
+                                              "precio":  1075,
                                               "codigo":  "AR1"
                                           },
                                           {
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "Juanedu Suites",
-                                              "estrellas":  0,
-                                              "precio":  1147,
+                                              "estrellas":  3,
+                                              "precio":  1038,
                                               "codigo":  "AR2"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Aruba Blue Village",
                                               "estrellas":  0,
-                                              "precio":  1292,
+                                              "precio":  1189,
                                               "codigo":  "AR3"
                                           },
                                           {
                                               "tipo":  "All inclusive",
                                               "hotel":  "Divi Dutch Village Beach Resort",
                                               "estrellas":  4,
-                                              "precio":  2762,
+                                              "precio":  2731,
                                               "codigo":  "AR4"
                                           },
                                           {
                                               "tipo":  "Media pensión",
                                               "hotel":  "Eagle Aruba Resort",
                                               "estrellas":  3,
-                                              "precio":  2707,
+                                              "precio":  2663,
                                               "codigo":  "AR5"
                                           },
                                           {
                                               "tipo":  "Pensión completa",
                                               "hotel":  "Eagle Aruba Resort",
                                               "estrellas":  3,
-                                              "precio":  2965,
+                                              "precio":  2914,
                                               "codigo":  "AR6"
                                           }
                                       ]
@@ -256,41 +256,41 @@
                                   ],
                          "desc":  "Las casitas de colores de Willemstad, playas escondidas y snorkel de primer nivel.",
                          "incluye":  "Vuelo ida y vuelta + 7 noches",
-                         "salida":  "Salida 10/05/2027 desde Buenos Aires, regreso 17/05",
+                         "salida":  "Salida 12/04/2027 desde Buenos Aires, regreso 19/04",
                          "opciones":  [
                                           {
                                               "tipo":  "Hotel solo alojamiento",
-                                              "hotel":  "Mirador Apartments",
-                                              "estrellas":  0,
-                                              "precio":  1003,
+                                              "hotel":  "Eve's Residence",
+                                              "estrellas":  2,
+                                              "precio":  889,
                                               "codigo":  "CU1"
                                           },
                                           {
                                               "tipo":  "Apartamento",
                                               "hotel":  "Mirador Apartments",
                                               "estrellas":  0,
-                                              "precio":  1003,
+                                              "precio":  972,
                                               "codigo":  "CU2"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
-                                              "hotel":  "DeLynne Resort Curaçao",
+                                              "hotel":  "Delynne Boutique Hotel",
                                               "estrellas":  3,
-                                              "precio":  1139,
+                                              "precio":  1084,
                                               "codigo":  "CU3"
                                           },
                                           {
                                               "tipo":  "All inclusive",
                                               "hotel":  "Kunuku Resort All Inclusive",
                                               "estrellas":  4,
-                                              "precio":  1730,
+                                              "precio":  1822,
                                               "codigo":  "CU4"
                                           },
                                           {
                                               "tipo":  "Pensión completa",
                                               "hotel":  "Sonesta Livingstone",
                                               "estrellas":  4,
-                                              "precio":  2241,
+                                              "precio":  2191,
                                               "codigo":  "CU5"
                                           }
                                       ]
@@ -313,42 +313,42 @@
                                               "tipo":  "Hotel solo alojamiento",
                                               "hotel":  "AKBAL Playa - Beach Zone",
                                               "estrellas":  2,
-                                              "precio":  832,
+                                              "precio":  831,
                                               "codigo":  "PD1"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "BALAM Playa",
                                               "estrellas":  2,
-                                              "precio":  848,
+                                              "precio":  846,
                                               "codigo":  "PD2"
                                           },
                                           {
                                               "tipo":  "Apartamento",
                                               "hotel":  "AKBAL Playa - Beach Zone",
                                               "estrellas":  2,
-                                              "precio":  832,
+                                              "precio":  831,
                                               "codigo":  "PD3"
                                           },
                                           {
                                               "tipo":  "Pensión completa",
                                               "hotel":  "Tukan Hotel Playa del Carmen",
                                               "estrellas":  4,
-                                              "precio":  1072,
+                                              "precio":  1076,
                                               "codigo":  "PD4"
                                           },
                                           {
                                               "tipo":  "All inclusive",
-                                              "hotel":  "BlueBay Grand Esmeralda",
-                                              "estrellas":  5,
-                                              "precio":  1388,
+                                              "hotel":  "Allegro Playacar",
+                                              "estrellas":  0,
+                                              "precio":  1318,
                                               "codigo":  "PD5"
                                           },
                                           {
                                               "tipo":  "Media pensión",
                                               "hotel":  "Mahekal Beach Resort",
                                               "estrellas":  4,
-                                              "precio":  1496,
+                                              "precio":  1416,
                                               "codigo":  "PD6"
                                           }
                                       ]
@@ -365,41 +365,41 @@
                                   ],
                          "desc":  "La zona hotelera frente al Caribe, Isla Mujeres y la mejor noche de México.",
                          "incluye":  "Vuelo ida y vuelta + 7 noches",
-                         "salida":  "Salida 12/04/2027 desde Buenos Aires, regreso 19/04",
+                         "salida":  "Salida 08/03/2027 desde Buenos Aires, regreso 15/03",
                          "opciones":  [
                                           {
                                               "tipo":  "Hotel solo alojamiento",
-                                              "hotel":  "Labná 57",
-                                              "estrellas":  3,
-                                              "precio":  915,
+                                              "hotel":  "Ambiance Suites Cancún",
+                                              "estrellas":  4,
+                                              "precio":  866,
                                               "codigo":  "CN1"
                                           },
                                           {
                                               "tipo":  "Hotel con desayuno",
-                                              "hotel":  "Kabah Boutique Hotel",
-                                              "estrellas":  4,
-                                              "precio":  999,
+                                              "hotel":  "LolHa Hotel Boutique",
+                                              "estrellas":  0,
+                                              "precio":  872,
                                               "codigo":  "CN2"
                                           },
                                           {
                                               "tipo":  "All inclusive",
-                                              "hotel":  "Flamingo Cancún All Inclusive",
-                                              "estrellas":  4,
-                                              "precio":  1323,
+                                              "hotel":  "Hotel Dos Playas Faranda",
+                                              "estrellas":  3,
+                                              "precio":  1367,
                                               "codigo":  "CN3"
                                           },
                                           {
                                               "tipo":  "Media pensión",
                                               "hotel":  "Krystal Urban Cancún & Beach Club",
                                               "estrellas":  4,
-                                              "precio":  1367,
+                                              "precio":  1287,
                                               "codigo":  "CN4"
                                           },
                                           {
                                               "tipo":  "Pensión completa",
-                                              "hotel":  "Cancún Bay All Inclusive Hotel",
-                                              "estrellas":  4,
-                                              "precio":  1623,
+                                              "hotel":  "Hotel Emporio Cancún",
+                                              "estrellas":  5,
+                                              "precio":  1903,
                                               "codigo":  "CN5"
                                           }
                                       ]
@@ -663,9 +663,9 @@
                          "opciones":  [
                                           {
                                               "tipo":  "Hotel solo alojamiento",
-                                              "hotel":  "Hostal Aravaca Garden",
-                                              "estrellas":  3,
-                                              "precio":  1233,
+                                              "hotel":  "Hostal Avenida 57",
+                                              "estrellas":  2,
+                                              "precio":  1234,
                                               "codigo":  "MD1"
                                           },
                                           {
@@ -853,7 +853,7 @@
                                               "tipo":  "Hotel con desayuno",
                                               "hotel":  "Pensão Praça da Figueira",
                                               "estrellas":  3,
-                                              "precio":  1394,
+                                              "precio":  1454,
                                               "codigo":  "LS1"
                                           }
                                       ]
@@ -870,13 +870,13 @@
                                   ],
                          "desc":  "Gaudí, la Rambla y el Mediterráneo, en una ciudad para recorrer a pie.",
                          "incluye":  "Vuelo ida y vuelta + 7 noches",
-                         "salida":  "Salida 05/04/2027 desde Buenos Aires, regreso 12/04",
+                         "salida":  "Salida 10/05/2027 desde Buenos Aires, regreso 17/05",
                          "opciones":  [
                                           {
                                               "tipo":  "Hotel solo alojamiento",
-                                              "hotel":  "Hostalet de Barcelona",
-                                              "estrellas":  1,
-                                              "precio":  1659,
+                                              "hotel":  "Hostal River",
+                                              "estrellas":  2,
+                                              "precio":  1583,
                                               "codigo":  "BC1"
                                           }
                                       ]
@@ -897,9 +897,9 @@
                          "opciones":  [
                                           {
                                               "tipo":  "Habitación doble, con desayuno",
-                                              "hotel":  "Mondo House",
-                                              "estrellas":  0,
-                                              "precio":  1492,
+                                              "hotel":  "Alba Hotel Torre Maura",
+                                              "estrellas":  3,
+                                              "precio":  1476,
                                               "codigo":  "RM1"
                                           }
                                       ]
@@ -980,18 +980,18 @@
                        "iata":  "AUA",
                        "aerolinea":  "LATAM",
                        "escalas":  "1 escala",
-                       "fechas":  "10 al 17 de mayo 2027",
-                       "precio":  618
+                       "fechas":  "31 de mayo al 7 de junio 2027",
+                       "precio":  613
                    },
                    {
                        "codigo":  "VU4",
                        "region":  "caribe",
                        "destino":  "Cartagena",
                        "iata":  "CTG",
-                       "aerolinea":  "Copa Airlines",
+                       "aerolinea":  "LATAM",
                        "escalas":  "1 escala",
-                       "fechas":  "10 al 17 de mayo 2027",
-                       "precio":  581
+                       "fechas":  "8 al 15 de marzo 2027",
+                       "precio":  579
                    },
                    {
                        "codigo":  "VU5",
@@ -1008,20 +1008,20 @@
                        "region":  "caribe",
                        "destino":  "Curazao",
                        "iata":  "CUR",
-                       "aerolinea":  "Copa Airlines",
-                       "escalas":  "1 escala",
-                       "fechas":  "10 al 17 de mayo 2027",
-                       "precio":  769
+                       "aerolinea":  "Aerolíneas Argentinas",
+                       "escalas":  "directo",
+                       "fechas":  "12 al 19 de abril 2027",
+                       "precio":  718
                    },
                    {
                        "codigo":  "VU7",
                        "region":  "brasil",
                        "destino":  "Río de Janeiro",
                        "iata":  "RIO",
-                       "aerolinea":  "Gol",
+                       "aerolinea":  "Aerolíneas Argentinas",
                        "escalas":  "directo",
-                       "fechas":  "8 al 15 de marzo 2027",
-                       "precio":  365
+                       "fechas":  "10 al 17 de mayo 2027",
+                       "precio":  355
                    },
                    {
                        "codigo":  "VU8",
@@ -1058,10 +1058,10 @@
                        "region":  "eeuu",
                        "destino":  "Miami",
                        "iata":  "MIA",
-                       "aerolinea":  "Sky Airline",
-                       "escalas":  "1 escala a la ida, 2 a la vuelta",
-                       "fechas":  "12 al 19 de abril 2027",
-                       "precio":  797
+                       "aerolinea":  "Aerolíneas Argentinas",
+                       "escalas":  "directo",
+                       "fechas":  "7 al 14 de junio 2027",
+                       "precio":  733
                    },
                    {
                        "codigo":  "VU12",
@@ -1101,7 +1101,7 @@
                        "aerolinea":  "Gol",
                        "escalas":  "1 escala",
                        "fechas":  "10 al 17 de mayo 2027",
-                       "precio":  1072
+                       "precio":  1132
                    },
                    {
                        "codigo":  "VU18",
@@ -1130,7 +1130,7 @@
                        "iata":  "PAR",
                        "aerolinea":  "Avianca",
                        "escalas":  "1 escala",
-                       "fechas":  "8 al 15 de marzo 2027",
+                       "fechas":  "12 al 19 de abril 2027",
                        "precio":  1136
                    },
                    {
@@ -1138,20 +1138,20 @@
                        "region":  "europa",
                        "destino":  "Londres",
                        "iata":  "LON",
-                       "aerolinea":  "ITA Airways",
+                       "aerolinea":  "Avianca",
                        "escalas":  "1 escala",
-                       "fechas":  "1 al 8 de marzo 2027",
-                       "precio":  1427
+                       "fechas":  "8 al 15 de marzo 2027",
+                       "precio":  1458
                    },
                    {
                        "codigo":  "VU22",
                        "region":  "asia",
                        "destino":  "Dubái",
                        "iata":  "DXB",
-                       "aerolinea":  "Emirates",
+                       "aerolinea":  "Ethiopian Airlines",
                        "escalas":  "1 escala",
-                       "fechas":  "8 al 15 de marzo 2027",
-                       "precio":  1636
+                       "fechas":  "9 al 16 de agosto 2027",
+                       "precio":  1384
                    },
                    {
                        "codigo":  "VU23",
@@ -1161,17 +1161,17 @@
                        "aerolinea":  "Ethiopian Airlines",
                        "escalas":  "2 escalas",
                        "fechas":  "10 al 17 de mayo 2027",
-                       "precio":  2047
+                       "precio":  1928
                    },
                    {
                        "codigo":  "VU24",
                        "region":  "asia",
                        "destino":  "Tokio",
                        "iata":  "TYO",
-                       "aerolinea":  "LATAM",
-                       "escalas":  "2 escalas",
-                       "fechas":  "7 al 14 de junio 2027",
-                       "precio":  2026
+                       "aerolinea":  "Turkish Airlines",
+                       "escalas":  "1 escala",
+                       "fechas":  "15 al 22 de febrero 2027",
+                       "precio":  1951
                    },
                    {
                        "codigo":  "VU25",
@@ -1181,7 +1181,7 @@
                        "aerolinea":  "Ethiopian Airlines",
                        "escalas":  "1 escala",
                        "fechas":  "10 al 17 de mayo 2027",
-                       "precio":  1892
+                       "precio":  1773
                    }
                ],
     "grupales":  [
